@@ -1,12 +1,12 @@
 /*To make top margin smaller*/
 
 .callout.large {
-    padding: 0rem;
+    padding: 0;
     border-color: transparent;
 }
 
 .callout {
-    margin: 0 0 0rem;
+    margin: 0 0 0;
 }
 
 /* For the menu bar */
