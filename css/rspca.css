@@ -1,100 +1,192 @@
+/*
+Colors:
+RSPCA blue: #003473
+Aqua: #189ca1
+*/
+
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+.head {
+    background-color: #003473;
+}
+
+.head .branch-name {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.head .logo {
+    width: 104px;
+    height: 55px;
+}
+
+.head .button {
+    background-color: #E65100;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.head .message {
+    background-color:#E65100;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.social-media-btn {
+    font-size: 40px;
+    color: white;
+}
+
+.footer {
+    background-color: #003473;
+    font-size: 14px;
+    color: lightgrey;
+}
+
+.footer a {
+    color: lightgrey;
+}
+
+a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+.full-nav, .full-nav .menu, .small-nav {
+    background-color: #189ca1;
+}
+
+.full-nav {
+    padding: 0;
+}
+
+.nav-links a {
+    background-color: #189ca1;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: black;
+    /*border-bottom: solid 2px;*/
+    /*border-bottom-color: white;*/
+}
+
+/* OLD OLD OLD */
 /*To make top margin smaller*/
 
-.callout.large {
-    padding: 0;
-    border-color: transparent;
-}
+/*.callout.large {*/
+/*    padding: 0;*/
+/*    border-color: transparent;*/
+/*}*/
 
-.callout {
-    margin: 0 0 0;
-}
+/*.callout {*/
+/*    margin: 0 0 0;*/
+/*}*/
 
 /* For the menu bar */
 
 /* Variables */
 /* Small Navigation */
-.logo-small {
-    float: right; }
+/*.logo-small {*/
+/*    float: right; }*/
 
-/*The title bar when small*/
-.title-bar {
-    /*background: #8E8E68;*/
-    background: #1A237E;
-    color: #fefefe;
-}
-.title-bar {
-    padding: 0 .5rem; }
+/*!*The title bar when small*!*/
+/*.title-bar {*/
+/*    !*background: #8E8E68;*!*/
+/*    background: #1A237E;*/
+/*    color: #fefefe;*/
+/*}*/
+/*.title-bar {*/
+/*    padding: 0 .5rem; }*/
 
-.menu-icon,
-.title-bar-title {
-    position: relative;
-    /*top: 10px;*/
-}
+/*.menu-icon,*/
+/*.title-bar-title {*/
+/*    position: relative;*/
+/*    !*top: 10px;*!*/
+/*}*/
 
-/* Medium-Up Navigation */
-@media only screen and (min-width: 40rem) {
-    .logo-wrapper {
-        position: relative; }
-    .logo-wrapper .logo {
-        width: 118px;
-        height: 92px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        top: -6px;
-        margin-left: -59px; }
+/*!* Medium-Up Navigation *!*/
+/*@media only screen and (min-width: 40rem) {*/
+/*    .logo-wrapper {*/
+/*        position: relative; }*/
+/*    .logo-wrapper .logo {*/
+/*        width: 118px;*/
+/*        height: 92px;*/
+/*        position: absolute;*/
+/*        left: 50%;*/
+/*        right: 50%;*/
+/*        top: -6px;*/
+/*        margin-left: -59px; }*/
 
-    .top-bar-right {
-        width: 50%;
-        /*padding-left: 86px; */
-    }
-    .top-bar-right ul {
-        float: left; }
+/*    .top-bar-right {*/
+/*        width: 50%;*/
+/*        !*padding-left: 86px; *!*/
+/*    }*/
+/*    .top-bar-right ul {*/
+/*        float: left; }*/
 
-    .top-bar-left {
-        width: 50%;
-        /*padding-right: 86px; */
-    }
-    .top-bar-left ul {
-        float: right; } }
+/*    .top-bar-left {*/
+/*        width: 50%;*/
+/*        !*padding-right: 86px; *!*/
+/*    }*/
+/*    .top-bar-left ul {*/
+/*        float: right; } }*/
 
-/*Menu bar colour*/
-.top-bar, .top-bar ul {
-    /*background-color: #8E8E68;*/
-    background-color: #1A237E;
-}
+/*!*Menu bar colour*!*/
+/*.top-bar, .top-bar ul {*/
+/*    !*background-color: #8E8E68;*!*/
+/*    background-color: #1A237E;*/
+/*}*/
 
-/*links in top-bar*/
+/*!*links in top-bar*!*/
 
-.top-bar a {
-    color: white;
-}
+/*.top-bar a {*/
+/*    color: white;*/
+/*}*/
 
 
 /*Text syle and headers*/
 
-p {
-    font-family: "museo-sans","Helvetica Neue", Helvetica, arial, sans-serif;
-}
+/*p {*/
+/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*}*/
 
-h1 {
-    color: #1A237E;
-    font-family: "museo-sans","Helvetica Neue", Helvetica, arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
+/*h1 {*/
+/*    color: #1A237E;*/
+/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*}*/
 
-.central{
-    text-align:center;
-}
-.central_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-}
+/*.central{*/
+/*    text-align:center;*/
+/*}*/
+/*.central_img{*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    border-color: white;*/
+/*}*/
 
 /*button properties*/
 
@@ -104,18 +196,18 @@ h1 {
     /*padding: 1em;*/
 /*}*/
 
-.button {
-    background: transparent;
-    font-size: 1em;
-}
+/*.button {*/
+/*    background: transparent;*/
+/*    font-size: 1em;*/
+/*}*/
 
-.button:hover{
-    text-decoration: underline;
-    background: transparent;
-}
-.button:focus{
-    color: #FFB74D;
-}
+/*.button:hover{*/
+/*    text-decoration: underline;*/
+/*    background: transparent;*/
+/*}*/
+/*.button:focus{*/
+/*    color: #FFB74D;*/
+/*}*/
 
 /*.button:active{*/
     /*color: #ffae00;*/
@@ -123,54 +215,54 @@ h1 {
 
 /*For small screens*/
 
-@media only screen and (min-width: 40rem) {
+/*@media only screen and (min-width: 40rem) {*/
 
-    /*This makes the text in the box larger and gives it a padding*/
-    .intro-list {
-        padding-top: 2em;
-        /*padding-left: 4em;*/
-        font-size: 115%;
-        /*text-align: center;*/
-    }
+/*    !*This makes the text in the box larger and gives it a padding*!*/
+/*    .intro-list {*/
+/*        padding-top: 2em;*/
+/*        !*padding-left: 4em;*!*/
+/*        font-size: 115%;*/
+/*        !*text-align: center;*!*/
+/*    }*/
 
-    .pagehead {
-        padding: 1em;
-    }
-    h1 {
-        /*font-size: 2.5rem;*/
-        font-size: 32pt;
-        padding-top: 0.5em;
-    }
-    .top-bar{
-        margin-bottom: 2rem;
-    }
-    .button {
-        background: #1A237E;
-    }
-}
+/*    .pagehead {*/
+/*        padding: 1em;*/
+/*    }*/
+/*    h1 {*/
+/*        !*font-size: 2.5rem;*!*/
+/*        font-size: 32pt;*/
+/*        padding-top: 0.5em;*/
+/*    }*/
+/*    .top-bar{*/
+/*        margin-bottom: 2rem;*/
+/*    }*/
+/*    .button {*/
+/*        background: #1A237E;*/
+/*    }*/
+/*}*/
 
-h2{
-    font-size:24pt;
-    font-weight: bold;
-    text-align: center;
-}
-h3{
-    font-size: 16pt;
-}
+/*h2{*/
+/*    font-size:24pt;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*}*/
+/*h3{*/
+/*    font-size: 16pt;*/
+/*}*/
 /*Links on page*/
-a {
-    color: #1A237E;
-}
+/*a {*/
+/*    color: #1A237E;*/
+/*}*/
 
-a:focus, a:hover {
-    color: #870058;
-    text-decoration: underline;
-}
+/*a:focus, a:hover {*/
+/*    color: #870058;*/
+/*    text-decoration: underline;*/
+/*}*/
 
 
-a.inbox_link{
-    color: white;
-}
+/*a.inbox_link{*/
+/*    color: white;*/
+/*}*/
 
 
 
@@ -180,13 +272,7 @@ a.inbox_link{
 /*}*/
 
 /*!*The red text to report animal emergencies at the top*!*/
-.message {
-    color:#E65100;
-    font-size: 16pt;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.25rem;
-}
+
 
 .panel {
     color: white;
