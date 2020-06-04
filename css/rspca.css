@@ -43,7 +43,9 @@ a:hover {
 
 p,
 span,
-li {
+li,
+section .flex-video,
+section .callout {
   max-width: var(--measure);
 }
 
@@ -60,7 +62,6 @@ main > * + * {
 }
 
 .content-nav {
-  margin-top: 1rem;
   background-color: var(--color-accent);
   color: var(--color-light);
   border-top: 1px solid var(--color-accent);
