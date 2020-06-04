@@ -1,92 +1,201 @@
 /*
 Colors:
-RSPCA blue: #003473
-Aqua: #189ca1
+Dark primary - RSPCA blue: #003473
+Accent - Aqua: #189ca1
 */
 
-.embed-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
+:root {
+  --font-plain: Arial, sans-serif;
+  --color-rspca-blue: #003473;
+  --color-accent: #189ca1;
+  --color-dark: #050505;
+  --color-darkish: #404040;
+  --color-lightish: #e6e6e6;
+  --color-light: #fafafa;
+  --color-mid: grey;
+  --ratio: 1.4;
+  --s-5: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) /
+      var(--ratio)
+  );
+  --s-4: calc(
+    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio)
+  );
+  --s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));
+  --s-2: calc(var(--s0) / var(--ratio) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s0) * var(--ratio) * var(--ratio));
+  --s3: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio));
+  --s4: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)
+  );
+  --s5: calc(
+    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) *
+      var(--ratio)
+  );
+  --measure: 65ch;
+  --line-height: var(--ratio);
+  --line-height-small: calc(0.8 * var(--ratio));
+  --border-thin: var(--s-5);
+  --border-thick: var(--s-2);
+  line-height: var(--ratio);
+  font-size: calc(0.1vw + 1rem);
+  font-family: var(--font-plain);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
+
+a {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+article,
+footer,
+.nav-links,
+.grid-x,
+.message {
+  max-width: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--line-height-small);
+  font-weight: 700;
+  hyphens: auto;
+}
+
+.h1,
+h1 {
+  font-size: var(--s4);
+}
+
+.h2,
+h2 {
+  font-size: var(--s3);
+}
+
+.h3,
+h3 {
+  font-size: var(--s2);
+}
+
+.h4,
+h4 {
+  font-size: var(--s1);
+}
+
+main > * + * {
+  margin-top: var(--s1);
+}
+
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
 .embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .head {
-    background-color: #003473;
+  background-color: var(--color-rspca-blue);
 }
 
 .head .branch-name {
-    color: white;
-    font-size: 26px;
-    font-weight: bold;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .head .logo {
-    width: 104px;
-    height: 55px;
+  width: 104px;
+  height: 55px;
 }
 
 .head .button {
-    background-color: #E65100;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
+  background-color: #e65100;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .head .message {
-    background-color:#E65100;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
+  background-color: #e65100;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
 }
 
 .social-media-btn {
-    font-size: 40px;
-    color: white;
+  font-size: 40px;
+  color: white;
 }
 
 .footer {
-    background-color: #003473;
-    font-size: 14px;
-    color: lightgrey;
+  background-color: #003473;
+  font-size: 14px;
+  color: lightgrey;
 }
 
 .footer a {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 a[href^="tel:"] {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-.full-nav, .full-nav .menu, .small-nav {
-    background-color: #189ca1;
+.full-nav,
+.full-nav .menu,
+.small-nav {
+  background-color: var(--color-accent);
 }
 
 .full-nav {
-    padding: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    background-color: #189ca1;
-    color: white;
-    font-weight: bold;
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-    background-color: white;
-    color: black;
-    /*border-bottom: solid 2px;*/
-    /*border-bottom-color: white;*/
+  background-color: white;
+  color: black;
+  /*border-bottom: solid 2px;*/
+  /*border-bottom-color: white;*/
 }
 
 /* OLD OLD OLD */
@@ -162,7 +271,6 @@ a[href^="tel:"] {
 /*    color: white;*/
 /*}*/
 
-
 /*Text syle and headers*/
 
 /*p {*/
@@ -193,7 +301,7 @@ a[href^="tel:"] {
 /*? 12 Aug not sure if used*/
 
 /*.button-group a{*/
-    /*padding: 1em;*/
+/*padding: 1em;*/
 /*}*/
 
 /*.button {*/
@@ -210,7 +318,7 @@ a[href^="tel:"] {
 /*}*/
 
 /*.button:active{*/
-    /*color: #ffae00;*/
+/*color: #ffae00;*/
 /*}*/
 
 /*For small screens*/
@@ -259,62 +367,57 @@ a[href^="tel:"] {
 /*    text-decoration: underline;*/
 /*}*/
 
-
 /*a.inbox_link{*/
 /*    color: white;*/
 /*}*/
 
-
-
 /*.menu-icon, .title-bar-title {*/
-    /*position: relative;*/
-    /*top: 5px;*/
+/*position: relative;*/
+/*top: 5px;*/
 /*}*/
 
 /*!*The red text to report animal emergencies at the top*!*/
 
-
 .panel {
-    color: white;
-    /*margin: 0.5em;*/
-    margin-top: 0.5em;
-    padding: 0.5em;
+  color: white;
+  /*margin: 0.5em;*/
+  margin-top: 0.5em;
+  padding: 0.5em;
 }
 
 .spaced {
-    margin-left: 2em;
-    margin-right: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
-.colour1{
-    /*background-color: #8E8E68;*/
-    background-color: #1A237E;
+.colour1 {
+  /*background-color: #8E8E68;*/
+  background-color: #1a237e;
 }
 
-
-.colour2{
-    /*background-color: #AC5959;*/
-    background-color: #44AF69;
+.colour2 {
+  /*background-color: #AC5959;*/
+  background-color: #44af69;
 }
 
-.colour3{
-    /*background-color: #AC5959;*/
-    background-color: #870058;
+.colour3 {
+  /*background-color: #AC5959;*/
+  background-color: #870058;
 }
 
 /*To reduce the margin-bottom to 0 as the default for p is 1*/
 div.panel p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-.newsbox{
-    border: 4px solid #fefefe;
-    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+.newsbox {
+  border: 4px solid #fefefe;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+
 /*
 body {
     background: white;
