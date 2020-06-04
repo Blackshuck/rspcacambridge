@@ -8,20 +8,25 @@ Accent - Aqua: #189ca1
   --font-plain: Arial, sans-serif;
   --color-rspca-blue: #003473;
   --color-accent: #189ca1;
+  --color-accent-orange: #e65100;
   --color-dark: #050505;
   --color-darkish: #404040;
   --color-lightish: #e6e6e6;
-  --color-light: #fafafa;
+  --color-light: #fefefe;
   --color-mid: grey;
   --ratio: 1.4;
   --measure: 65ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8 * var(--ratio));
   line-height: var(--ratio);
-  font-size: calc(0.1vw + 1rem);
+  /*font-size: calc(0.1vw + 1rem);*/
   font-family: var(--font-plain);
   background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+body {
+  background-color: var(--color-light);
 }
 
 a {
@@ -36,22 +41,10 @@ a:hover {
   text-decoration: underline;
 }
 
-* {
+p,
+span,
+li {
   max-width: var(--measure);
-}
-
-html,
-body,
-div,
-header,
-nav,
-main,
-article,
-footer,
-.nav-links,
-.grid-x,
-.message {
-  max-width: none;
 }
 
 h1,
@@ -66,8 +59,28 @@ main > * + * {
   margin-top: 1rem;
 }
 
-address > span {
-  display: block;
+.content-nav {
+  margin-top: 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+.content-nav a {
+  color: var(--color-light);
+}
+.content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+  border-color: var(--color-light) transparent transparent;
+}
+
+address + p {
+  margin-top: 1rem;
+}
+
+.menu .is-active,
+.menu .is-active > a {
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .embed-container {
@@ -101,18 +114,19 @@ address > span {
 }
 
 .head .button {
-  background-color: #e65100;
+  background-color: var(--color-accent-orange);
   color: white;
   border-radius: 5px;
   font-weight: bold;
 }
 
 .head .message {
-  background-color: #e65100;
+  background-color: var(--color-accent-orange);
   font-size: 16px;
   font-weight: bold;
   color: white;
   margin: 0;
+  max-width: none;
 }
 
 .social-media-btn {
@@ -121,7 +135,7 @@ address > span {
 }
 
 .footer {
-  background-color: #003473;
+  background-color: var(--color-rspca-blue);
   font-size: 14px;
   color: lightgrey;
 }
@@ -135,7 +149,7 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
-a[href^="tel:"]:before {
+p[itemprop="telephone"] > a[href^="tel:"]:before {
   content: "\260e";
   margin-right: 0.5em;
 }
@@ -157,8 +171,8 @@ a[href^="tel:"]:before {
 }
 
 .nav-links a:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--color-light);
+  color: var(--color-dark);
   /*border-bottom: solid 2px;*/
   /*border-bottom-color: white;*/
 }
