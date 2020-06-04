@@ -14,32 +14,9 @@ Accent - Aqua: #189ca1
   --color-light: #fafafa;
   --color-mid: grey;
   --ratio: 1.4;
-  --s-5: calc(
-    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio) /
-      var(--ratio)
-  );
-  --s-4: calc(
-    var(--s0) / var(--ratio) / var(--ratio) / var(--ratio) / var(--ratio)
-  );
-  --s-3: calc(var(--s0) / var(--ratio) / var(--ratio) / var(--ratio));
-  --s-2: calc(var(--s0) / var(--ratio) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s0) * var(--ratio) * var(--ratio));
-  --s3: calc(var(--s0) * var(--ratio) * var(--ratio) * var(--ratio));
-  --s4: calc(
-    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio)
-  );
-  --s5: calc(
-    var(--s0) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) *
-      var(--ratio)
-  );
   --measure: 65ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8 * var(--ratio));
-  --border-thin: var(--s-5);
-  --border-thick: var(--s-2);
   line-height: var(--ratio);
   font-size: calc(0.1vw + 1rem);
   font-family: var(--font-plain);
@@ -81,33 +58,16 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: var(--line-height-small);
   font-weight: 700;
   hyphens: auto;
 }
 
-.h1,
-h1 {
-  font-size: var(--s4);
-}
-
-.h2,
-h2 {
-  font-size: var(--s3);
-}
-
-.h3,
-h3 {
-  font-size: var(--s2);
-}
-
-.h4,
-h4 {
-  font-size: var(--s1);
-}
-
 main > * + * {
-  margin-top: var(--s1);
+  margin-top: 1rem;
+}
+
+address > span {
+  display: block;
 }
 
 .embed-container {
@@ -173,6 +133,11 @@ main > * + * {
 a[href^="tel:"] {
   color: inherit;
   text-decoration: none;
+}
+
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
 }
 
 .full-nav,
