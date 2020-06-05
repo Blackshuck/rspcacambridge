@@ -4,7 +4,7 @@
 # 2. Copies assets (CSS, img, etc.) into the build folder.
 # 3. Converts each mustache file in the templates folder into html.
 
-PYTHON_VENV="./python_venv"
+PYTHON_VENV="./venv"
 ASSETS=("./css" "./icons" "./fonts" "./img")
 
 TEMPLATES_DIR="./templates"
@@ -14,7 +14,7 @@ DATA_DIR="$TEMPLATES_DIR/data"
 TEMPLATES="$TEMPLATES_DIR/*.mustache"
 
 if [ ! -d $PARTIALS_DIR ]; then
-  echo "✘ Please check that partials folder $PARTIALS_DIR exists"
+  echo " - ✘ Please check that partials folder $PARTIALS_DIR exists"
   exit
 fi
 if [ ! -d $OUTPUT_DIR ]; then
@@ -46,7 +46,7 @@ for f in $TEMPLATES; do
   echo -n "$f"
   name=$(basename "$f" .mustache)
   if [ ! -f "$DATA_DIR/$name.json" ]; then
-    echo "✘ Please check that $DATA_DIR/$name.json exists"
+    echo " - ✘ Please check that $DATA_DIR/$name.json exists"
     continue
   fi
   if chevron -p $PARTIALS_DIR -d "$DATA_DIR/$name.json" "$f" >"$OUTPUT_DIR/$name.html"; then
