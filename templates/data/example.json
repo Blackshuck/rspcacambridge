@@ -1,0 +1,10 @@
+{
+  "metadata_page_title": "Example Page Metadata Title",
+  "breadcrumbs": [
+    {
+      "content": "Home",
+      "filepath": "index.html"
+    }
+  ],
+  "current_breadcrumb": "Current page name"
+}
