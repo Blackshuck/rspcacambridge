@@ -11,7 +11,7 @@ Accent - Aqua: #189ca1
   --color-accent-orange: #e65100;
   --color-dark: #050505;
   --color-darkish: #404040;
-  --color-lightish: #e6e6e6;
+  --color-lightish: #f1f1f1;
   --color-light: #fefefe;
   --color-mid: grey;
   --ratio: 1.4;
@@ -100,6 +100,22 @@ address + p {
 .menu .is-active > a {
   background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+.card-image {
+  max-height: 200px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.card-section {
+  background-color: var(--color-lightish);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-section h2 {
+  font-size: 1.5625rem;
+  font-weight: normal;
 }
 
 .embed-container {
