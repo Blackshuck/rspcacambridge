@@ -74,6 +74,23 @@ main > * + * {
 .content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
   border-color: var(--color-light) transparent transparent;
 }
+.social-icon-link,
+.social-icon-link:hover,
+.social-icon-link:focus {
+  text-decoration: none;
+}
+.social-icon-link span {
+  color: var(--color-lightish);
+  font-size: 3rem;
+}
+.social-icon-link span img {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  stroke: currentColor;
+  fill: var(--color-lightish);
+  stroke-width: 0;
+}
 
 address + p {
   margin-top: 1rem;
