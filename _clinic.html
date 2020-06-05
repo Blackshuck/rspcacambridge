@@ -66,7 +66,7 @@
     </div>
 
     <!-- Medium-Up Navigation -->
-    <nav class="top-bar full-nav" id="nav-menu">
+    <nav class="top-bar full-nav" id="nav-menu" aria-label="Main">
       <!-- Left Nav Section -->
       <div class="top-bar-left">
         <ul class="vertical medium-horizontal menu nav-links align-center">
@@ -123,29 +123,39 @@
                       itemprop="openingHours"
                       content="Tu,We,Th,Fr 09:00-10:30"
                     >
+                      <caption class="show-for-sr">
+                        Opening hours
+                      </caption>
+                      <thead class="show-for-sr">
+                        <tr>
+                          <th id="weekday">Weekday</th>
+                          <th id="time">Time</th>
+                          <th id="services">Services</th>
+                        </tr>
+                      </thead>
                       <tbody>
                         <tr>
-                          <td>Tuesday</td>
-                          <td>09:00-10:30</td>
-                          <td>Open surgery</td>
+                          <td headers="weekday">Tuesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
                         </tr>
                         <tr>
-                          <td>Wednesday</td>
-                          <td>09:00-10:30</td>
-                          <td>
+                          <td headers="weekday">Wednesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">
                             Vaccination, microchipping, neutering pre-checks and
                             post-operative stitch removal only
                           </td>
                         </tr>
                         <tr>
-                          <td>Thursday</td>
-                          <td>09:00-10:30</td>
-                          <td>Open surgery</td>
+                          <td headers="weekday">Thursday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
                         </tr>
                         <tr>
-                          <td>Friday</td>
-                          <td>09:00-10:30</td>
-                          <td>Open surgery</td>
+                          <td headers="weekday">Friday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
                         </tr>
                       </tbody>
                     </table>
@@ -166,6 +176,7 @@
               </div>
               <div class="cell large-6 text-center">
                 <iframe
+                  title="Map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.857487208834!2d0.15359931570958604!3d52.209637266935815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8706632bd4431%3A0xce42f04ce09bf9bf!2sRSPCA%20Cambridge%20and%20District%20Branch!5e0!3m2!1sru!2suk!4v1591275778243!5m2!1sru!2suk"
                   style="border:0;height:100%;width:100%;"
                   allowfullscreen=""
@@ -270,8 +281,8 @@
                 <p>
                   There is a basic
                   <strong
-                    >£15 charge per visit, plus the cost price of any medicines
-                    prescribed for your pet</strong
+                    >&pound;15 charge per visit, plus the cost price of any
+                    medicines prescribed for your pet</strong
                   >.
                 </p>
                 <p>
@@ -348,17 +359,17 @@
                 </p>
                 <ul>
                   <li>
-                    Kitten and puppy vaccinations: £12 for the first vaccination
-                    and £12 for the booster 3 weeks later.
+                    Kitten and puppy vaccinations: &pound;12 for the first
+                    vaccination and &pound;12 for the booster 3 weeks later.
                   </li>
                   <li>
-                    Additional boosters should be given every year and are £17
-                    for cats and dogs.
+                    Additional boosters should be given every year and are
+                    &pound;17 for cats and dogs.
                   </li>
-                  <li>Rabbit vaccinations: £17.</li>
+                  <li>Rabbit vaccinations: &pound;17.</li>
                   <li>
                     RHVD-2. Vaccination Annual Booster (Rabbits) from 10 weeks
-                    of age: £12
+                    of age: &pound;12
                   </li>
                 </ul>
                 <p>
@@ -419,12 +430,12 @@
                   health check. Payment should be made at this point and is:
                 </p>
                 <ul>
-                  <li>£20 for male cats, guinea pigs and ferrets</li>
-                  <li>£22 for male rabbits</li>
-                  <li>£40 for female cats</li>
-                  <li>£40 for female rabbits</li>
-                  <li>£48 for male dogs</li>
-                  <li>£65 for female dogs.</li>
+                  <li>&pound;20 for male cats, guinea pigs and ferrets</li>
+                  <li>&pound;22 for male rabbits</li>
+                  <li>&pound;40 for female cats</li>
+                  <li>&pound;40 for female rabbits</li>
+                  <li>&pound;48 for male dogs</li>
+                  <li>&pound;65 for female dogs.</li>
                 </ul>
               </section>
               <section id="helping" data-magellan-target="helping">
@@ -435,6 +446,7 @@
                 </p>
                 <div class="flex-video">
                   <iframe
+                    title="Video about volunteering at the RSPCA Cambridge Animal Clinic"
                     height="315"
                     src="https://www.youtube.com/embed/ZF7HbUIgasY"
                     allowfullscreen
@@ -467,7 +479,11 @@
               </section>
             </div>
             <div class="cell medium-4 grid-padding-y show-for-medium">
-              <nav class="sticky-container" data-sticky-container>
+              <nav
+                class="sticky-container"
+                data-sticky-container
+                aria-label="Content"
+              >
                 <div
                   class="sticky"
                   data-sticky
@@ -537,7 +553,7 @@
             no. 205098
           </p>
           <ul class="menu align-center">
-            <li><a href="tac.html">Terms & Conditions</a></li>
+            <li><a href="tac.html">Terms &amp; Conditions</a></li>
             <li>
               <a href="https://www.rspca.org.uk/utilities/privacy"
                 >Privacy Policy</a

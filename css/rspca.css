@@ -139,11 +139,11 @@ address + p {
 .footer {
   background-color: var(--color-rspca-blue);
   font-size: 14px;
-  color: lightgrey;
+  color: var(--color-lightish);
 }
 
 .footer a {
-  color: lightgrey;
+  color: var(--color-lightish);
 }
 
 a[href^="tel:"] {
