@@ -84,12 +84,13 @@
       </div>
     </nav>
 
-    <!--MAIN BODY OF PAGE STARTS HERE-->
-    <main class="grid-container">
+    <!-- BODY OF PAGE STARTS HERE-->
+    <div class="grid-container">
+      <!-- BREADCRUMBS NAVIGATION -->
       <div class="grid-x align-center">
         <div class="cell medium-10">
           <div class="grid-x grid-margin-x grid-padding-y align-center">
-            <div class="cell medium-full">
+            <div class="cell">
               <nav aria-label="You are here:" role="navigation">
                 <ul class="breadcrumbs">
                   <li><a href="index.html">Home</a></li>
@@ -98,9 +99,14 @@
               </nav>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- MAIN CONTENT -->
+      <div class="grid-x align-center">
+        <main class="cell medium-10" role="main">
           <div itemscope itemtype="http://schema.org/UKNonprofitType">
             <div class="grid-x grid-margin-x align-center">
-              <div class="cell medium-full">
+              <div class="cell">
                 <h2><span itemprop="name">RSPCA Cambridge</span> Clinic</h2>
               </div>
             </div>
@@ -184,9 +190,6 @@
                 ></iframe>
               </div>
             </div>
-            <!--            <div class="grid-x grid-margin-x align-center">-->
-            <!--              <div class="cell medium-8"></div>-->
-            <!--            </div>-->
           </div>
           <div class="grid-x grid-margin-x align-center" id="content">
             <div class="medium-8 cell">
@@ -477,6 +480,7 @@
                 </p>
               </section>
             </div>
+            <!-- SIDEBAR NAVIGATION -->
             <div class="cell medium-4 grid-padding-y show-for-medium">
               <nav
                 class="sticky-container"
@@ -495,7 +499,9 @@
                     <li>
                       <a href="#faq">FAQ</a>
                       <ul class="menu vertical nested">
-                        <li><a href="#eligibility">Is my pet eligible?</a></li>
+                        <li>
+                          <a href="#eligibility">Is my pet eligible?</a>
+                        </li>
                         <li><a href="#cost">How much does it cost?</a></li>
                         <li>
                           <a href="#which-animals"
@@ -519,9 +525,9 @@
               </nav>
             </div>
           </div>
-        </div>
+        </main>
       </div>
-    </main>
+    </div>
 
     <!--FOOTER STARTS HERE-->
     <footer class="footer grid-container fluid">

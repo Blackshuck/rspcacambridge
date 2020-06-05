@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content with sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/rspca.css" />
+  </head>
+
+  <body>
+    <!-- BODY OF PAGE STARTS HERE-->
+    <div class="grid-container">
+      <!-- BREADCRUMBS NAVIGATION -->
+      <div class="grid-x align-center">
+        <div class="cell medium-10">
+          <div class="grid-x grid-margin-x grid-padding-y align-center">
+            <div class="cell">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Current page
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN CONTENT -->
+      <div class="grid-x align-center">
+        <main class="cell medium-10" role="main">
+          <div class="grid-x grid-margin-x align-center">
+            <div class="cell">
+              <h2>Page Title</h2>
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x align-center" id="content">
+            <div class="medium-8 cell">
+              <section id="header" data-magellan-target="header">
+                <h3>Header</h3>
+                <p>Content.</p>
+              </section>
+              <section
+                id="another_header"
+                data-magellan-target="another_header"
+              >
+                <h3>Another Header</h3>
+                <p>Other content.</p>
+              </section>
+            </div>
+            <!-- SIDEBAR NAVIGATION -->
+            <div class="cell medium-4 grid-padding-y show-for-medium">
+              <nav
+                class="sticky-container"
+                data-sticky-container
+                aria-label="Content"
+              >
+                <div
+                  class="sticky"
+                  data-sticky
+                  data-anchor="content"
+                  data-sticky-on="medium"
+                >
+                  <ul class="content-nav vertical menu" data-magellan>
+                    <li><a href="#header">Header</a></li>
+                    <li><a href="#another_header">Another header</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
