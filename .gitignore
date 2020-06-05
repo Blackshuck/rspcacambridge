@@ -5,7 +5,7 @@
 .DS_Store
 
 # Python files
-python_venv
+venv
 
 # Build files
 build/img
