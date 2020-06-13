@@ -12,7 +12,7 @@ Accent - Aqua: #189ca1
   --color-dark: #050505;
   --color-darkish: #404040;
   --color-lightish: #f1f1f1;
-  --color-light: #fefefe;
+  --color-light: #fafafa;
   --color-mid: grey;
   --ratio: 1.4;
   --measure: 65ch;
@@ -59,6 +59,10 @@ h4 {
 
 main > * + * {
   margin-top: 1rem;
+}
+
+.full-screen-height {
+  min-height: calc(100vh - 374px);
 }
 
 .content-nav {
@@ -165,7 +169,7 @@ address + p {
 
 .head .branch-name {
   color: white;
-  font-size: 26px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -176,7 +180,7 @@ address + p {
 
 .head .button {
   background-color: var(--color-accent-orange);
-  color: white;
+  color: var(--color-light);
   border-radius: 5px;
   font-weight: bold;
 }
@@ -185,14 +189,19 @@ address + p {
   background-color: var(--color-accent-orange);
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: var(--color-light);
   margin: 0;
   max-width: none;
 }
 
+.message a[href^="tel:"]::before {
+  content: unset;
+  margin-right: unset;
+}
+
 .social-media-btn {
   font-size: 40px;
-  color: white;
+  color: var(--color-light);
 }
 
 .footer {
@@ -206,8 +215,8 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
-p[itemprop="telephone"] > a[href^="tel:"]::before {
-  /* Telephone symbol */
+/* Telephone symbol */
+a[href^="tel:"]::before {
   content: "\260e";
   margin-right: 0.5em;
 }

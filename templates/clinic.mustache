@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  {{> metadata }}
+  <body>
+    {{> header }} {{> navigation }}
+    <!-- BODY OF PAGE STARTS HERE-->
+    <div class="grid-container full-screen-height">
+      {{> breadcrumbs }}
+      <!-- MAIN CONTENT -->
+      <div class="grid-x align-center">
+        <main class="cell medium-10" role="main">
+          <div itemscope itemtype="http://schema.org/UKNonprofitType">
+            <div class="grid-x grid-margin-x align-center">
+              <div class="cell">
+                <h2><span itemprop="name">RSPCA Cambridge</span> Clinic</h2>
+              </div>
+            </div>
+            <div class="grid-x grid-margin-x grid-padding-y align-center">
+              <div class="cell large-6">
+                <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                    <h3 class="h4">Opening hours</h3>
+                    <!--                    <div class="callout alert">-->
+                    <!--                      <p>-->
+                    <!--                        <strong-->
+                    <!--                          >April 2020: Clinic currently not running due to-->
+                    <!--                          Coronavirus. Registered clients please contact Branch-->
+                    <!--                          for veterinary emergencies.</strong-->
+                    <!--                        >-->
+                    <!--                      </p>-->
+                    <!--                    </div>-->
+                    <table
+                      itemprop="openingHours"
+                      content="Tu,We,Th,Fr 09:00-10:30"
+                    >
+                      <caption class="show-for-sr">
+                        Opening hours
+                      </caption>
+                      <thead class="show-for-sr">
+                        <tr>
+                          <th id="weekday">Weekday</th>
+                          <th id="time">Time</th>
+                          <th id="services">Services</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td headers="weekday">Tuesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Wednesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">
+                            Vaccination, microchipping, neutering pre-checks and
+                            post-operative stitch removal only
+                          </td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Thursday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Friday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="cell">
+                    <h3 class="h4">Address</h3>
+                    <address itemprop="address">
+                      1 Pool Way<br />
+                      Whitehill Road<br />
+                      Cambridge<br />
+                      CB5 8NT
+                    </address>
+                    <p itemprop="telephone" content="+441223247986">
+                      <a href="tel:+441223247986">01223 247 986</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cell large-6 text-center">
+                <iframe
+                  title="Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.857487208834!2d0.15359931570958604!3d52.209637266935815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8706632bd4431%3A0xce42f04ce09bf9bf!2sRSPCA%20Cambridge%20and%20District%20Branch!5e0!3m2!1sru!2suk!4v1591275778243!5m2!1sru!2suk"
+                  style="border: 0; height: 100%; width: 100%;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x align-center" id="content">
+            <div class="cell medium-4 grid-padding-y show-for-medium"></div>
+          </div>
+          <div
+            class="grid-x grid-margin-x align-justify"
+            data-equalizer
+            data-equalize-on="medium"
+          >
+            <div class="cell medium-4">
+              <div class="card" data-equalizer-watch>
+                <a href="clinic/about.html">
+                  <div class="card-image">
+                    <img src="img/clinic.jpg" alt="Photo of the clinic" />
+                  </div>
+                </a>
+                <div class="card-section">
+                  <a href="clinic/about.html"><h2>About</h2></a>
+                  <p>General information about our clinic.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cell medium-4">
+              <div class="card" data-equalizer-watch>
+                <a href="clinic/appointments.html">
+                  <div class="card-image">
+                    <img
+                      src="img/doginclinic.jpg"
+                      alt="Photo of a dog during appointment at the clinic"
+                    />
+                  </div>
+                </a>
+                <div class="card-section">
+                  <a href="clinic/appointments.html"><h2>Appointments</h2></a>
+                  <p>How to bring your pet to an appointment.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cell medium-4">
+              <div class="card" data-equalizer-watch>
+                <a href="clinic/faq.html">
+                  <div class="card-image">
+                    <img src="img/puppy.jpg" alt="Photo of a puppy" />
+                  </div>
+                </a>
+                <div class="card-section">
+                  <a href="clinic/faq.html"><h2>FAQ's</h2></a>
+                  <p>Frequently asked questions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    {{> footer }} {{> scripts }}
+  </body>
+</html>

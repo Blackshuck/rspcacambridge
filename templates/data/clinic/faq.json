@@ -1,0 +1,16 @@
+{
+  "metadata_page_title": "FAQ - Clinic",
+  "assetPrefix": "../",
+  "breadcrumbs?": true,
+  "breadcrumbs": [
+    {
+      "content": "Home",
+      "filepath": "../index.html"
+    },
+    {
+      "content": "Clinic",
+      "filepath": "../clinic.html"
+    }
+  ],
+  "current_breadcrumb": "FAQ"
+}

@@ -1,11 +1,21 @@
+{{#breadcrumbs?}}
 <!-- BREADCRUMBS NAVIGATION -->
-<div>
-  <nav aria-label="You are here:" role="navigation">
-    <ul class="breadcrumbs">
-      {{#breadcrumbs}}
-      <li><a href="{{filepath}}">{{content}}</a></li>
-      {{/breadcrumbs}}
-      <li><span class="show-for-sr">Current: </span> {{current_breadcrumb}}</li>
-    </ul>
-  </nav>
+<div class="grid-x align-center">
+  <div class="cell medium-10">
+    <div class="grid-x grid-margin-x grid-padding-y align-center">
+      <div class="cell">
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            {{#breadcrumbs}}
+            <li><a href="{{filepath}}">{{content}}</a></li>
+            {{/breadcrumbs}}
+            <li>
+              <span class="show-for-sr">Current: </span> {{current_breadcrumb}}
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 </div>
+{{/breadcrumbs?}}
