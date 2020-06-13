@@ -5,7 +5,7 @@ Accent - Aqua: #189ca1
 */
 
 :root {
-  --font-plain: Arial, sans-serif;
+  --font-plain: "arial", sans-serif;
   --color-rspca-blue: #003473;
   --color-accent: #189ca1;
   --color-accent-orange: #e65100;
@@ -18,8 +18,8 @@ Accent - Aqua: #189ca1
   --measure: 65ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8 * var(--ratio));
+
   line-height: var(--ratio);
-  /*font-size: calc(0.1vw + 1rem);*/
   font-family: var(--font-plain);
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -68,21 +68,26 @@ main > * + * {
   border-top: 1px solid var(--color-accent);
   border-bottom: 1px solid var(--color-accent);
 }
+
 .content-nav a {
   color: var(--color-light);
 }
+
 .content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
   border-color: var(--color-light) transparent transparent;
 }
+
 .social-icon-link,
 .social-icon-link:hover,
 .social-icon-link:focus {
   text-decoration: none;
 }
+
 .social-icon-link span {
   color: var(--color-lightish);
   font-size: 3rem;
 }
+
 .social-icon-link span img {
   display: inline-block;
   height: 1em;
@@ -94,6 +99,25 @@ main > * + * {
 
 address + p {
   margin-top: 1rem;
+}
+
+.nav-links a {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  font-weight: bold;
+}
+
+.footer a {
+  color: var(--color-lightish);
+}
+
+.nav-links a:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+
+  /* border-bottom: solid 2px; */
+
+  /* border-bottom-color: white; */
 }
 
 .menu .is-active,
@@ -108,11 +132,13 @@ address + p {
   max-width: 100%;
   overflow: hidden;
 }
+
 .card-section {
   background-color: var(--color-lightish);
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .card-section h2 {
   font-size: 1.5625rem;
   font-weight: normal;
@@ -175,16 +201,12 @@ address + p {
   color: var(--color-lightish);
 }
 
-.footer a {
-  color: var(--color-lightish);
-}
-
 a[href^="tel:"] {
   color: inherit;
   text-decoration: none;
 }
 
-p[itemprop="telephone"] > a[href^="tel:"]:before {
+p[itemprop="telephone"] > a[href^="tel:"]::before {
   /* Telephone symbol */
   content: "\260e";
   margin-right: 0.5em;
@@ -200,202 +222,306 @@ p[itemprop="telephone"] > a[href^="tel:"]:before {
   padding: 0;
 }
 
-.nav-links a {
-  background-color: var(--color-accent);
-  color: var(--color-light);
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  /*border-bottom: solid 2px;*/
-  /*border-bottom-color: white;*/
-}
-
 /* OLD OLD OLD */
-/*To make top margin smaller*/
 
-/*.callout.large {*/
-/*    padding: 0;*/
-/*    border-color: transparent;*/
-/*}*/
+/* To make top margin smaller */
 
-/*.callout {*/
-/*    margin: 0 0 0;*/
-/*}*/
+/* .callout.large { */
+
+/*    padding: 0; */
+
+/*    border-color: transparent; */
+
+/* } */
+
+/* .callout { */
+
+/*    margin: 0 0 0; */
+
+/* } */
 
 /* For the menu bar */
 
 /* Variables */
+
 /* Small Navigation */
-/*.logo-small {*/
-/*    float: right; }*/
 
-/*!*The title bar when small*!*/
-/*.title-bar {*/
-/*    !*background: #8E8E68;*!*/
-/*    background: #1A237E;*/
-/*    color: #fefefe;*/
-/*}*/
-/*.title-bar {*/
-/*    padding: 0 .5rem; }*/
+/* .logo-small { */
 
-/*.menu-icon,*/
-/*.title-bar-title {*/
-/*    position: relative;*/
-/*    !*top: 10px;*!*/
-/*}*/
+/*    float: right; } */
 
-/*!* Medium-Up Navigation *!*/
-/*@media only screen and (min-width: 40rem) {*/
-/*    .logo-wrapper {*/
-/*        position: relative; }*/
-/*    .logo-wrapper .logo {*/
-/*        width: 118px;*/
-/*        height: 92px;*/
-/*        position: absolute;*/
-/*        left: 50%;*/
-/*        right: 50%;*/
-/*        top: -6px;*/
-/*        margin-left: -59px; }*/
+/* !*The title bar when small*! */
 
-/*    .top-bar-right {*/
-/*        width: 50%;*/
-/*        !*padding-left: 86px; *!*/
-/*    }*/
-/*    .top-bar-right ul {*/
-/*        float: left; }*/
+/* .title-bar { */
 
-/*    .top-bar-left {*/
-/*        width: 50%;*/
-/*        !*padding-right: 86px; *!*/
-/*    }*/
-/*    .top-bar-left ul {*/
-/*        float: right; } }*/
+/*    !*background: #8E8E68;*! */
 
-/*!*Menu bar colour*!*/
-/*.top-bar, .top-bar ul {*/
-/*    !*background-color: #8E8E68;*!*/
-/*    background-color: #1A237E;*/
-/*}*/
+/*    background: #1A237E; */
 
-/*!*links in top-bar*!*/
+/*    color: #fefefe; */
 
-/*.top-bar a {*/
-/*    color: white;*/
-/*}*/
+/* } */
 
-/*Text syle and headers*/
+/* .title-bar { */
 
-/*p {*/
-/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*}*/
+/*    padding: 0 .5rem; } */
 
-/*h1 {*/
-/*    color: #1A237E;*/
-/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*}*/
+/* .menu-icon, */
 
-/*.central{*/
-/*    text-align:center;*/
-/*}*/
-/*.central_img{*/
-/*    display: block;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    border-width: 1px;*/
-/*    border-style: solid;*/
-/*    border-color: white;*/
-/*}*/
+/* .title-bar-title { */
 
-/*button properties*/
+/*    position: relative; */
 
-/*? 12 Aug not sure if used*/
+/*    !*top: 10px;*! */
 
-/*.button-group a{*/
-/*padding: 1em;*/
-/*}*/
+/* } */
 
-/*.button {*/
-/*    background: transparent;*/
-/*    font-size: 1em;*/
-/*}*/
+/* !* Medium-Up Navigation *! */
 
-/*.button:hover{*/
-/*    text-decoration: underline;*/
-/*    background: transparent;*/
-/*}*/
-/*.button:focus{*/
-/*    color: #FFB74D;*/
-/*}*/
+/* @media only screen and (min-width: 40rem) { */
 
-/*.button:active{*/
-/*color: #ffae00;*/
-/*}*/
+/*    .logo-wrapper { */
 
-/*For small screens*/
+/*        position: relative; } */
 
-/*@media only screen and (min-width: 40rem) {*/
+/*    .logo-wrapper .logo { */
 
-/*    !*This makes the text in the box larger and gives it a padding*!*/
-/*    .intro-list {*/
-/*        padding-top: 2em;*/
-/*        !*padding-left: 4em;*!*/
-/*        font-size: 115%;*/
-/*        !*text-align: center;*!*/
-/*    }*/
+/*        width: 118px; */
 
-/*    .pagehead {*/
-/*        padding: 1em;*/
-/*    }*/
-/*    h1 {*/
-/*        !*font-size: 2.5rem;*!*/
-/*        font-size: 32pt;*/
-/*        padding-top: 0.5em;*/
-/*    }*/
-/*    .top-bar{*/
-/*        margin-bottom: 2rem;*/
-/*    }*/
-/*    .button {*/
-/*        background: #1A237E;*/
-/*    }*/
-/*}*/
+/*        height: 92px; */
 
-/*h2{*/
-/*    font-size:24pt;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*}*/
-/*h3{*/
-/*    font-size: 16pt;*/
-/*}*/
-/*Links on page*/
-/*a {*/
-/*    color: #1A237E;*/
-/*}*/
+/*        position: absolute; */
 
-/*a:focus, a:hover {*/
-/*    color: #870058;*/
-/*    text-decoration: underline;*/
-/*}*/
+/*        left: 50%; */
 
-/*a.inbox_link{*/
-/*    color: white;*/
-/*}*/
+/*        right: 50%; */
 
-/*.menu-icon, .title-bar-title {*/
-/*position: relative;*/
-/*top: 5px;*/
-/*}*/
+/*        top: -6px; */
 
-/*!*The red text to report animal emergencies at the top*!*/
+/*        margin-left: -59px; } */
+
+/*    .top-bar-right { */
+
+/*        width: 50%; */
+
+/*        !*padding-left: 86px; *! */
+
+/*    } */
+
+/*    .top-bar-right ul { */
+
+/*        float: left; } */
+
+/*    .top-bar-left { */
+
+/*        width: 50%; */
+
+/*        !*padding-right: 86px; *! */
+
+/*    } */
+
+/*    .top-bar-left ul { */
+
+/*        float: right; } } */
+
+/* !*Menu bar colour*! */
+
+/* .top-bar, .top-bar ul { */
+
+/*    !*background-color: #8E8E68;*! */
+
+/*    background-color: #1A237E; */
+
+/* } */
+
+/* !*links in top-bar*! */
+
+/* .top-bar a { */
+
+/*    color: white; */
+
+/* } */
+
+/* Text syle and headers */
+
+/* p { */
+
+/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+/* } */
+
+/* h1 { */
+
+/*    color: #1A237E; */
+
+/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+/*    font-weight: bold; */
+
+/*    text-align: center; */
+
+/* } */
+
+/* .central{ */
+
+/*    text-align:center; */
+
+/* } */
+
+/* .central_img{ */
+
+/*    display: block; */
+
+/*    margin-left: auto; */
+
+/*    margin-right: auto; */
+
+/*    border-width: 1px; */
+
+/*    border-style: solid; */
+
+/*    border-color: white; */
+
+/* } */
+
+/* button properties */
+
+/* ? 12 Aug not sure if used */
+
+/* .button-group a{ */
+
+/* padding: 1em; */
+
+/* } */
+
+/* .button { */
+
+/*    background: transparent; */
+
+/*    font-size: 1em; */
+
+/* } */
+
+/* .button:hover{ */
+
+/*    text-decoration: underline; */
+
+/*    background: transparent; */
+
+/* } */
+
+/* .button:focus{ */
+
+/*    color: #FFB74D; */
+
+/* } */
+
+/* .button:active{ */
+
+/* color: #ffae00; */
+
+/* } */
+
+/* For small screens */
+
+/* @media only screen and (min-width: 40rem) { */
+
+/*    !*This makes the text in the box larger and gives it a padding*! */
+
+/*    .intro-list { */
+
+/*        padding-top: 2em; */
+
+/*        !*padding-left: 4em;*! */
+
+/*        font-size: 115%; */
+
+/*        !*text-align: center;*! */
+
+/*    } */
+
+/*    .pagehead { */
+
+/*        padding: 1em; */
+
+/*    } */
+
+/*    h1 { */
+
+/*        !*font-size: 2.5rem;*! */
+
+/*        font-size: 32pt; */
+
+/*        padding-top: 0.5em; */
+
+/*    } */
+
+/*    .top-bar{ */
+
+/*        margin-bottom: 2rem; */
+
+/*    } */
+
+/*    .button { */
+
+/*        background: #1A237E; */
+
+/*    } */
+
+/* } */
+
+/* h2{ */
+
+/*    font-size:24pt; */
+
+/*    font-weight: bold; */
+
+/*    text-align: center; */
+
+/* } */
+
+/* h3{ */
+
+/*    font-size: 16pt; */
+
+/* } */
+
+/* Links on page */
+
+/* a { */
+
+/*    color: #1A237E; */
+
+/* } */
+
+/* a:focus, a:hover { */
+
+/*    color: #870058; */
+
+/*    text-decoration: underline; */
+
+/* } */
+
+/* a.inbox_link{ */
+
+/*    color: white; */
+
+/* } */
+
+/* .menu-icon, .title-bar-title { */
+
+/* position: relative; */
+
+/* top: 5px; */
+
+/* } */
+
+/* !*The red text to report animal emergencies at the top*! */
 
 .panel {
   color: white;
-  /*margin: 0.5em;*/
+
+  /* margin: 0.5em; */
   margin-top: 0.5em;
   padding: 0.5em;
 }
@@ -406,21 +532,21 @@ p[itemprop="telephone"] > a[href^="tel:"]:before {
 }
 
 .colour1 {
-  /*background-color: #8E8E68;*/
+  /* background-color: #8E8E68; */
   background-color: #1a237e;
 }
 
 .colour2 {
-  /*background-color: #AC5959;*/
+  /* background-color: #AC5959; */
   background-color: #44af69;
 }
 
 .colour3 {
-  /*background-color: #AC5959;*/
+  /* background-color: #AC5959; */
   background-color: #870058;
 }
 
-/*To reduce the margin-bottom to 0 as the default for p is 1*/
+/* To reduce the margin-bottom to 0 as the default for p is 1 */
 div.panel p {
   margin-bottom: 0;
 }
