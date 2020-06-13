@@ -46,17 +46,18 @@ generate_html() {
   name=$(basename "$1" .mustache)
   folder="$(basename "$(dirname "$1")")"
   if [ "${folder}" == "$(basename "${TEMPLATES_DIR}")" ]; then
-    json="${DATA_DIR}/${name}.json"
-  else
-    json="${DATA_DIR}/${folder}/${name}.json"
+    folder=""
   fi
+  json=${DATA_DIR}/${folder}/${name}.json
+  outputDir=${OUTPUT_DIR}/${folder}
+  mkdir -p ${outputDir}
   if [ ! -f "${json}" ]; then
     echo " - ✘ Please check that ${json} exists"
     return
   fi
-  if chevron -p ${PARTIALS_DIR} -d "${json}" "$1" >"${OUTPUT_DIR}/${name}.html"; then
+  if chevron -p ${PARTIALS_DIR} -d "${json}" "$1" >"${outputDir}/${name}.html"; then
     echo " - ✔ OK"
-    prettier --write "${OUTPUT_DIR}/${name}.html"
+    prettier --write "${outputDir}/${name}.html"
   else
     echo " - ✘ FAIL"
   fi
