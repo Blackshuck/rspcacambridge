@@ -109,6 +109,7 @@ address + p {
   background-color: var(--color-accent);
   color: var(--color-light);
   font-weight: bold;
+  width: 100%;
 }
 
 .footer a {
@@ -229,6 +230,16 @@ a[href^="tel:"]::before {
 
 .full-nav {
   padding: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .content-nav-container {
+    order: 1;
+  }
+
+  .content-container {
+    order: 2;
+  }
 }
 
 /* OLD OLD OLD */
