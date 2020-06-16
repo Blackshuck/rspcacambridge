@@ -4,6 +4,33 @@ RSPCA blue: #003473
 Aqua: #189ca1
 */
 
+/* Global styles */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* Font sizes for icons */
+
+.large {
+    font-size: 50px;
+}
+
+.medium {
+    font-size: 35px;
+}
+
+.small {
+    font-size: 20px;
+}
+
+/* */
+
 .embed-container {
     position: relative;
     overflow: hidden;
@@ -22,6 +49,10 @@ Aqua: #189ca1
     background-color: #003473;
 }
 
+.head .message a {
+    text-decoration: underline;
+}
+
 .head .branch-name {
     color: white;
     font-size: 26px;
@@ -34,10 +65,11 @@ Aqua: #189ca1
 }
 
 .head .button {
-    background-color: #E65100;
+    background-color: #189ca1;
     color: white;
     border-radius: 5px;
     font-weight: bold;
+    margin: 0;
 }
 
 .head .message {
@@ -49,23 +81,21 @@ Aqua: #189ca1
 }
 
 .social-media-btn {
-    font-size: 40px;
-    color: white;
+    margin-right: 5px;
 }
 
 .footer {
     background-color: #003473;
+    color: white;
+}
+
+.footer hr {
+    height: 1px;
+}
+
+.footer-bottom {
+    color: lightgrey;
     font-size: 14px;
-    color: lightgrey;
-}
-
-.footer a {
-    color: lightgrey;
-}
-
-a[href^="tel:"] {
-    color: inherit;
-    text-decoration: none;
 }
 
 .full-nav, .full-nav .menu, .small-nav {
@@ -85,11 +115,9 @@ a[href^="tel:"] {
 .nav-links a:hover {
     background-color: white;
     color: black;
-    /*border-bottom: solid 2px;*/
-    /*border-bottom-color: white;*/
 }
 
-/* OLD OLD OLD */
+/* Old styles */
 /*To make top margin smaller*/
 
 /*.callout.large {*/
