@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-{{> metadata }}
-<body>
-{{> header }} {{> navigation }}
-<!-- BODY OF PAGE STARTS HERE-->
-<div class="grid-container full-screen-height">
-  {{> breadcrumbs }}
-  <!-- MAIN CONTENT -->
-  <div class="grid-x align-center">
-    <main class="cell" role="main">
-      <div>
-        <div class="grid-x grid-margin-x align-center">
-          <div class="cell">
-            <h2>Appointments</h2>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x grid-padding-y align-center">
-          <div class="cell medium-8">
-            <section id="appointments" data-magellan-target="appointments">
-              <p>
-                There is no appointment system at the clinic and animals are
-                seen on a first-come, first-served basis (except some very
-                infectious cases who may have to be seen last).
-              </p>
-              <p>
-                Registration normally begins at about 8:30 and no further
-                cases will be admitted after 10:30, although everyone who has
-                arrived by then will be seen. On busy days this will mean a
-                long wait.
-              </p>
-              <div class="callout warning">
-                <p>
-                  <strong>Please note</strong>: If you are bringing a puppy or
-                  dog for their first vaccinations we advise that you come to
-                  the Wednesday session and not one of the open surgeries, to
-                  avoid bringing them into contact with other dogs who may
-                  already be carrying infection. If possible, leave the puppy
-                  in your car while you register and only bring them into the
-                  building when it is your turn to see the vet. Carry them so
-                  that they do not risk picking up infection from where other
-                  dogs have walked.
-                </p>
-                <p>
-                  Suspected cases of infection CANNOT be seen at the clinic on
-                  Wednesdays, to avoid risk to young animals who are there for
-                  their first vaccinations.
-                </p>
+  {{> metadata }}
+  <body>
+    {{> header }} {{> navigation }}
+    <!-- BODY OF PAGE STARTS HERE-->
+    <div class="grid-container full-screen-height">
+      {{> breadcrumbs }}
+      <!-- MAIN CONTENT -->
+      <div class="grid-x align-center">
+        <main class="cell" role="main">
+          <div>
+            <div class="grid-x grid-margin-x align-center">
+              <div class="cell">
+                <h2>Appointments</h2>
               </div>
-            </section>
+            </div>
+            <div class="grid-x grid-margin-x grid-padding-y align-center">
+              <div class="cell medium-8">
+                <section id="appointments" data-magellan-target="appointments">
+                  <p>
+                    There is no appointment system at the clinic and animals are
+                    seen on a first-come, first-served basis (except some very
+                    infectious cases who may have to be seen last).
+                  </p>
+                  <p>
+                    Registration normally begins at about 8:30 and no further
+                    cases will be admitted after 10:30, although everyone who
+                    has arrived by then will be seen. On busy days this will
+                    mean a long wait.
+                  </p>
+                  <div class="callout warning">
+                    <p>
+                      <strong>Please note</strong>: If you are bringing a puppy
+                      or dog for their first vaccinations we advise that you
+                      come to the Wednesday session and not one of the open
+                      surgeries, to avoid bringing them into contact with other
+                      dogs who may already be carrying infection. If possible,
+                      leave the puppy in your car while you register and only
+                      bring them into the building when it is your turn to see
+                      the vet. Carry them so that they do not risk picking up
+                      infection from where other dogs have walked.
+                    </p>
+                    <p>
+                      Suspected cases of infection CANNOT be seen at the clinic
+                      on Wednesdays, to avoid risk to young animals who are
+                      there for their first vaccinations.
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="cell medium-4">
+                <img
+                  src="{{assetPrefix}}img/doginclinic.jpg"
+                  alt="Photo of a dog during appointment at the clinic"
+                />
+              </div>
+            </div>
           </div>
-          <div class="cell medium-4">
-            <img src="{{assetPrefix}}img/doginclinic.jpg" alt="Photo of a dog during appointment at the clinic"/>
-          </div>
-        </div>
+        </main>
       </div>
-    </main>
-  </div>
-</div>
-{{> footer }} {{> scripts }}
-</body>
+    </div>
+    {{> footer }} {{> scripts }}
+  </body>
 </html>

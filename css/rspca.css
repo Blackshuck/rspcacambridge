@@ -21,6 +21,7 @@ Accent - Aqua: #189ca1
 
   line-height: var(--ratio);
   font-family: var(--font-plain);
+  font-size: calc(0.1vw + 1em);
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -29,7 +30,8 @@ body {
   background-color: var(--color-light);
 }
 
-a {
+a,
+.breadcrumbs a {
   color: var(--color-accent);
   font-weight: bold;
   text-decoration: none;
@@ -69,12 +71,15 @@ main > * + * {
   margin-bottom: 1rem;
   color: var(--color-light);
   background-color: var(--color-accent);
-  border-top: 1px solid var(--color-accent);
   border-bottom: 1px solid var(--color-accent);
 }
 
-.content-nav a {
-  color: var(--color-light);
+.content-nav-header {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  border: 0.08rem solid var(--color-accent);
 }
 
 .content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
@@ -105,7 +110,8 @@ address + p {
   margin-top: 1rem;
 }
 
-.nav-links a {
+.nav-links a,
+.content-nav a {
   background-color: var(--color-accent);
   color: var(--color-light);
   font-weight: bold;
@@ -116,13 +122,13 @@ address + p {
   color: var(--color-lightish);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus,
+.content-nav a:hover,
+.content-nav a:focus {
   background-color: var(--color-light);
   color: var(--color-dark);
-
-  /* border-bottom: solid 2px; */
-
-  /* border-bottom-color: white; */
+  text-decoration: none;
 }
 
 .menu .is-active,
