@@ -21,7 +21,6 @@ Accent - Aqua: #189ca1
 
   line-height: var(--ratio);
   font-family: var(--font-plain);
-  font-size: calc(0.1vw + 1em);
   background-color: var(--color-light);
   color: var(--color-dark);
 }
