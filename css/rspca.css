@@ -117,6 +117,14 @@ a:hover {
     color: black;
 }
 
+.announcement {
+    background-color: #e4e1ca;
+}
+
+.homepage-card .card-divider {
+    background-color: #189ca1;
+    color: white;
+}
 /* Old styles */
 /*To make top margin smaller*/
 
