@@ -51,11 +51,15 @@ section .callout,
   max-width: var(--measure);
 }
 
+footer p {
+  max-width: unset;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  font-weight: 700;
+  font-weight: 500;
   hyphens: auto;
 }
 
@@ -92,15 +96,8 @@ main > * + * {
   text-decoration: none;
 }
 
-.social-icon-link span {
-  color: var(--color-lightish);
-  font-size: 3rem;
-}
-
 .social-icon-link span img {
   display: inline-block;
-  height: 1em;
-  width: 1em;
   stroke: currentColor;
   fill: var(--color-lightish);
   stroke-width: 0;
@@ -120,6 +117,11 @@ address + p {
 
 .footer a {
   color: var(--color-lightish);
+  font-weight: normal;
+}
+
+.footer .vertical.menu a {
+  padding: 0.7rem 1rem 0.7rem 0;
 }
 
 .nav-links a:hover,
@@ -135,33 +137,6 @@ address + p {
 .menu .is-active > a {
   background-color: var(--color-light);
   color: var(--color-dark);
-}
-
-.card-image {
-  max-height: 200px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.card-image img {
-  height: 100%;
-  min-width: 100%;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
-  object-fit: cover;
-}
-
-.card-section {
-  background-color: var(--color-lightish);
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.card-section h2 {
-  font-size: 1.5625rem;
-  font-weight: normal;
 }
 
 .embed-container {
@@ -195,24 +170,20 @@ address + p {
 }
 
 .head .button {
-  background-color: var(--color-accent-orange);
+  background-color: var(--color-accent);
   color: var(--color-light);
   border-radius: 5px;
   font-weight: bold;
+  margin: 0;
 }
 
 .head .message {
   background-color: var(--color-accent-orange);
-  font-size: 16px;
+  /*font-size: 16px;*/
   font-weight: bold;
   color: var(--color-light);
   margin: 0;
   max-width: none;
-}
-
-.social-media-btn {
-  font-size: 40px;
-  color: var(--color-light);
 }
 
 .warning-text {
@@ -222,8 +193,16 @@ address + p {
 
 .footer {
   background-color: var(--color-rspca-blue);
-  font-size: 14px;
   color: var(--color-lightish);
+}
+
+.footer hr {
+  height: 1px;
+}
+
+.footer-bottom {
+  color: var(--color-lightish);
+  font-size: 0.9em;
 }
 
 a[href^="tel:"] {
@@ -231,10 +210,52 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
-/* Telephone symbol 📞 */
+/* Telephone symbol */
 a[href^="tel:"]::before {
-  content: "📞";
-  margin-right: 0.3em;
+  content: "";
+  display: inline-block;
+  height: 0.8rem;
+  width: 1.1rem;
+  background-size: 1rem 0.8rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32" fill="currentColor"><path d="M22.375 22.5q0.125 0.5-0.313 0.938l-3.125 3.125q-0.5 0.5-1.25 0.625h-0.438q-5.125 0-11.188-6.063t-6.063-11.625q0.125-0.75 0.625-1.25l3.188-3.125q0.313-0.313 0.75-0.313 0.625 0 0.938 0.625l2.563 4.75q0.438 0.875-0.313 1.625l-1.125 1.188q-0.125 0.125-0.125 0.313 0.063 1.563 2.938 4.438 1.25 1.25 2.375 2t1.625 0.875l0.5 0.125q0.063 0 0.25-0.188l1.375-1.313q0.438-0.438 1-0.438 0.313 0 0.625 0.188h0.063l4.563 2.688q0.438 0.25 0.563 0.813z"/></svg>');
+  background-repeat: no-repeat;
+}
+
+/* Email symbol */
+a[href^="mailto:"]::before {
+  content: "";
+  display: inline-block;
+  height: 0.8rem;
+  width: 1.1rem;
+  background-size: 1rem 0.8rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32" fill="currentColor"><path d="M23.813 6.438q0.813 0 0.813 0.813v1.5q0 0.063-0.125 0.188 0 0.063-0.125 0.125t-0.188 0.063l-11.75 6.875q-0.063 0-0.063 0.031t-0.063 0.031-0.063-0.063l-12.125-6.875q-0.125-0.125-0.125-0.188v-1.688q0-0.813 0.813-0.813h23zM24.563 11.438q0.063 0.063 0.063 0.125v11.063q0 0.188-0.125 0.188l-0.063 0.063q-0.063 0-0.125-0.063l-6.688-7.188v-0.188q0-0.125 0.063-0.125l6.625-3.875q0.125-0.125 0.25 0zM15.813 16.625l7.938 8.563q0.125 0.125 0 0.25t-0.188 0.125h-22.75q-0.125 0-0.375-0.125-0.125-0.125-0.125-0.188 0-0.125 0.063-0.188l8.875-8.188q0.125-0.125 0.25-0.063l2.375 1.375q0.438 0.25 1-0.063l2.625-1.563q0.125-0.125 0.313 0.063zM7.313 15.875l-7 6.438q-0.063 0.063-0.125 0.063h-0.063q-0.125-0.125-0.125-0.188v-10.438q0-0.063 0.125-0.188 0.125-0.063 0.188 0l6.938 4 0.125 0.125q0 0.125-0.063 0.188z"/></svg>');
+  background-repeat: no-repeat;
+}
+
+/* Telephone symbol on a dark background */
+.footer a[href^="tel:"]::before,
+.message a[href^="tel:"]::before,
+.header a[href^="tel:"]::before {
+  content: "";
+  display: inline-block;
+  height: 0.8rem;
+  width: 1.1rem;
+  background-size: 1rem 0.8rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32" fill="white"><path d="M22.375 22.5q0.125 0.5-0.313 0.938l-3.125 3.125q-0.5 0.5-1.25 0.625h-0.438q-5.125 0-11.188-6.063t-6.063-11.625q0.125-0.75 0.625-1.25l3.188-3.125q0.313-0.313 0.75-0.313 0.625 0 0.938 0.625l2.563 4.75q0.438 0.875-0.313 1.625l-1.125 1.188q-0.125 0.125-0.125 0.313 0.063 1.563 2.938 4.438 1.25 1.25 2.375 2t1.625 0.875l0.5 0.125q0.063 0 0.25-0.188l1.375-1.313q0.438-0.438 1-0.438 0.313 0 0.625 0.188h0.063l4.563 2.688q0.438 0.25 0.563 0.813z"/></svg>');
+  background-repeat: no-repeat;
+}
+
+/* Email symbol on a dark background */
+.footer a[href^="mailto:"]::before,
+.message a[href^="mailto:"]::before,
+.header a[href^="mailto:"]::before {
+  content: "";
+  display: inline-block;
+  height: 0.8rem;
+  width: 1.1rem;
+  background-size: 1rem 0.8rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32" fill="white"><path d="M23.813 6.438q0.813 0 0.813 0.813v1.5q0 0.063-0.125 0.188 0 0.063-0.125 0.125t-0.188 0.063l-11.75 6.875q-0.063 0-0.063 0.031t-0.063 0.031-0.063-0.063l-12.125-6.875q-0.125-0.125-0.125-0.188v-1.688q0-0.813 0.813-0.813h23zM24.563 11.438q0.063 0.063 0.063 0.125v11.063q0 0.188-0.125 0.188l-0.063 0.063q-0.063 0-0.125-0.063l-6.688-7.188v-0.188q0-0.125 0.063-0.125l6.625-3.875q0.125-0.125 0.25 0zM15.813 16.625l7.938 8.563q0.125 0.125 0 0.25t-0.188 0.125h-22.75q-0.125 0-0.375-0.125-0.125-0.125-0.125-0.188 0-0.125 0.063-0.188l8.875-8.188q0.125-0.125 0.25-0.063l2.375 1.375q0.438 0.25 1-0.063l2.625-1.563q0.125-0.125 0.313 0.063zM7.313 15.875l-7 6.438q-0.063 0.063-0.125 0.063h-0.063q-0.125-0.125-0.125-0.188v-10.438q0-0.063 0.125-0.188 0.125-0.063 0.188 0l6.938 4 0.125 0.125q0 0.125-0.063 0.188z"/></svg>');
+  background-repeat: no-repeat;
 }
 
 .full-nav,
@@ -257,302 +278,6 @@ a[href^="tel:"]::before {
   }
 }
 
-/* OLD OLD OLD */
-
-/* To make top margin smaller */
-
-/* .callout.large { */
-
-/*    padding: 0; */
-
-/*    border-color: transparent; */
-
-/* } */
-
-/* .callout { */
-
-/*    margin: 0 0 0; */
-
-/* } */
-
-/* For the menu bar */
-
-/* Variables */
-
-/* Small Navigation */
-
-/* .logo-small { */
-
-/*    float: right; } */
-
-/* !*The title bar when small*! */
-
-/* .title-bar { */
-
-/*    !*background: #8E8E68;*! */
-
-/*    background: #1A237E; */
-
-/*    color: #fefefe; */
-
-/* } */
-
-/* .title-bar { */
-
-/*    padding: 0 .5rem; } */
-
-/* .menu-icon, */
-
-/* .title-bar-title { */
-
-/*    position: relative; */
-
-/*    !*top: 10px;*! */
-
-/* } */
-
-/* !* Medium-Up Navigation *! */
-
-/* @media only screen and (min-width: 40rem) { */
-
-/*    .logo-wrapper { */
-
-/*        position: relative; } */
-
-/*    .logo-wrapper .logo { */
-
-/*        width: 118px; */
-
-/*        height: 92px; */
-
-/*        position: absolute; */
-
-/*        left: 50%; */
-
-/*        right: 50%; */
-
-/*        top: -6px; */
-
-/*        margin-left: -59px; } */
-
-/*    .top-bar-right { */
-
-/*        width: 50%; */
-
-/*        !*padding-left: 86px; *! */
-
-/*    } */
-
-/*    .top-bar-right ul { */
-
-/*        float: left; } */
-
-/*    .top-bar-left { */
-
-/*        width: 50%; */
-
-/*        !*padding-right: 86px; *! */
-
-/*    } */
-
-/*    .top-bar-left ul { */
-
-/*        float: right; } } */
-
-/* !*Menu bar colour*! */
-
-/* .top-bar, .top-bar ul { */
-
-/*    !*background-color: #8E8E68;*! */
-
-/*    background-color: #1A237E; */
-
-/* } */
-
-/* !*links in top-bar*! */
-
-/* .top-bar a { */
-
-/*    color: white; */
-
-/* } */
-
-/* Text syle and headers */
-
-/* p { */
-
-/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-
-/* } */
-
-/* h1 { */
-
-/*    color: #1A237E; */
-
-/*    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-
-/*    font-weight: bold; */
-
-/*    text-align: center; */
-
-/* } */
-
-/* .central{ */
-
-/*    text-align:center; */
-
-/* } */
-
-/* .central_img{ */
-
-/*    display: block; */
-
-/*    margin-left: auto; */
-
-/*    margin-right: auto; */
-
-/*    border-width: 1px; */
-
-/*    border-style: solid; */
-
-/*    border-color: white; */
-
-/* } */
-
-/* button properties */
-
-/* ? 12 Aug not sure if used */
-
-/* .button-group a{ */
-
-/* padding: 1em; */
-
-/* } */
-
-/* .button { */
-
-/*    background: transparent; */
-
-/*    font-size: 1em; */
-
-/* } */
-
-/* .button:hover{ */
-
-/*    text-decoration: underline; */
-
-/*    background: transparent; */
-
-/* } */
-
-/* .button:focus{ */
-
-/*    color: #FFB74D; */
-
-/* } */
-
-/* .button:active{ */
-
-/* color: #ffae00; */
-
-/* } */
-
-/* For small screens */
-
-/* @media only screen and (min-width: 40rem) { */
-
-/*    !*This makes the text in the box larger and gives it a padding*! */
-
-/*    .intro-list { */
-
-/*        padding-top: 2em; */
-
-/*        !*padding-left: 4em;*! */
-
-/*        font-size: 115%; */
-
-/*        !*text-align: center;*! */
-
-/*    } */
-
-/*    .pagehead { */
-
-/*        padding: 1em; */
-
-/*    } */
-
-/*    h1 { */
-
-/*        !*font-size: 2.5rem;*! */
-
-/*        font-size: 32pt; */
-
-/*        padding-top: 0.5em; */
-
-/*    } */
-
-/*    .top-bar{ */
-
-/*        margin-bottom: 2rem; */
-
-/*    } */
-
-/*    .button { */
-
-/*        background: #1A237E; */
-
-/*    } */
-
-/* } */
-
-/* h2{ */
-
-/*    font-size:24pt; */
-
-/*    font-weight: bold; */
-
-/*    text-align: center; */
-
-/* } */
-
-/* h3{ */
-
-/*    font-size: 16pt; */
-
-/* } */
-
-/* Links on page */
-
-/* a { */
-
-/*    color: #1A237E; */
-
-/* } */
-
-/* a:focus, a:hover { */
-
-/*    color: #870058; */
-
-/*    text-decoration: underline; */
-
-/* } */
-
-/* a.inbox_link{ */
-
-/*    color: white; */
-
-/* } */
-
-/* .menu-icon, .title-bar-title { */
-
-/* position: relative; */
-
-/* top: 5px; */
-
-/* } */
-
-/* !*The red text to report animal emergencies at the top*! */
-
 .panel {
   color: white;
 
@@ -564,21 +289,6 @@ a[href^="tel:"]::before {
 .spaced {
   margin-left: 2em;
   margin-right: 2em;
-}
-
-.colour1 {
-  /* background-color: #8E8E68; */
-  background-color: #1a237e;
-}
-
-.colour2 {
-  /* background-color: #AC5959; */
-  background-color: #44af69;
-}
-
-.colour3 {
-  /* background-color: #AC5959; */
-  background-color: #870058;
 }
 
 /* To reduce the margin-bottom to 0 as the default for p is 1 */
@@ -593,151 +303,3 @@ div.panel p {
   padding-left: 1em;
   padding-right: 1em;
 }
-
-/*
-body {
-    background: white;
-}
-
-.row {
-    max-width: 80%;
-    background-color: white;
-    padding-top: 10px;
-    !*border-style: solid;*!
-    !*border-color: purple;*!
-    !*border-width: 2px;*!
-}
-
-!*.row.toprow {
-    max-width: 80%;
-    background-color: white;
-    padding-top: 0px;
-}*!
-
-ul, menu, dir {list-style-type: none;}
-
-img.padfloatr {
-    padding: 20px;
-    float: left;
-}
-img.center {
-    display: block;
-    margin: auto auto;
-}
-
-a {
-    font-weight: bold;
-    color:  #003366;
-}
-
-a:hover{
-    color: #FF6600;
-}
-
-
-
-h1.middle {
-    margin-top: 30px;
-    text-align: center;
-}
-h4 {
-    font-weight: bold;
-}
-
-
-
-!*The leaf links*!
-
-.leaves .leaf{
-    height: 130px;
-    width: 130px;
-    margin: 10px;
-    padding: 4px;
-    padding-top: 20px;
-    padding-left: 10px;
-    text-align: center;
-    background-color: greenyellow;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    box-shadow: 10px 10px 5px #888888;
-    line-height: 200%;
-}
-
-.leaves .leaf  a {
-    font-size: 1.2vw;
-    color: darkgreen;
-    font-weight: bolder;
-}
-!*.button-group {*!
-    !*text-align: right;*!
-
-!*}*!
-#rspca .button {
-    background-color: #003366;
-    !*padding: 0.8rem;*!
-    color: white;
-    font-weight: bold;
-    font-size: 110%;
-    margin: 5px;
-
-    !*border-radius:12px;*!
-    !*smaller bottom margin for buttons than default*!
-    !*margin-left: 10px;*!
-    padding: 1rem 1.5rem 1.0625rem 1.5rem;
-}
-
-!*For the shops navigation*!
-#rspca .button.round {
-    margin: 0 0 0.25rem;
-}
-
-#rspca .button:hover,
-#rspca .button:focus,
-#rspca .button:active {
-    background-color: #336699 ;
-    color: #FFCC66;
-}
-
-!*Animal emergency button*!
-#rspca .button.emergency {
-    background-color: #d80000;
-    padding: 15px;
-    !*float: right;*!
-    !*padding: 12px;*!
-}
-
-#rspca .button.emergency:hover,
-#rspca .button.emergency:active,
-#rspca .button.emergency:focus {
-    background-color: #b10000;
-}
-
-@media only screen and (max-width: 40em) {
-    #rspca .button {
-        margin: 2px;
-        padding: 0.8rem;
-    }
-
-} !* max-width 640px, mobile-only styles, use when QAing mobile issues *!
-
-@media only screen and (min-width: 40.063em) {
-
-    !*.leaves .leaf {
-        height: 60px;
-        width: 60px;
-        margin: 2px;
-        padding: 2px;
-        padding-top: 2px;
-        padding-left: 2px;
-        text-align: center;
-        background-color: greenyellow;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        box-shadow: 5px 5px 2px #888888;
-    }*!
-!*.leaves .leaf  a {
-    font-size: 12pt;
-}*!
-    } *!!* min-width 641px, medium screen*!
-
-*/
