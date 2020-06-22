@@ -75,7 +75,7 @@ main > * + * {
   margin-bottom: 1rem;
   color: var(--color-light);
   background-color: var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 .content-nav-header {
@@ -84,6 +84,7 @@ main > * + * {
   padding: 0.7rem 1rem;
   font-weight: 700;
   border: 0.08rem solid var(--color-accent);
+  border-bottom: none;
 }
 
 .content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
@@ -120,8 +121,9 @@ address + p {
   font-weight: normal;
 }
 
-.footer .vertical.menu a {
-  padding: 0.7rem 1rem 0.7rem 0;
+.head .message a {
+  color: var(--color-light);
+  text-decoration: underline;
 }
 
 .nav-links a:hover,
@@ -137,6 +139,16 @@ address + p {
 .menu .is-active > a {
   background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+.footer .vertical.menu a {
+  padding: 0.7rem 1rem 0.7rem 0;
+}
+
+.head .message a:hover,
+.head .message a:active {
+  color: var(--color-light);
+  text-decoration: none;
 }
 
 .embed-container {
@@ -170,7 +182,7 @@ address + p {
 }
 
 .head .button {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-orange);
   color: var(--color-light);
   border-radius: 5px;
   font-weight: bold;
@@ -179,7 +191,6 @@ address + p {
 
 .head .message {
   background-color: var(--color-accent-orange);
-  /*font-size: 16px;*/
   font-weight: bold;
   color: var(--color-light);
   margin: 0;
