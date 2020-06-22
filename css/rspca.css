@@ -15,7 +15,7 @@ Accent - Aqua: #189ca1
   --color-light: #fafafa;
   --color-mid: grey;
   --ratio: 1.4;
-  --measure: 65ch;
+  --measure: 80ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8 * var(--ratio));
 
@@ -46,7 +46,8 @@ p,
 span,
 li,
 section .flex-video,
-section .callout {
+section .callout,
+.content-container .card {
   max-width: var(--measure);
 }
 
@@ -143,6 +144,15 @@ address + p {
   overflow: hidden;
 }
 
+.card-image img {
+  height: 100%;
+  min-width: 100%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+
 .card-section {
   background-color: var(--color-lightish);
   padding-left: 1rem;
@@ -200,14 +210,14 @@ address + p {
   max-width: none;
 }
 
-.message a[href^="tel:"]::before {
-  content: unset;
-  margin-right: unset;
-}
-
 .social-media-btn {
   font-size: 40px;
   color: var(--color-light);
+}
+
+.warning-text {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .footer {
@@ -221,10 +231,10 @@ a[href^="tel:"] {
   text-decoration: none;
 }
 
-/* Telephone symbol */
+/* Telephone symbol 📞 */
 a[href^="tel:"]::before {
-  content: "\260e";
-  margin-right: 0.5em;
+  content: "📞";
+  margin-right: 0.3em;
 }
 
 .full-nav,
