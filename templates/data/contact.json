@@ -1,0 +1,40 @@
+{
+  "metadata_page_title": "Contact",
+  "breadcrumbs?": true,
+  "assetPrefix": "",
+  "breadcrumbs": [
+    {
+      "content": "Home",
+      "filepath": "index.html"
+    }
+  ],
+  "current_breadcrumb": "Contact",
+  "sidebarContentId": "content",
+  "sidebarHeader": "Contact",
+  "sidebarItems": [
+    {
+      "id": "cambridge-animal-clinic",
+      "header": "Cambridge Animal Clinic"
+    },
+    {
+      "id": "cambridge-charity-shop-emporium",
+      "header": "Cambridge Charity Shop (Burleigh St)"
+    },
+    {
+      "id": "cambridge-charity-shop",
+      "header": "Cambridge Charity Shop (Mill Rd)"
+    },
+    {
+      "id": "newmarket-charity-shop",
+      "header": "Newmarket Charity Shop"
+    },
+    {
+      "id": "cambridge-and-district-animal-rehoming",
+      "header": "Cambridge &amp; District Animal Rehoming"
+    },
+    {
+      "id": "rspca-cambridge-branch",
+      "header": "RSPCA Cambridge Branch"
+    }
+  ]
+}
