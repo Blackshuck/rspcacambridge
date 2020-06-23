@@ -127,9 +127,7 @@ address + p {
 }
 
 .nav-links a:hover,
-.nav-links a:focus,
-.content-nav a:hover,
-.content-nav a:focus {
+.nav-links a:focus {
   background-color: var(--color-light);
   color: var(--color-dark);
   text-decoration: none;
