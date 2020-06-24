@@ -32,7 +32,7 @@ body {
 a,
 .breadcrumbs a {
   color: var(--color-accent);
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -51,6 +51,10 @@ table,
 .content-container .card,
 .responsive-embed {
   max-width: var(--measure);
+}
+
+td[headers="weekday"] {
+  font-weight: 500;
 }
 
 footer p {
@@ -114,6 +118,10 @@ figcaption {
 
 address + p {
   margin-top: 1rem;
+}
+
+address {
+  font-style: inherit;
 }
 
 .nav-links a,
