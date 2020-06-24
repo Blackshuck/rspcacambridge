@@ -14,6 +14,7 @@ Accent - Aqua: #189ca1
   --color-lightish: #f1f1f1;
   --color-light: #fafafa;
   --color-mid: grey;
+  --color-white: #fefefe;
   --ratio: 1.4;
   --measure: 80ch;
   --line-height: var(--ratio);
@@ -32,7 +33,6 @@ body {
 a,
 .breadcrumbs a {
   color: var(--color-accent);
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -49,7 +49,8 @@ section .flex-video,
 section .callout,
 table,
 .content-container .card,
-.responsive-embed {
+.responsive-embed,
+.accordion {
   max-width: var(--measure);
 }
 
@@ -291,6 +292,27 @@ a[href^="mailto:"]::before {
 
 .content-nav-container {
   margin-bottom: 1em;
+}
+
+.accordion-title,
+.accordion-title > .h5 {
+  color: var(--color-accent);
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.accordion,
+.accordion-content {
+  background-color: unset;
+}
+
+.accordion-title {
+  background-color: var(--color-white);
+}
+
+.accordion-title::before {
+  font-size: 1.25em;
 }
 
 @media screen and (max-width: 39.9375em) {
