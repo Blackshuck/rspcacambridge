@@ -1,139 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="RSPCA Cambridge branch, clinic, rehoming, adoption, Littleport, Royston, Gamlingay, Newmarket"
-    />
-    <meta
-      name="description"
-      content="RSPCA Cambridge | Animal charity branch serving the Cambridge area"
-    />
-    <title>
-      Clinic - RSPCA Cambridge and District Branch
-    </title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/rspca.css" />
-  </head>
+  {{> metadata }}
   <body>
-    <!-- PAGE HEADER -->
-    <header class="head">
-      <div class="grid-x text-center message">
-        <div class="cell grid-container">
-          <p class="message">
-            To report animal emergencies, cruelty or neglect call the National
-            RSPCA Helpline on
-            <span class="nowrap">
-              <a
-                href="tel:+443001234999"
-                title="Call the National RSPCA Helpline"
-                >0300&nbsp;1234&nbsp;999</a
-              >
-            </span>
-            or report it
-            <a
-              href="https://www.rspca.org.uk/utilities/contactus/reportcruelty"
-              title="Report animal emergencies, cruelty or neglect on the RSPCA website"
-              >online</a
-            >.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-x align-center">
-        <div class="cell medium-10">
-          <div
-            class="grid-x grid-padding-x grid-padding-y align-justify align-middle"
-          >
-            <div class="cell medium-8">
-              <div class="grid-x grid-padding-x align-middle">
-                <div class="cell shrink">
-                  <a href="index.html">
-                    <img
-                      class="logo"
-                      src="img/rspca-logo.png"
-                      alt="RSPCA logo"
-                    />
-                  </a>
-                </div>
-                <div class="cell auto">
-                  <span class="branch-name">Cambridge and District Branch</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="cell medium-4 hide-for-small-only">
-              <div class="grid-x grid-padding-x align-right">
-                <div class="cell shrink">
-                  <a
-                    href="https://www.justgiving.com/rspcacambridge/donate/?utm_source=website&utm_medium=buttons&utm_content=rspcacambridge&utm_campaign=Donate_JG_Blue"
-                    class="button"
-                    >Donate</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- NAVIGATION -->
-    <!-- Small Navigation -->
-    <div
-      class="title-bar small-nav"
-      data-responsive-toggle="nav-menu"
-      data-hide-for="medium"
-    >
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
-
-    <!-- Medium-Up Navigation -->
-    <nav class="top-bar full-nav" id="nav-menu" aria-label="Main">
-      <!-- Left Nav Section -->
-      <div class="top-bar-left">
-        <ul class="vertical medium-horizontal menu nav-links align-center">
-          <li><a href="index.html" class="button">Home</a></li>
-          <li><a href="about.html" class="button">About</a></li>
-          <li><a href="clinic.html" class="button">Clinic</a></li>
-          <li><a href="shops.html" class="button">Shops</a></li>
-          <li><a href="donate.html" class="button">Donate</a></li>
-          <li>
-            <a href="volunteer.html" class="button">Volunteer</a>
-          </li>
-          <li><a href="adopt.html" class="button">Adopt</a></li>
-          <li><a href="news.html" class="button">News</a></li>
-          <li><a href="contact.html" class="button">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
+    {{> header }} {{> navigation }}
     <!-- BODY OF PAGE STARTS HERE-->
     <div class="grid-container full-screen-height">
-      <!-- BREADCRUMBS NAVIGATION -->
-      <div class="grid-x align-center">
-        <div class="cell">
-          <div class="grid-x grid-margin-x grid-padding-y align-center">
-            <div class="cell">
-              <nav aria-label="You are here:" role="navigation">
-                <ul class="breadcrumbs">
-                  <li><a href="index.html">Home</a></li>
-                  <li><span class="show-for-sr">Current: </span> Clinic</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{> breadcrumbs }}
       <!-- MAIN CONTENT -->
       <div class="grid-x">
         <main class="cell" role="main">
@@ -259,7 +131,7 @@
                 <div class="cell medium-4 content-nav-container">
                   <figure>
                     <img
-                      src="img/dog-in-clinic.jpeg"
+                      src="{{assetPrefix}}img/dog-in-clinic.jpeg"
                       alt="Photo of a dog in the clinic"
                     />
                     <figcaption>
@@ -720,9 +592,10 @@
                       anyone who would be willing to transport animals to the
                       clinic from private vets where they have received initial
                       first aid, and from the clinic to our kennels, or to
-                      <a href="foster.html">foster homes</a>. See our
+                      <a href="{{assetPath}}foster.html">foster homes</a>. See
+                      our
                       <a
-                        href="volunteer.html"
+                        href="{{assetPath}}volunteer.html"
                         title="RSPCA Cambridge volunteers page"
                         >RSPCA Cambridge volunteers page</a
                       >
@@ -785,134 +658,6 @@
         </main>
       </div>
     </div>
-    <!--FOOTER STARTS HERE-->
-    <footer class="footer fluid">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-          <div class="cell medium-4">
-            <h4 class="align-right">More info</h4>
-            <ul class="menu vertical align-left">
-              <li><a href="about.html">About us</a></li>
-              <li><a href="news.html">News</a></li>
-              <li><a href="clinic.html">Our clinic</a></li>
-              <li><a href="shops.html">Our shops</a></li>
-              <li><a href="adopt.html">Adopt a pet</a></li>
-              <li><a href="volunteer.html">Volunteer with us</a></li>
-            </ul>
-          </div>
-          <div class="cell medium-4">
-            <h4 class="align-right">Find us</h4>
-            <address>
-              <strong>RSPCA Animal Clinic</strong> <br />
-              1 Pool Way <br />
-              Whitehill Road <br />
-              Cambridge <br />
-              CB5 8NT <br />
-            </address>
-            <p>
-              <a href="tel:+441223 247 986">01223 247 986</a>
-            </p>
-          </div>
-          <div class="cell medium-4">
-            <h4 class="align-right">Contact us</h4>
-            <p>
-              <a href="mailto:info@rspcacambridge.org.uk"
-                >info@rspcacambridge.org.uk</a
-              >
-            </p>
-            <p>
-              <a href="tel:+447742658086">07742 658 086</a>
-            </p>
-            <div class="cell medium-6">
-              <ul class="menu simple">
-                <li>
-                  <a
-                    class="social-icon-link"
-                    href="https://twitter.com/#!/cambstreasurer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="currentColor"
-                    >
-                      <title>Twitter</title>
-                      <path
-                        d="M24.6 8.4q-1.2 1.7-2.5 2.6v0.6q0 5.5-3.9 9.9t-10.5 4.4q-4.2 0-7.7-2.2 0.4 0.1 1.2 0.1 3.5 0 6.3-2.2-1.6-0.1-2.9-1t-1.8-2.5q0.6 0.1 0.9 0.1 0.7 0 1.4-0.2-1.7-0.3-2.9-1.7t-1.2-3.2v-0.1q1.3 0.7 2.3 0.7-2.2-1.5-2.2-4.2 0-1.4 0.6-2.5 4.1 4.9 10.4 5.3-0.1-0.7-0.1-1.1 0-2.1 1.5-3.6t3.6-1.5q2.3 0 3.7 1.6 1.8-0.4 3.2-1.2-0.6 1.8-2.2 2.8 1.4-0.2 2.9-0.7z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="social-icon-link"
-                    href="https://www.facebook.com/rspcacambridge"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="currentColor"
-                    >
-                      <title>Facebook</title>
-                      <path
-                        d="M21.8 4.5q0.5 0 0.9 0.4t0.4 0.9v20.5q0 0.5-0.4 0.9t-0.9 0.4h-5.9v-8.9h3l0.4-3.5h-3.4v-2.2q0-1.7 1.8-1.7h1.8v-3.1q-0.9-0.2-2.7-0.2-2 0-3.2 1.2t-1.2 3.4v2.6h-3v3.5h3v8.9h-11.1q-0.5 0-0.9-0.4t-0.4-0.9v-20.5q0-0.5 0.4-0.9t0.9-0.4h20.5z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="social-icon-link"
-                    href="https://rspca-cambridge-rehome.blogspot.com"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="currentColor"
-                    >
-                      <title>RSPCA Cambridge Rehoming Gallery</title>
-                      <path
-                        d="M19.25 4.5q1.563 0 2.688 1.125t1.125 2.688v15.375q0 1.563-1.125 2.688t-2.688 1.125h-15.438q-1.563 0-2.688-1.125t-1.125-2.688v-15.375q0-1.563 1.125-2.688t2.688-1.125h15.438zM18.5 18.563v-3.813l-0.125-0.25-0.188-0.125q-0.125-0.063-0.938-0.094t-1-0.219q-0.25-0.25-0.375-1.25t-0.375-1.5q-0.438-0.938-1.5-1.625t-1.938-0.813h-3.125q-1.813 0-3.156 1.344t-1.344 3.156v5.188q0 1.813 1.344 3.125t3.156 1.313h5.125q1.813 0 3.125-1.313t1.313-3.125zM9 14.25q-0.375 0-0.625-0.281t-0.25-0.594q0-0.813 0.875-0.813h2.438q0.875 0 0.875 0.813 0 0.313-0.25 0.594t-0.625 0.281h-2.438zM14 17.625q0.313 0 0.594 0.281t0.281 0.594-0.281 0.563-0.594 0.25h-5q-0.875 0-0.875-0.813 0-0.313 0.25-0.594t0.625-0.281h5z"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="grid-x grid-margin-x text-center footer-bottom">
-          <div class="cell">
-            <p>
-              &copy; RSPCA Cambridge 2020. All rights reserved. Registered
-              charity no. 205098
-            </p>
-            <ul class="menu align-center">
-              <li><a href="tac.html">Terms &amp; Conditions</a></li>
-              <li>
-                <a href="https://www.rspca.org.uk/utilities/privacy"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).foundation();
-    </script>
+    {{> footer }} {{> scripts }}
   </body>
 </html>

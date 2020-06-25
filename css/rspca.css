@@ -1,378 +1,340 @@
-/*To make top margin smaller*/
+/*
+Colors:
+Dark primary - RSPCA blue: #003473
+Accent - Aqua: #189ca1
+*/
 
-.callout.large {
-    padding: 0;
-    border-color: transparent;
+:root {
+  --font-plain: "arial", sans-serif;
+  --color-rspca-blue: #003473;
+  --color-accent: #189ca1;
+  --color-accent-orange: #e65100;
+  --color-dark: #050505;
+  --color-darkish: #404040;
+  --color-lightish: #f1f1f1;
+  --color-light: #fafafa;
+  --color-mid: grey;
+  --ratio: 1.4;
+  --measure: 80ch;
+  --line-height: var(--ratio);
+  --line-height-small: calc(0.8 * var(--ratio));
+
+  line-height: var(--ratio);
+  font-family: var(--font-plain);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
-.callout {
-    margin: 0 0 0;
+body {
+  background-color: var(--color-light);
 }
 
-/* For the menu bar */
-
-/* Variables */
-/* Small Navigation */
-.logo-small {
-    float: right; }
-
-/*The title bar when small*/
-.title-bar {
-    /*background: #8E8E68;*/
-    background: #1A237E;
-    color: #fefefe;
-}
-.title-bar {
-    padding: 0 .5rem; }
-
-.menu-icon,
-.title-bar-title {
-    position: relative;
-    /*top: 10px;*/
+a,
+.breadcrumbs a {
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
 }
 
-/* Medium-Up Navigation */
-@media only screen and (min-width: 40rem) {
-    .logo-wrapper {
-        position: relative; }
-    .logo-wrapper .logo {
-        width: 118px;
-        height: 92px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        top: -6px;
-        margin-left: -59px; }
-
-    .top-bar-right {
-        width: 50%;
-        /*padding-left: 86px; */
-    }
-    .top-bar-right ul {
-        float: left; }
-
-    .top-bar-left {
-        width: 50%;
-        /*padding-right: 86px; */
-    }
-    .top-bar-left ul {
-        float: right; } }
-
-/*Menu bar colour*/
-.top-bar, .top-bar ul {
-    /*background-color: #8E8E68;*/
-    background-color: #1A237E;
+a:focus,
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
-/*links in top-bar*/
-
-.top-bar a {
-    color: white;
+p,
+span,
+li,
+section .flex-video,
+section .callout,
+table,
+.content-container .card,
+.responsive-embed {
+  max-width: var(--measure);
 }
 
-
-/*Text syle and headers*/
-
-p {
-    font-family: "museo-sans","Helvetica Neue", Helvetica, arial, sans-serif;
+td[headers="weekday"],
+td[headers="pet"],
+td[headers="vaccination-pet"] {
+  font-weight: 500;
 }
 
-h1 {
-    color: #1A237E;
-    font-family: "museo-sans","Helvetica Neue", Helvetica, arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
+footer p {
+  max-width: unset;
 }
 
-.central{
-    text-align:center;
-}
-.central_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  hyphens: auto;
 }
 
-/*button properties*/
-
-/*? 12 Aug not sure if used*/
-
-/*.button-group a{*/
-    /*padding: 1em;*/
-/*}*/
-
-.button {
-    background: transparent;
-    font-size: 1em;
+main > * + * {
+  margin-top: 1rem;
 }
 
-.button:hover{
-    text-decoration: underline;
-    background: transparent;
-}
-.button:focus{
-    color: #FFB74D;
+figcaption {
+  font-size: 0.75rem;
+  text-align: right;
+  color: var(--color-mid);
 }
 
-/*.button:active{*/
-    /*color: #ffae00;*/
-/*}*/
-
-/*For small screens*/
-
-@media only screen and (min-width: 40rem) {
-
-    /*This makes the text in the box larger and gives it a padding*/
-    .intro-list {
-        padding-top: 2em;
-        /*padding-left: 4em;*/
-        font-size: 115%;
-        /*text-align: center;*/
-    }
-
-    .pagehead {
-        padding: 1em;
-    }
-    h1 {
-        /*font-size: 2.5rem;*/
-        font-size: 32pt;
-        padding-top: 0.5em;
-    }
-    .top-bar{
-        margin-bottom: 2rem;
-    }
-    .button {
-        background: #1A237E;
-    }
+.full-screen-height {
+  min-height: calc(100vh - 374px);
 }
 
-h2{
-    font-size:24pt;
-    font-weight: bold;
-    text-align: center;
-}
-h3{
-    font-size: 16pt;
-}
-/*Links on page*/
-a {
-    color: #1A237E;
+.content-nav {
+  margin-bottom: 1rem;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
-a:focus, a:hover {
-    color: #870058;
-    text-decoration: underline;
+.content-nav-header {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  border: 0.08rem solid var(--color-accent);
+  border-bottom: none;
 }
 
-
-a.inbox_link{
-    color: white;
+.content-nav .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+  border-color: var(--color-light) transparent transparent;
 }
 
+.social-icon-link,
+.social-icon-link:hover,
+.social-icon-link:focus {
+  text-decoration: none;
+}
 
+.social-icon-link span img {
+  display: inline-block;
+  stroke: currentColor;
+  fill: var(--color-lightish);
+  stroke-width: 0;
+}
 
-/*.menu-icon, .title-bar-title {*/
-    /*position: relative;*/
-    /*top: 5px;*/
-/*}*/
+address + p {
+  margin-top: 1rem;
+}
 
-/*!*The red text to report animal emergencies at the top*!*/
-.message {
-    color:#E65100;
-    font-size: 16pt;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.25rem;
+address {
+  font-style: inherit;
+}
+
+.nav-links a,
+.content-nav a {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  font-weight: bold;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--color-lightish);
+  font-weight: normal;
+}
+
+.head .message a {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.menu .is-active,
+.menu .is-active > a {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.footer .vertical.menu a {
+  padding: 0.7rem 1rem 0.7rem 0;
+}
+
+.head .message a:hover,
+.head .message a:active {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.head {
+  background-color: var(--color-rspca-blue);
+}
+
+.head .branch-name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.head .logo {
+  width: 104px;
+  height: 55px;
+}
+
+.head .button {
+  background-color: var(--color-accent-orange);
+  color: var(--color-light);
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.head .message {
+  background-color: var(--color-accent-orange);
+  font-weight: bold;
+  color: var(--color-light);
+  margin: 0;
+  max-width: none;
+}
+
+.warning-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: var(--color-rspca-blue);
+  color: var(--color-lightish);
+}
+
+.footer hr {
+  height: 1px;
+}
+
+.footer-bottom {
+  color: var(--color-lightish);
+  font-size: 0.9em;
+}
+
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Telephone symbol */
+a[href^="tel:"]::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.2rem;
+  background-image: url("../icons/phone-dark.svg");
+  background-repeat: no-repeat;
+}
+
+/* Email symbol */
+a[href^="mailto:"]::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.2rem;
+  background-image: url("../icons/email-dark.svg");
+  background-repeat: no-repeat;
+}
+
+/* Telephone symbol on a dark background */
+.footer a[href^="tel:"]::before,
+.message a[href^="tel:"]::before,
+.header a[href^="tel:"]::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.2rem;
+  background-image: url("../icons/phone-white.svg");
+  background-repeat: no-repeat;
+}
+
+/* Email symbol on a dark background */
+.footer a[href^="mailto:"]::before,
+.message a[href^="mailto:"]::before,
+.header a[href^="mailto:"]::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.2rem;
+  background-image: url("../icons/email-white.svg");
+  background-repeat: no-repeat;
+}
+
+.full-nav,
+.full-nav .menu,
+.small-nav {
+  background-color: var(--color-accent);
+}
+
+.full-nav {
+  padding: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .content-nav-container {
+    order: 1;
+  }
+
+  .sticky-container {
+    margin-top: 1em;
+  }
+
+  .content-container {
+    order: 2;
+  }
 }
 
 .panel {
-    color: white;
-    /*margin: 0.5em;*/
-    margin-top: 0.5em;
-    padding: 0.5em;
+  color: white;
+
+  /* margin: 0.5em; */
+  margin-top: 0.5em;
+  padding: 0.5em;
 }
 
 .spaced {
-    margin-left: 2em;
-    margin-right: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
-.colour1{
-    /*background-color: #8E8E68;*/
-    background-color: #1A237E;
-}
-
-
-.colour2{
-    /*background-color: #AC5959;*/
-    background-color: #44AF69;
-}
-
-.colour3{
-    /*background-color: #AC5959;*/
-    background-color: #870058;
-}
-
-/*To reduce the margin-bottom to 0 as the default for p is 1*/
+/* To reduce the margin-bottom to 0 as the default for p is 1 */
 div.panel p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-.newsbox{
-    border: 4px solid #fefefe;
-    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+.newsbox {
+  border: 4px solid #fefefe;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
-/*
-body {
-    background: white;
-}
-
-.row {
-    max-width: 80%;
-    background-color: white;
-    padding-top: 10px;
-    !*border-style: solid;*!
-    !*border-color: purple;*!
-    !*border-width: 2px;*!
-}
-
-!*.row.toprow {
-    max-width: 80%;
-    background-color: white;
-    padding-top: 0px;
-}*!
-
-ul, menu, dir {list-style-type: none;}
-
-img.padfloatr {
-    padding: 20px;
-    float: left;
-}
-img.center {
-    display: block;
-    margin: auto auto;
-}
-
-a {
-    font-weight: bold;
-    color:  #003366;
-}
-
-a:hover{
-    color: #FF6600;
-}
-
-
-
-h1.middle {
-    margin-top: 30px;
-    text-align: center;
-}
-h4 {
-    font-weight: bold;
-}
-
-
-
-!*The leaf links*!
-
-.leaves .leaf{
-    height: 130px;
-    width: 130px;
-    margin: 10px;
-    padding: 4px;
-    padding-top: 20px;
-    padding-left: 10px;
-    text-align: center;
-    background-color: greenyellow;
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    box-shadow: 10px 10px 5px #888888;
-    line-height: 200%;
-}
-
-.leaves .leaf  a {
-    font-size: 1.2vw;
-    color: darkgreen;
-    font-weight: bolder;
-}
-!*.button-group {*!
-    !*text-align: right;*!
-
-!*}*!
-#rspca .button {
-    background-color: #003366;
-    !*padding: 0.8rem;*!
-    color: white;
-    font-weight: bold;
-    font-size: 110%;
-    margin: 5px;
-
-    !*border-radius:12px;*!
-    !*smaller bottom margin for buttons than default*!
-    !*margin-left: 10px;*!
-    padding: 1rem 1.5rem 1.0625rem 1.5rem;
-}
-
-!*For the shops navigation*!
-#rspca .button.round {
-    margin: 0 0 0.25rem;
-}
-
-#rspca .button:hover,
-#rspca .button:focus,
-#rspca .button:active {
-    background-color: #336699 ;
-    color: #FFCC66;
-}
-
-!*Animal emergency button*!
-#rspca .button.emergency {
-    background-color: #d80000;
-    padding: 15px;
-    !*float: right;*!
-    !*padding: 12px;*!
-}
-
-#rspca .button.emergency:hover,
-#rspca .button.emergency:active,
-#rspca .button.emergency:focus {
-    background-color: #b10000;
-}
-
-@media only screen and (max-width: 40em) {
-    #rspca .button {
-        margin: 2px;
-        padding: 0.8rem;
-    }
-
-} !* max-width 640px, mobile-only styles, use when QAing mobile issues *!
-
-@media only screen and (min-width: 40.063em) {
-
-    !*.leaves .leaf {
-        height: 60px;
-        width: 60px;
-        margin: 2px;
-        padding: 2px;
-        padding-top: 2px;
-        padding-left: 2px;
-        text-align: center;
-        background-color: greenyellow;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        box-shadow: 5px 5px 2px #888888;
-    }*!
-!*.leaves .leaf  a {
-    font-size: 12pt;
-}*!
-    } *!!* min-width 641px, medium screen*!
-
-*/
