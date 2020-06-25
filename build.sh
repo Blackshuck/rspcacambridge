@@ -66,7 +66,7 @@ generate_html() {
 process_folder() {
   for d in "$1"/*; do
     if [ "${d}" == "${DATA_DIR}" ] || [ "${d}" == "${PARTIALS_DIR}" ]; then
-      return
+      continue
     fi
     if [ ! -d "${d}" ] && [ "${d: -9}" == ".mustache" ]; then
       generate_html "${d}"
