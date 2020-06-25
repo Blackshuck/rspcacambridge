@@ -1,0 +1,25 @@
+<!-- SIDEBAR NAVIGATION -->
+
+<nav
+  class="sticky-container"
+  data-sticky-container
+  aria-label="Content navigation"
+>
+  <div
+    class="sticky"
+    data-sticky
+    data-anchor="{{sidebarContentId}}"
+    data-sticky-on="medium"
+  >
+    <div class="content-nav-header hide-for-small-only">
+      {{sidebarHeader}}
+    </div>
+    <ul class="content-nav vertical menu" data-magellan>
+      {{# sidebarItems}}
+      <li>
+        <a href="#{{id}}">{{{header}}}</a>
+      </li>
+      {{/sidebarItems}}
+    </ul>
+  </div>
+</nav>
