@@ -1,227 +1,268 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  {{> metadata }}
-  <body>
-    {{> header }} {{> navigation }}
-    <!-- BODY OF PAGE STARTS HERE-->
-    <div class="grid-container full-screen-height">
-      {{#breadcrumbs?}} {{> breadcrumbs }} {{/breadcrumbs?}}
-      <!-- MAIN CONTENT -->
-      <div class="grid-x align-center">
-        <main class="cell" role="main" id="{{sidebarContentId}}">
-          <div class="grid-x grid-margin-x align-center">
-            <div class="cell">
-              <h2>Contact</h2>
-            </div>
-          </div>
-          <div
-            class="grid-x grid-margin-x align-center"
-            data-equalizer
-            data-equalize-on="medium"
+{{> metadata }}
+<body>
+{{> header }} {{> navigation }}
+<!-- BODY OF PAGE STARTS HERE-->
+<div class="grid-container full-screen-height">
+  {{#breadcrumbs?}} {{> breadcrumbs }} {{/breadcrumbs?}}
+  <!-- MAIN CONTENT -->
+  <div class="grid-x align-center">
+    <main class="cell" role="main" id="{{sidebarContentId}}">
+      <div class="grid-x grid-margin-x align-center">
+        <div class="cell">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x align-center">
+        <div class="cell medium-8">
+          <p class="callout warning">
+            If you need to find a vet near Cambridge and are not
+            eligible for assistance by us (see our
+            <a
+                    href="{{assetPrefix}}clinic.html"
+                    title="Our clinic page"
+            >Animal Clinic page</a
+            >
+            for details), you can find a local vet by entering your
+            postcode on the
+            <a
+                    href="https://findavet.rcvs.org.uk"
+                    title="Royal College of Veterinary Surgeons website"
+            >Royal College of Veterinary Surgeons website</a
+            >. Please note that this website is not affiliated to the
+            RSPCA and we cannot guarantee the accuracy of other
+            websites.
+          </p>
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3"
+           data-equalizer
+           data-equalize-by-row="true">
+        <div data-equalizer-watch class="cell contact card">
+          <section
+                  id="cambridge-animal-clinic"
+                  data-magellan-target="cambridge-animal-clinic"
+                  itemscope
+                  itemtype="schema.org/LocalBusiness"
           >
-            <div class="cell medium-8 content-container">
-              <div
-                class="card"
-                id="cambridge-animal-clinic"
-                data-magellan-target="cambridge-animal-clinic"
+            <div class="card-divider">
+              <a href="{{assetPrefix}}clinic.html" title="Our clinic page">
+                <h3 itemprop="name">
+                  RSPCA Cambridge Animal Clinic
+                </h3>
+              </a>
+            </div>
+            <img src="{{assetPrefix}}img/dog-in-clinic.jpeg" alt="Picture of a dog in the RSPCA Cambridge Animal Clinic">
+            <div class="card-section">
+              <address itemprop="address">
+                1 Pool Way,<br/>
+                Whitehill Road,<br/>
+                Cambridge,<br/>
+                CB5 8NT
+              </address>
+              <p>
+                <a
+                        class="directions-link"
+                        href="https://goo.gl/maps/HtGFSzviRbvriCyJ9"
+                        title="Click to open a map"
+                >Get directions</a
+                >
+              </p>
+              <p>
+                <a href="tel:+4412232479866" itemprop="telephone"
+                >01223&nbsp;247&nbsp;986</a
+                >
+              </p>
+            </div>
+          </section>
+        </div>
+        <div data-equalizer-watch class="cell contact card">
+          <section
+                  id="cambridge-charity-shop-emporium"
+                  data-magellan-target="cambridge-charity-shop-emporium"
+                  itemscope
+                  itemtype="schema.org/LocalBusiness"
+          >
+            <div class="card-section">
+              <a href="{{assetPrefix}}shops.html" title="Our shop page"
+              ><h3 itemprop="name">
+                Cambridge Charity Shop (Burleigh St)
+              </h3></a
               >
-                <div
+            </div>
+            <img src="{{assetPrefix}}img/burleigh.jpg" alt="Photo of Cambridge Charity Shop at Burleigh Street">
+            <div class="card-section">
+              <address itemprop="address">
+                Emporium 61,<br/>
+                61 Burleigh Street,<br/>
+                Cambridge,<br/>
+                CB1 1DJ
+              </address>
+              <p>
+                <a
+                        class="directions-link"
+                        href="https://goo.gl/maps/LPDZSDx38Aum9QNN7"
+                        title="Click to open a map"
+                >Get directions</a
+                >
+              </p>
+              <p>
+                <a href="tel:+441223312802" itemprop="telephone"
+                >01223&nbsp;312&nbsp;802</a
+                >
+              </p>
+            </div>
+          </section>
+        </div>
+        <div data-equalizer-watch
+             class="cell contact card"
+             id="cambridge-charity-shop"
+             data-magellan-target="cambridge-charity-shop"
+        >
+          <section
                   class="card-section"
                   itemscope
                   itemtype="schema.org/LocalBusiness"
-                >
-                  <a href="{{assetPrefix}}clinic.html" title="Our clinic page">
-                    <h3 itemprop="name">
-                      Cambridge Animal Clinic
-                    </h3>
-                  </a>
-                  <address itemprop="address">
-                    1 Pool Way, Whitehill Road, Cambridge, CB5 8NT
-                  </address>
-                  <p>
-                    Tel:
-                    <a href="tel:+4412232479866" itemprop="telephone"
-                      >01223 247 986</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card"
-                id="cambridge-charity-shop-emporium"
-                data-magellan-target="cambridge-charity-shop-emporium"
+          >
+            <a href="{{assetPrefix}}shops.html" title="Our shop page"
+            ><h3 itemprop="name">
+              Cambridge Charity Shop (Mill Rd)
+            </h3></a
+            >
+            <address itemprop="address">
+              188 Mill Road,<br/>
+              Cambridge,<br/>
+              CB1 3LP
+            </address>
+            <p>
+              <a
+                      class="directions-link"
+                      href="https://goo.gl/maps/jgMmWRqhngwPdu2v8"
+                      title="Click to open a map"
+              >Get directions</a
               >
-                <div
+            </p>
+            <p>
+              <a href="tel:+441223212644" itemprop="telephone"
+              >01223&nbsp;212&nbsp;644</a
+              >
+            </p>
+          </section>
+        </div>
+        <div data-equalizer-watch
+             class="cell contact card"
+             id="newmarket-charity-shop"
+             data-magellan-target="newmarket-charity-shop"
+        >
+          <section
                   class="card-section"
                   itemscope
                   itemtype="schema.org/LocalBusiness"
-                >
-                  <a href="{{assetPrefix}}shops.html" title="Our shop page"
-                    ><h3 itemprop="name">
-                      Cambridge Charity Shop (Burleigh St)
-                    </h3></a
-                  >
-                  <address itemprop="address">
-                    Emporium 61, 61 Burleigh Street, Cambridge, CB1 1DJ
-                  </address>
-                  <p>
-                    Tel:
-                    <a href="tel:+441223312802" itemprop="telephone"
-                      >01223 312 802</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card"
-                id="cambridge-charity-shop"
-                data-magellan-target="cambridge-charity-shop"
+          >
+            <a href="{{assetPrefix}}shops.html" title="Our shop page"
+            ><h3 itemprop="name">
+              Newmarket Charity Shop
+            </h3></a
+            >
+            <address itemprop="address">
+              10A Market Street,<br/>
+              Newmarket<br/>
+              CB8 8EEt
+            </address>
+            <p>
+              <a
+                      class="directions-link"
+                      href="https://goo.gl/maps/bzVJ1m6w1y6mcztdA"
+                      title="Click to open a map"
+              >Get directions</a
               >
-                <div
+            </p>
+            <p>
+              <a href="tel:+441638662053" itemprop="telephone"
+              >01638&nbsp;662&nbsp;053</a
+              >
+            </p>
+          </section>
+        </div>
+        <div data-equalizer-watch
+             class="cell contact card"
+             id="cambridge-and-district-animal-rehoming"
+             data-magellan-target="cambridge-and-district-animal-rehoming"
+        >
+          <section
                   class="card-section"
                   itemscope
                   itemtype="schema.org/LocalBusiness"
-                >
-                  <a href="{{assetPrefix}}shops.html" title="Our shop page"
-                    ><h3 itemprop="name">
-                      Cambridge Charity Shop (Mill Rd)
-                    </h3></a
-                  >
-                  <address itemprop="address">
-                    188 Mill Road, Cambridge, CB1 3LP
-                  </address>
-                  <p>
-                    Tel:
-                    <a href="tel:+441223212644" itemprop="telephone"
-                      >01223 212 644</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card"
-                id="newmarket-charity-shop"
-                data-magellan-target="newmarket-charity-shop"
+          >
+            <h3 itemprop="name">
+              Cambridge &amp; District Animal Rehoming
+            </h3>
+            <p>
+              <a href="tel:+441638508316" itemprop="telephone"
+              >01638&nbsp;508&nbsp;316</a
               >
-                <div
-                  class="card-section"
-                  itemscope
-                  itemtype="schema.org/LocalBusiness"
-                >
-                  <a href="{{assetPrefix}}shops.html" title="Our shop page"
-                    ><h3 itemprop="name">
-                      Newmarket Charity Shop
-                    </h3></a
-                  >
-                  <address itemprop="address">
-                    10A Market Street, Newmarket CB8 8EEt
-                  </address>
-                  <p>
-                    Tel:
-                    <a href="tel:+441638662053" itemprop="telephone"
-                      >01638 662 053</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card"
-                id="cambridge-and-district-animal-rehoming"
-                data-magellan-target="cambridge-and-district-animal-rehoming"
-              >
-                <div
-                  class="card-section"
-                  itemscope
-                  itemtype="schema.org/LocalBusiness"
-                >
-                  <h3 itemprop="name">
-                    Cambridge &amp; District Animal Rehoming
-                  </h3>
-                  <p>
-                    Tel:
-                    <a href="tel:+441638508316" itemprop="telephone"
-                      >01638 508 316</a
-                    >
-                  </p>
-                  <p>
-                    Email (preferably):
-                    <a
+            </p>
+            <p>
+              Email (preferably):
+              <a
                       href="mailto:rehoming@rspcacambridge.org.uk"
                       itemprop="email"
-                      >rehoming@rspcacambridge.org.uk</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card"
-                id="rspca-cambridge-branch"
-                data-magellan-target="rspca-cambridge-branch"
+              >rehoming@rspcacambridge.org.uk</a
               >
-                <div
+            </p>
+          </section>
+        </div>
+        <div data-equalizer-watch
+             class="cell contact card"
+             id="rspca-cambridge-branch"
+             data-magellan-target="rspca-cambridge-branch"
+        >
+          <section
                   class="card-section"
                   itemscope
                   itemtype="schema.org/LocalBusiness"
+          >
+            <a href="{{assetPrefix}}ingex.html" title="Our home page"
+            ><h3 itemprop="name">
+              RSPCA Cambridge Branch
+            </h3></a
+            >
+            <p>
+              Tel (for urgent enquiries):
+              <a href="tel:+447742658086" itemprop="telephone"
+              >07742&nbsp;658&nbsp;086</a
+              >
+            </p>
+            <p>
+              Email (for non-urgent enquiries, as answerphone messages may
+              not be picked up):<br/>
+              <a href="mailto:info@rspcacambridge.org.uk" itemprop="email"
+              >info@rspcacambridge.org.uk</a
+              >
+            </p>
+            <div>
+              <p>
+                <strong
+                >Please wait until the evening/weekend for non-urgent
+                  calls</strong
                 >
-                  <a href="{{assetPrefix}}ingex.html" title="Our home page"
-                    ><h3 itemprop="name">
-                      RSPCA Cambridge Branch
-                    </h3></a
-                  >
-                  <p>
-                    Tel (for urgent enquiries):
-                    <a href="tel:+447742658086" itemprop="telephone"
-                      >07742 658 086</a
-                    >
-                  </p>
-                  <p>
-                    Email (for non-urgent enquiries, as answerphone messages may
-                    not be picked up):
-                    <a href="mailto:info@rspcacambridge.org.uk" itemprop="email"
-                      >info@rspcacambridge.org.uk</a
-                    >
-                  </p>
-                  <div>
-                    <p>
-                      Please wait until the evening/weekend for non-urgent calls
-                      and be aware that this number is answered by a volunteer
-                      who is also trying to do other tasks.
-                    </p>
-                    <p>
-                      Please note: This is just an ordinary mobile phone, so you
-                      will not be charged for more than the normal cost of a
-                      phone call to a mobile. However, we can normally only help
-                      you with problems which occur within our own branch area.
-                    </p>
-                    <p>
-                      If you need to find a vet near Cambridge and are not
-                      eligible for assistance by us (see our
-                      <a
-                        href="{{assetPrefix}}clinic.html"
-                        title="Our clinic page"
-                        >Animal Clinic page</a
-                      >
-                      for details), you can find a local vet by entering your
-                      postcode on the
-                      <a
-                        href="https://findavet.rcvs.org.uk"
-                        title="Royal College of Veterinary Surgeons website"
-                        >Royal College of Veterinary Surgeons website</a
-                      >. Please note that this website is not affiliated to the
-                      RSPCA and we cannot guarantee the accuracy of other
-                      websites.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                and be aware that this number is answered by a volunteer
+                who is also trying to do other tasks.
+              </p>
+              <p>
+                Please note: This is just an ordinary mobile phone, so you
+                will not be charged for more than the normal cost of a
+                phone call to a mobile. However, we can normally only help
+                you with problems which occur within our own branch area.
+              </p>
             </div>
-            <div class="cell medium-4 grid-padding-y content-nav-container">
-              {{> sidebar}}
-            </div>
-          </div>
-        </main>
+          </section>
+        </div>
       </div>
-    </div>
-    {{> footer }} {{> scripts }}
-  </body>
+    </main>
+  </div>
+</div>
+{{> footer }} {{> scripts }}
+</body>
 </html>

@@ -289,6 +289,20 @@ a[href^="mailto:"]::before {
   white-space: nowrap;
 }
 
+.directions-link::before {
+  content: "";
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.3rem;
+  background-image: url("../icons/pin.svg");
+  background-repeat: no-repeat;
+}
+
+.contact.card h3 {
+  font-size: 1.5em;
+}
+
 @media screen and (max-width: 39.9375em) {
   .content-nav-container {
     order: 1;
