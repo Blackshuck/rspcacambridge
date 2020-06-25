@@ -54,7 +54,8 @@ table,
 }
 
 td[headers="weekday"],
-td[headers="pet"] {
+td[headers="pet"],
+td[headers="vaccination-pet"] {
   font-weight: 500;
 }
 
