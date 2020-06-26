@@ -275,6 +275,19 @@ a[href^="mailto:"]::before {
   background-repeat: no-repeat;
 }
 
+/* External link symbol */
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
+{
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-size: 1rem 0.75rem;
+  background-image: url("../icons/external-link.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 /* PDF symbol */
 a[href$=".pdf" i]::before {
   content: "";
@@ -298,6 +311,24 @@ a[href$=".pdf" i]::before {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.donate-justgiving,
+.button.donate-justgiving:hover {
+  background-color: #ad29b6; /* JustGiving brand colour */
+}
+
+.button.donate-justgiving:hover,
+.button.donate-justgiving:active {
+  background-color: #9824a0; /* JustGiving darker brand colour */
+}
+
+.inline {
+  display: inline;
+}
+
+.card-divider + .card-divider {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 39.9375em) {
