@@ -121,10 +121,33 @@ a:hover {
     background-color: #e4e1ca;
 }
 
-.homepage-card .card-divider {
+.homepage-about-card .card-divider {
     background-color: #189ca1;
     color: white;
 }
+
+.homepage-help-card {
+    border-color: #189ca1;
+}
+
+.homepage-help-card .card-divider {
+    background-color: white;
+    color: #189ca1;
+    padding-bottom: 0;
+}
+
+.homepage-help-card .card-divider h4 {
+    font-weight: bold;
+}
+
+.home-10-point-plan {
+    font-weight: bold;
+}
+
+.home-10-point-plan a {
+    text-decoration: underline;
+}
+
 /* Old styles */
 /*To make top margin smaller*/
 
