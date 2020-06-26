@@ -167,11 +167,6 @@ address {
   text-decoration: none;
 }
 
-/*.head .message a {*/
-/*    text-decoration: underline;*/
-/*}*/
-
-
 .head {
   background-color: var(--color-rspca-blue);
 }
@@ -188,8 +183,8 @@ address {
 }
 
 .head .button {
-  background-color: var(--color-accent-orange);
-  /*background-color: var(--color-accent);*/
+  /*background-color: var(--color-accent-orange);*/
+  background-color: var(--color-accent);
   color: var(--color-light);
   border-radius: 5px;
   font-weight: bold;
@@ -304,16 +299,6 @@ a[href^="mailto:"]::before {
   }
 }
 
-
-/*a {*/
-/*    color: inherit;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*a:hover {*/
-/*    color: inherit;*/
-/*}*/
-
 /* Font sizes for icons */
 
 .large {
@@ -328,43 +313,31 @@ a[href^="mailto:"]::before {
     font-size: 20px;
 }
 
-
 .social-media-btn {
     margin-right: 5px;
 }
-
-.footer-bottom {
-    color: lightgrey;
-    font-size: 14px;
-}
-
-/*.nav-links a {*/
-/*    background-color: #189ca1;*/
-/*    color: white;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.nav-links a:hover {*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*}*/
 
 .announcement {
     background-color: #e4e1ca;
 }
 
 .homepage-about-card .card-divider {
-    background-color: #189ca1;
+    background-color: var(--color-accent);
     color: white;
 }
 
+.homepage-about-card .card-section,
+.homepage-help-card .card-section {
+  background-color: white;
+}
+
 .homepage-help-card {
-    border-color: #189ca1;
+    border-color: var(--color-accent);
 }
 
 .homepage-help-card .card-divider {
     background-color: white;
-    color: #189ca1;
+    color: var(--color-accent);
     padding-bottom: 0;
 }
 
@@ -372,14 +345,9 @@ a[href^="mailto:"]::before {
     font-weight: bold;
 }
 
-.home-10-point-plan {
+#home-10-point-plan {
     font-weight: bold;
 }
-
-.home-10-point-plan a {
-    text-decoration: underline;
-}
-
 
 /* Embed external in responsive iframe */
 .embed-container {
