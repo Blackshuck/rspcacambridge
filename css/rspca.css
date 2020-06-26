@@ -321,32 +321,48 @@ a[href^="mailto:"]::before {
     background-color: #e4e1ca;
 }
 
-.homepage-about-card .card-divider {
+.homepage .about-card .card-divider {
     background-color: var(--color-accent);
     color: white;
 }
 
-.homepage-about-card .card-section,
-.homepage-help-card .card-section {
+.homepage a:hover,
+.homepage a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.homepage #divider {
+  width: 20%;
+}
+
+.homepage .about-card .card-section,
+.homepage .help-card .card-section {
   background-color: white;
 }
 
-.homepage-help-card {
+.homepage .help-card {
     border-color: var(--color-accent);
 }
 
-.homepage-help-card .card-divider {
+.homepage .help-card .card-divider {
     background-color: white;
     color: var(--color-accent);
     padding-bottom: 0;
 }
 
-.homepage-help-card .card-divider h4 {
+.homepage .help-card .card-divider h4 {
     font-weight: bold;
 }
 
 #home-10-point-plan {
     font-weight: bold;
+}
+
+#home-10-point-plan a:hover,
+#home-10-point-plan a:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 /* Embed external in responsive iframe */
