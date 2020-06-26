@@ -3,3 +3,12 @@
 
 # MacOS files
 .DS_Store
+
+# Python files
+venv
+
+# Build files
+build/img
+build/css
+build/icons
+build/fonts
