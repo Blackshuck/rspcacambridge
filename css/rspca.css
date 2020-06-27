@@ -144,6 +144,10 @@ address {
   text-decoration: underline;
 }
 
+.nav-links a {
+  font-size: 1rem;
+}
+
 .nav-links a:hover,
 .nav-links a:focus {
   background-color: var(--color-light);
@@ -183,7 +187,6 @@ address {
 }
 
 .head .button {
-  /*background-color: var(--color-accent-orange);*/
   background-color: var(--color-accent);
   color: var(--color-light);
   border-radius: 5px;
@@ -299,20 +302,6 @@ a[href^="mailto:"]::before {
   }
 }
 
-/* Font sizes for icons */
-
-.large {
-    font-size: 50px;
-}
-
-.medium {
-    font-size: 35px;
-}
-
-.small {
-    font-size: 20px;
-}
-
 .social-media-btn {
     margin-right: 5px;
 }
@@ -321,15 +310,19 @@ a[href^="mailto:"]::before {
     background-color: #e4e1ca;
 }
 
+.homepage {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
 .homepage .about-card .card-divider {
     background-color: var(--color-accent);
     color: white;
 }
 
+.homepage a,
 .homepage a:hover,
 .homepage a:focus {
   color: inherit;
-  text-decoration: none;
 }
 
 .homepage #divider {
@@ -359,6 +352,7 @@ a[href^="mailto:"]::before {
     font-weight: bold;
 }
 
+#home-10-point-plan a,
 #home-10-point-plan a:hover,
 #home-10-point-plan a:focus {
   color: var(--color-accent);
