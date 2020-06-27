@@ -313,6 +313,10 @@ a[href$=".pdf" i]::before {
   white-space: nowrap;
 }
 
+.donate-justgiving {
+  color: var(--color-light);
+}
+
 .donate-justgiving,
 .button.donate-justgiving:hover {
   background-color: #ad29b6; /* JustGiving brand colour */
