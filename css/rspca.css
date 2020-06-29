@@ -8,7 +8,8 @@ Accent - Aqua: #189ca1
   --font-plain: "arial", sans-serif;
   --color-rspca-blue: #003473;
   --color-accent: #189ca1;
-  --color-accent-orange: #e65100;
+  --color-accent-orange: #f69220;
+  --color-accent-red: #be1c42;
   --color-dark: #050505;
   --color-darkish: #404040;
   --color-lightish: #f1f1f1;
@@ -187,15 +188,15 @@ address {
 }
 
 .head .button {
-  background-color: var(--color-accent);
-  color: var(--color-light);
+  background-color: var(--color-accent-orange);
+  color: var(--color-dark);
   border-radius: 5px;
   font-weight: bold;
   margin: 0;
 }
 
 .head .message {
-  background-color: var(--color-accent-orange);
+  background-color: var(--color-accent-red);
   font-weight: bold;
   color: var(--color-light);
   margin: 0;
@@ -314,15 +315,15 @@ a[href^="mailto:"]::before {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
-.homepage .about-card .card-divider {
-    background-color: var(--color-accent);
-    color: white;
+
+.homepage a {
+  color: inherit;
 }
 
-.homepage a,
 .homepage a:hover,
 .homepage a:focus {
-  color: inherit;
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 .homepage #divider {
@@ -332,19 +333,11 @@ a[href^="mailto:"]::before {
 .homepage .about-card .card-section,
 .homepage .help-card .card-section {
   background-color: white;
+  text-align: left;
 }
 
-.homepage .help-card {
-    border-color: var(--color-accent);
-}
-
-.homepage .help-card .card-divider {
-    background-color: white;
-    color: var(--color-accent);
-    padding-bottom: 0;
-}
-
-.homepage .help-card .card-divider h4 {
+.homepage .help-card .card-divider h4,
+.homepage .about-card .card-divider h4 {
     font-weight: bold;
 }
 
