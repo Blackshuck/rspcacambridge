@@ -8,7 +8,8 @@ Accent - Aqua: #189ca1
   --font-plain: "arial", sans-serif;
   --color-rspca-blue: #003473;
   --color-accent: #189ca1;
-  --color-accent-orange: #e65100;
+  --color-accent-orange: #f69220;
+  --color-accent-red: #be1c42;
   --color-dark: #050505;
   --color-darkish: #404040;
   --color-lightish: #f1f1f1;
@@ -144,6 +145,10 @@ address {
   text-decoration: underline;
 }
 
+.nav-links a {
+  font-size: 1rem;
+}
+
 .nav-links a:hover,
 .nav-links a:focus {
   background-color: var(--color-light);
@@ -167,21 +172,6 @@ address {
   text-decoration: none;
 }
 
-.embed-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-.embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 .head {
   background-color: var(--color-rspca-blue);
 }
@@ -199,14 +189,14 @@ address {
 
 .head .button {
   background-color: var(--color-accent-orange);
-  color: var(--color-light);
+  color: var(--color-dark);
   border-radius: 5px;
   font-weight: bold;
   margin: 0;
 }
 
 .head .message {
-  background-color: var(--color-accent-orange);
+  background-color: var(--color-accent-red);
   font-weight: bold;
   color: var(--color-light);
   margin: 0;
@@ -313,28 +303,67 @@ a[href^="mailto:"]::before {
   }
 }
 
-.panel {
-  color: white;
-
-  /* margin: 0.5em; */
-  margin-top: 0.5em;
-  padding: 0.5em;
+.social-media-btn {
+    margin-right: 5px;
 }
 
-.spaced {
-  margin-left: 2em;
-  margin-right: 2em;
+.announcement {
+    background-color: #e4e1ca;
 }
 
-/* To reduce the margin-bottom to 0 as the default for p is 1 */
-div.panel p {
-  margin-bottom: 0;
+.homepage {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.newsbox {
-  border: 4px solid #fefefe;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+.homepage a {
+  color: inherit;
+}
+
+.homepage a:hover,
+.homepage a:focus {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.homepage #divider {
+  width: 20%;
+}
+
+.homepage .about-card .card-section,
+.homepage .help-card .card-section {
+  background-color: white;
+  text-align: left;
+}
+
+.homepage .help-card .card-divider h4,
+.homepage .about-card .card-divider h4 {
+    font-weight: bold;
+}
+
+#home-10-point-plan {
+    font-weight: bold;
+}
+
+#home-10-point-plan a,
+#home-10-point-plan a:hover,
+#home-10-point-plan a:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Embed external in responsive iframe */
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
