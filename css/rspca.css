@@ -8,7 +8,9 @@ Accent - Aqua: #189ca1
   --font-plain: "arial", sans-serif;
   --color-rspca-blue: #003473;
   --color-accent: #189ca1;
+  --color-accent-darker: #12787c;
   --color-accent-orange: #f69220;
+  --color-accent-orange-darker: #e9881e;
   --color-accent-red: #be1c42;
   --color-dark: #050505;
   --color-darkish: #404040;
@@ -195,6 +197,11 @@ address {
   margin: 0;
 }
 
+.head .button:hover,
+.head .button:active {
+  background-color: var(--color-accent-orange-darker);
+}
+
 .head .message {
   background-color: var(--color-accent-red);
   font-weight: bold;
@@ -276,8 +283,7 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
-{
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
   content: "";
   display: inline-block;
   height: 1rem;
@@ -317,14 +323,18 @@ a[href$=".pdf" i]::before {
   color: var(--color-light);
 }
 
+.donate-justgiving img {
+  height: 1.2rem;
+}
+
 .donate-justgiving,
 .button.donate-justgiving:hover {
-  background-color: #ad29b6; /* JustGiving brand colour */
+  background-color: var(--color-accent);
 }
 
 .button.donate-justgiving:hover,
 .button.donate-justgiving:active {
-  background-color: #9824a0; /* JustGiving darker brand colour */
+  background-color: var(--color-accent-darker);
 }
 
 .inline {
@@ -350,11 +360,11 @@ a[href$=".pdf" i]::before {
 }
 
 .social-media-btn {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .announcement {
-    background-color: #e4e1ca;
+  background-color: #e4e1ca;
 }
 
 .homepage {
@@ -384,11 +394,11 @@ a[href$=".pdf" i]::before {
 
 .homepage .help-card .card-divider h4,
 .homepage .about-card .card-divider h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #home-10-point-plan {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #home-10-point-plan a,
@@ -400,16 +410,16 @@ a[href$=".pdf" i]::before {
 
 /* Embed external in responsive iframe */
 .embed-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
 }
 
 .embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
