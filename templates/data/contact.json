@@ -13,8 +13,16 @@
   "sidebarHeader": "Contact us",
   "sidebarItems": [
     {
+      "id": "rspca-cambridge-branch",
+      "header": "RSPCA Cambridge Branch"
+    },
+    {
       "id": "cambridge-animal-clinic",
       "header": "Cambridge Animal Clinic"
+    },
+    {
+      "id": "cambridge-and-district-animal-rehoming",
+      "header": "Cambridge &amp; District Animal Rehoming"
     },
     {
       "id": "cambridge-charity-shop-emporium",
@@ -27,14 +35,6 @@
     {
       "id": "newmarket-charity-shop",
       "header": "Newmarket Charity Shop"
-    },
-    {
-      "id": "cambridge-and-district-animal-rehoming",
-      "header": "Cambridge &amp; District Animal Rehoming"
-    },
-    {
-      "id": "rspca-cambridge-branch",
-      "header": "RSPCA Cambridge Branch"
     }
   ]
 }

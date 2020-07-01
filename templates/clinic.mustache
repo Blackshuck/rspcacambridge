@@ -105,8 +105,8 @@
                 <div class="cell medium-4 medium-order-2">
                   <figure>
                     <img
-                            src="{{assetPrefix}}img/dog-in-clinic.jpeg"
-                            alt="Photo of a dog in the clinic"
+                      src="{{assetPrefix}}img/dog-in-clinic.jpeg"
+                      alt="Photo of a dog in the clinic"
                     />
                     <figcaption>
                       Photo by Poppy Corbett
@@ -189,53 +189,8 @@
                 </div>
               </div>
               <div class="grid-x grid-margin-x grid-padding-y" id="content">
-                <!-- SIDEBAR NAVIGATION -->
-                <div class="cell medium-4 grid-padding-y medium-order-2">
-                  <nav
-                          class="sticky-container"
-                          data-sticky-container
-                          aria-label="Content navigation"
-                  >
-                    <div
-                            class="sticky"
-                            data-sticky
-                            data-anchor="content"
-                            data-sticky-on="medium"
-                    >
-                      <div class="content-nav-header hide-for-small-only">
-                        FAQs
-                      </div>
-                      <ul class="content-nav vertical menu" data-magellan>
-                        <li>
-                          <a href="#eligibility">Is my pet eligible?</a>
-                        </li>
-                        <li>
-                          <a href="#cost">How much does it cost?</a>
-                        </li>
-                        <li>
-                          <a href="#which-animals"
-                          >Which animals can you treat?</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#out-of-hours"
-                          >What if my pet needs help out of hours?</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#vaccinations">Vaccinations</a>
-                        </li>
-                        <li>
-                          <a href="#neutering">Neutering</a>
-                        </li>
-                        <li>
-                          <a href="#helping"
-                          >Helping out at the animal clinic</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+                <div class="cell medium-4 medium-order-2">
+                  {{>sidebar}}
                 </div>
                 <article class="cell medium-8 medium-order-1">
                   <section id="eligibility" data-magellan-target="eligibility">

@@ -303,20 +303,6 @@ a[href^="mailto:"]::before {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .content-nav-container {
-    order: 1;
-  }
-
-  .sticky-container {
-    margin-top: 1em;
-  }
-
-  .content-container {
-    order: 2;
-  }
-}
-
 .social-media-btn {
     margin-right: 5px;
 }
@@ -380,4 +366,25 @@ a[href^="mailto:"]::before {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Prevent collapsed menu appearing together with full nav */
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .sticky-container {
+    margin-top: 1em;
+  }
 }
