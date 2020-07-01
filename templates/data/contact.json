@@ -1,5 +1,5 @@
 {
-  "metadata_page_title": "Contact",
+  "metadata_page_title": "Contact us",
   "breadcrumbs?": true,
   "assetPrefix": "",
   "breadcrumbs": [
@@ -8,9 +8,9 @@
       "filepath": "index.html"
     }
   ],
-  "current_breadcrumb": "Contact",
+  "current_breadcrumb": "Contact us",
   "sidebarContentId": "content",
-  "sidebarHeader": "Contact",
+  "sidebarHeader": "Contact us",
   "sidebarItems": [
     {
       "id": "cambridge-animal-clinic",
