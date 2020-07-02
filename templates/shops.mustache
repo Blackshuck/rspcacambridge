@@ -18,10 +18,10 @@
             Photo here
           </div>
           <div class="cell medium-8 medium-order-1">
-            <p class="callout alert lead">
-              April 2020: Our shops are currently closed due to the Coronavirus
-              outbreak. Please email us to enquire about dropping donations off.
-            </p>
+            <!--            <p class="callout alert lead">-->
+            <!--              April 2020: Our shops are currently closed due to the Coronavirus-->
+            <!--              outbreak. Please email us to enquire about dropping donations off.-->
+            <!--            </p>-->
             <p class="lead">
               Much of our fundraising is carried out through the activities of
               our three charity shops. Please support us by buying from our
@@ -46,14 +46,15 @@
         <hr />
         <section class="grid-x grid-margin-x">
           <div class="cell">
-            <h3>Burleigh Street</h3>
-            <address class="directions">
-              61 Burleigh Street, Cambridge, CB1 1DJ
-            </address>
+            <h3 id="burleigh">Burleigh Street</h3>
+            <!-- display: inline -->
+            <address class="directions"
+              >61 Burleigh Street, Cambridge, CB1 1DJ</address
+            >
             <p>
               <a href="tel:+441223312802">01223 312 802</a>
             </p>
-            <table>
+            <table class="clock">
               <tbody>
                 <tr>
                   <td>Monday&ndash;Sunday</td>
@@ -85,15 +86,22 @@
         </section>
         <hr />
         <section class="grid-x grid-margin-x">
-          <div class="cell">
-            <h3>Mill Road</h3>
-            <address class="directions">
-              188 Mill Road, Cambridge, CB1 3LP
-            </address>
+          <div class="cell medium-4 medium-order-2" data-sticky-container>
+            <img
+              src="{{assetPrefix}}img/millrd.png"
+              alt="A photo of entrance to the RSPCA Cambrige charity shop on Mill Road"
+            />
+          </div>
+          <div class="cell medium-8 medium-order-1">
+            <h3 id="mill">Mill Road</h3>
+            <!-- display: inline -->
+            <address class="directions"
+              >188 Mill Road, Cambridge, CB1 3LP</address
+            >
             <p>
               <a href="tel:+441223212644">01223 212 644</a>
             </p>
-            <table>
+            <table class="clock">
               <tbody>
                 <tr>
                   <td>Monday&ndash;Saturday</td>
@@ -116,7 +124,7 @@
               <a href="mailto:info@rspca-cambridge.org.uk"
                 >info@rspca-cambridge.org.uk</a
               >
-              or phone the Burleigh Street shop on
+              or phone the <a href="#burleigh">Burleigh Street shop</a> on
               <a href="tel:+441223312802">01223&nbsp;312&nbsp;802</a>. We are
               still collecting donations of clothing, linens, china, etc. at the
               bookshop to sell at 61 Burleigh St.
@@ -131,12 +139,13 @@
         <hr />
         <section class="grid-x grid-margin-x">
           <div class="cell">
-            <h3>Newmarket</h3>
-            <address class="directions">
-              10a Market Street, Newmarket, Suffolk, CB8 8EE
-            </address>
+            <h3 id="newmarket">Newmarket</h3>
+            <!-- display: inline -->
+            <address class="directions"
+              >10a Market Street, Newmarket, Suffolk, CB8 8EE</address
+            >
             <p><a href="tel:+441638662053">01638 662 053</a></p>
-            <table>
+            <table class="clock">
               <tbody>
                 <tr>
                   <td>Monday&ndash;Saturday</td>
