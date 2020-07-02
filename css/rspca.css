@@ -345,6 +345,10 @@ a[href$=".pdf" i]::before {
   padding-top: 0;
 }
 
+.image-link {
+  font-weight: unset;
+}
+
 .image-link:hover,
 .image-link:active {
   text-decoration: none;
