@@ -361,16 +361,8 @@ a[href$=".pdf" i]::before {
 }
 
 @media screen and (max-width: 39.9375em) {
-  .content-nav-container {
-    order: 1;
-  }
-
   .sticky-container {
     margin-top: 1em;
-  }
-
-  .content-container {
-    order: 2;
   }
 }
 
