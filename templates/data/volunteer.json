@@ -37,6 +37,10 @@
       "header": "Volunteer drivers"
     },
     {
+      "id": "clinic",
+      "header": "Helping out at the animal clinic"
+    },
+    {
       "id": "animals",
       "header": "Working with animals"
     },
