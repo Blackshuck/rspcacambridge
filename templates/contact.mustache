@@ -14,7 +14,10 @@
               <h2>{{current_breadcrumb}}</h2>
             </div>
           </div>
-          <div class="grid-x grid-margin-x grid-padding-y" id="{{sidebarContentId}}">
+          <div
+            class="grid-x grid-margin-x grid-padding-y"
+            id="{{sidebarContentId}}"
+          >
             <div class="cell medium-4 medium-order-2">
               {{>sidebar}}
             </div>
@@ -28,7 +31,7 @@
                   itemtype="schema.org/LocalBusiness"
                 >
                   <div class="card-section">
-                    <a href="{{assetPrefix}}ingex.html"
+                    <a href="{{assetPrefix}}index.html"
                       ><h3 itemprop="name">
                         RSPCA Cambridge Branch
                       </h3></a
@@ -81,20 +84,61 @@
                         RSPCA Cambridge Animal Clinic
                       </h3>
                     </a>
-                    <address itemprop="address">
-                      1 Pool Way,<br />
+                    <!-- display: inline -->
+                    <address itemprop="address" class="directions"
+                      >1 Pool Way,<br />
                       Whitehill Road,<br />
                       Cambridge,<br />
                       CB5 8NT
                     </address>
                     <p>
                       <a
-                        class="directions-link"
+                        class="map-link"
                         href="https://goo.gl/maps/HtGFSzviRbvriCyJ9"
                         title="Click to open a map"
                         >Get directions</a
                       >
                     </p>
+                    <table
+                      itemprop="openingHours"
+                      content="Tu,We,Th,Fr 09:00-10:30"
+                    >
+                      <caption class="show-for-sr">
+                        Opening hours
+                      </caption>
+                      <thead class="show-for-sr">
+                        <tr>
+                          <th id="weekday">Weekday</th>
+                          <th id="time">Time</th>
+                          <th id="services">Services</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td headers="weekday">Tuesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Wednesday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">
+                            Vaccination, microchipping, neutering pre-checks and
+                            post-operative stitch removal only
+                          </td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Thursday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                        <tr>
+                          <td headers="weekday">Friday</td>
+                          <td headers="time">09:00-10:30</td>
+                          <td headers="services">Open surgery</td>
+                        </tr>
+                      </tbody>
+                    </table>
                     <p class="callout secondary">
                       If you need to find a vet near Cambridge and are not
                       eligible for assistance by us (see our
@@ -158,15 +202,16 @@
                         Cambridge Charity Shop (Burleigh St)
                       </h3></a
                     >
-                    <address itemprop="address">
-                      Emporium 61,<br />
+                    <!-- display: inline -->
+                    <address itemprop="address" class="directions"
+                      >Emporium 61,<br />
                       61 Burleigh Street,<br />
                       Cambridge,<br />
                       CB1 1DJ
                     </address>
                     <p>
                       <a
-                        class="directions-link"
+                        class="map-link"
                         href="https://goo.gl/maps/LPDZSDx38Aum9QNN7"
                         title="Click to open a map"
                         >Get directions</a
@@ -177,6 +222,28 @@
                         >01223&nbsp;312&nbsp;802</a
                       >
                     </p>
+                    <table
+                      itemprop="openingHours"
+                      content="Mo,Tu,We,Th,Fr,Sa,Su 10:00-17:00"
+                    >
+                      <caption class="show-for-sr">
+                        Opening hours
+                      </caption>
+                      <thead class="show-for-sr">
+                        <tr>
+                          <th id="burleigh-weekdays">Weekdays</th>
+                          <th id="burleigh-time">Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td headers="burleigh-weekdays">
+                            Monday&ndash;Sunday
+                          </td>
+                          <td headers="burleigh-time">10:00&ndash;17:00</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </section>
@@ -194,14 +261,15 @@
                         Cambridge Charity Shop (Mill Rd)
                       </h3></a
                     >
-                    <address itemprop="address">
-                      188 Mill Road,<br />
+                    <!-- display: inline -->
+                    <address itemprop="address" class="directions"
+                      >188 Mill Road,<br />
                       Cambridge,<br />
                       CB1 3LP
                     </address>
                     <p>
                       <a
-                        class="directions-link"
+                        class="map-link"
                         href="https://goo.gl/maps/jgMmWRqhngwPdu2v8"
                         title="Click to open a map"
                         >Get directions</a
@@ -212,6 +280,36 @@
                         >01223&nbsp;212&nbsp;644</a
                       >
                     </p>
+                    <div>
+                      <meta
+                        itemprop="openingHours"
+                        content="Mo,Tu,We,Th,Fr,Sa 10:00-17:00"
+                      />
+                      <meta itemprop="openingHours" content="Su 11:00-17:00" />
+                      <table>
+                        <caption class="show-for-sr">
+                          Opening hours
+                        </caption>
+                        <thead class="show-for-sr">
+                          <tr>
+                            <th id="mill-weekdays">Weekdays</th>
+                            <th id="mill-time">Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td headers="mill-weekdays">
+                              Monday&ndash;Saturday
+                            </td>
+                            <td headers="mill-time">10:00&ndash;17:00</td>
+                          </tr>
+                          <tr>
+                            <td headers="mill-weekdays">Sunday</td>
+                            <td headers="mill-time">11:00&ndash;17:00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -229,14 +327,15 @@
                         Newmarket Charity Shop
                       </h3></a
                     >
-                    <address itemprop="address">
-                      10A Market Street,<br />
+                    <!-- display: inline -->
+                    <address itemprop="address" class="directions"
+                      >10A Market Street,<br />
                       Newmarket<br />
                       CB8 8EEt
                     </address>
                     <p>
                       <a
-                        class="directions-link"
+                        class="map-link"
                         href="https://goo.gl/maps/bzVJ1m6w1y6mcztdA"
                         title="Click to open a map"
                         >Get directions</a
@@ -247,6 +346,36 @@
                         >01638&nbsp;662&nbsp;053</a
                       >
                     </p>
+                    <div>
+                      <meta
+                        itemprop="openingHours"
+                        content="Mo,Tu,We,Th,Fr,Sa 09:30-16:30"
+                      />
+                      <meta itemprop="openingHours" content="Su 10:00-16:00" />
+                      <table>
+                        <caption class="show-for-sr">
+                          Opening hours
+                        </caption>
+                        <thead class="show-for-sr">
+                          <tr>
+                            <th id="newmarket-weekdays">Weekdays</th>
+                            <th id="newmarket-time">Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td headers="newmarket-weekdays">
+                              Monday&ndash;Saturday
+                            </td>
+                            <td headers="newmarket-time">09:30&ndash;16:30</td>
+                          </tr>
+                          <tr>
+                            <td headers="newmarket-weekdays">Sunday</td>
+                            <td headers="newmarket-time">10:00&ndash;16:00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </section>
