@@ -7,57 +7,56 @@
     <div class="grid-container full-screen-height">
       {{#breadcrumbs?}} {{> breadcrumbs }} {{/breadcrumbs?}}
       <!-- MAIN CONTENT -->
-      <div class="grid-x grid-padding-y align-center">
-        <main class="cell" role="main" id="{{sidebarContentId}}">
-          <div class="grid-x grid-margin-x align-center">
-            <div class="cell">
-              <h2>Terms &amp; Conditions</h2>
-            </div>
+      <main role="main">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <h2>{{{current_breadcrumb}}}</h2>
           </div>
-          <div class="grid-x grid-margin-x align-center">
-            <div class="cell">
-              <p>
-                Legal information: the RSPCA Cambridge and District Branch, part
-                of the RSPCA family, is a separately registered charity
-                dedicated to improving the lives of animals in Cambridge and the
-                local area, registered charity number: 205098.
-              </p>
-              <p>
-                User agreement: use of the site constitutes acceptance of these
-                terms and conditions, which are subject to the laws of England
-                and Wales and may be changed at any time. The site may only be
-                used for lawful purposes, in a manner that does not infringe the
-                rights of anyone else, nor restrict or inhibit their use and
-                enjoyment of this site.
-              </p>
-              <p>
-                Copyright: copyright in the materials on this website is owned
-                by the branch, the RSPCA and/or the content supplier.
-                Unauthorised use of the materials is prohibited. Anyone who has
-                a query about copyright should contact the branch.
-              </p>
-              <p>
-                Liability: neither the branch nor the RSPCA accept liability for
-                any damages whatsoever arising out of or in connection with the
-                use, or loss of use, of this site. Materials on this site are
-                provided for information or reporting purposes only and should
-                not be relied upon. They may be out of date, unavailable or
-                removed without notice.
-              </p>
-              <p>
-                Linking: button links to the national website can be downloaded
-                from RSPCA online. Links to third party websites from this site
-                are provided at the branch&rsquo;s discretion solely as a
-                convenience to users. Neither the branch nor the RSPCA is
-                responsible for the contents or reliability of linked
-                third-party websites, and does not necessarily endorse the views
-                expressed within them. Accessing linked third party sites is
-                entirely at the user&rsquo;s risk.
-              </p>
-            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-8">
+            <p>
+              Legal information: the RSPCA Cambridge and District Branch, part
+              of the RSPCA family, is a separately registered charity dedicated
+              to improving the lives of animals in Cambridge and the local area,
+              registered charity number: 205098.
+            </p>
+            <p>
+              User agreement: use of the site constitutes acceptance of these
+              terms and conditions, which are subject to the laws of England and
+              Wales and may be changed at any time. The site may only be used
+              for lawful purposes, in a manner that does not infringe the rights
+              of anyone else, nor restrict or inhibit their use and enjoyment of
+              this site.
+            </p>
+            <p>
+              Copyright: copyright in the materials on this website is owned by
+              the branch, the RSPCA and/or the content supplier. Unauthorised
+              use of the materials is prohibited. Anyone who has a query about
+              copyright should contact the branch.
+            </p>
+            <p>
+              Liability: neither the branch nor the RSPCA accept liability for
+              any damages whatsoever arising out of or in connection with the
+              use, or loss of use, of this site. Materials on this site are
+              provided for information or reporting purposes only and should not
+              be relied upon. They may be out of date, unavailable or removed
+              without notice.
+            </p>
+            <p>
+              Linking: button links to the national website can be downloaded
+              from RSPCA online. Links to third party websites from this site
+              are provided at the branch&rsquo;s discretion solely as a
+              convenience to users. Neither the branch nor the RSPCA is
+              responsible for the contents or reliability of linked third-party
+              websites, and does not necessarily endorse the views expressed
+              within them. Accessing linked third party sites is entirely at the
+              user&rsquo;s risk.
+            </p>
           </div>
-        </main>
-      </div>
+        </div>
+        <hr />
+      </main>
     </div>
     {{> footer }} {{> scripts }}
   </body>
