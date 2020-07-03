@@ -331,25 +331,22 @@ a[href$=".pdf" i]::before {
   background-repeat: no-repeat;
 }
 
-/* Clock symbol */
-.clock::before {
+/* Facebook icon */
+.facebook-link::before {
   content: "";
   display: inline-block;
   height: 1rem;
   width: 1.5rem;
   margin-left: -1.5rem;
-  background-size: 1.5rem 1.1rem;
-  background-image: url("../icons/clock.svg");
+  background-size: 1.2rem 1.1rem;
+  background-image: url("../icons/facebook.svg");
   background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .directions,
-.clock {
+.facebook-link {
   margin-left: 1.5rem;
-}
-
-table.clock {
-  display: flex;
 }
 
 .full-nav,
@@ -408,6 +405,7 @@ table.clock {
 }
 
 @media screen and (max-width: 39.9375em) {
+  .medium-order-1,
   .sticky-container {
     margin-top: 1em;
   }
