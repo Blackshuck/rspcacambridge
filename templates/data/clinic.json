@@ -8,5 +8,37 @@
       "filepath": "index.html"
     }
   ],
-  "current_breadcrumb": "Clinic"
+  "current_breadcrumb": "Clinic",
+  "sidebarContentId": "content",
+  "sidebarHeader": "FAQ",
+  "sidebarItems": [
+    {
+      "id": "eligibility",
+      "header": "Is my pet eligible?"
+    },
+    {
+      "id": "cost",
+      "header": "How much does it cost?"
+    },
+    {
+      "id": "which-animals",
+      "header": "Which animals can you treat?"
+    },
+    {
+      "id": "out-of-hours",
+      "header": "What if my pet needs help out of hours?"
+    },
+    {
+      "id": "vaccinations",
+      "header": "Vaccinations"
+    },
+    {
+      "id": "neutering",
+      "header": "Neutering"
+    },
+    {
+      "id": "helping",
+      "header": "Helping out at the animal clinic"
+    }
+  ]
 }
