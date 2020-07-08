@@ -109,8 +109,12 @@
           <li><a href="adopt.html" class="button">Adopt</a></li>
           <li><a href="shops.html" class="button">Shops</a></li>
           <li><a href="donate.html" class="button">Donate</a></li>
-          <li><a href="volunteer.html" class="button">Volunteer</a></li>
-          <li><a href="contact.html" class="button">Contact us</a></li>
+          <li>
+            <a href="volunteer.html" class="button">Volunteer</a>
+          </li>
+          <li>
+            <a href="contact.html" class="button">Contact us</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -125,7 +129,10 @@
               <nav aria-label="You are here:" role="navigation">
                 <ul class="breadcrumbs">
                   <li><a href="index.html">Home</a></li>
-                  <li><span class="show-for-sr">Current: </span> Clinic</li>
+                  <li>
+                    <span class="show-for-sr">Current: </span>
+                    Clinic
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -228,7 +235,18 @@
                 <div class="cell"><h3>About</h3></div>
               </div>
               <div class="grid-x grid-margin-x">
-                <section class="cell medium-8 content-container">
+                <div class="cell medium-4 medium-order-2">
+                  <figure>
+                    <img
+                      src="img/dog-in-clinic.jpeg"
+                      alt="Photo of a dog in the clinic"
+                    />
+                    <figcaption>
+                      Photo by Poppy Corbett
+                    </figcaption>
+                  </figure>
+                </div>
+                <section class="cell medium-8 medium-order-1">
                   <p class="lead">
                     The history of the RSPCA Cambridge animal clinic dates back
                     to the 1930s. Staff and hospital facilities for the clinic
@@ -254,17 +272,6 @@
                     probably put to sleep.
                   </p>
                 </section>
-                <div class="cell medium-4 content-nav-container">
-                  <figure>
-                    <img
-                      src="img/dog-in-clinic.jpeg"
-                      alt="Photo of a dog in the clinic"
-                    />
-                    <figcaption>
-                      Photo by Poppy Corbett
-                    </figcaption>
-                  </figure>
-                </div>
               </div>
             </div>
           </div>
@@ -315,7 +322,55 @@
                 </div>
               </div>
               <div class="grid-x grid-margin-x grid-padding-y" id="content">
-                <article class="cell medium-8 content-container">
+                <div class="cell medium-4 medium-order-2">
+                  <!-- SIDEBAR NAVIGATION -->
+                  <nav
+                    class="sticky-container"
+                    data-sticky-container
+                    aria-label="Content navigation"
+                  >
+                    <div
+                      class="sticky"
+                      data-sticky
+                      data-anchor="content"
+                      data-sticky-on="medium"
+                    >
+                      <div class="content-nav-header hide-for-small-only">
+                        FAQ
+                      </div>
+                      <ul class="content-nav vertical menu" data-magellan>
+                        <li>
+                          <a href="#eligibility">Is my pet eligible?</a>
+                        </li>
+                        <li>
+                          <a href="#cost">How much does it cost?</a>
+                        </li>
+                        <li>
+                          <a href="#which-animals"
+                            >Which animals can you treat?</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#out-of-hours"
+                            >What if my pet needs help out of hours?</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#vaccinations">Vaccinations</a>
+                        </li>
+                        <li>
+                          <a href="#neutering">Neutering</a>
+                        </li>
+                        <li>
+                          <a href="#helping"
+                            >Helping out at the animal clinic</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                <article class="cell medium-8 medium-order-1">
                   <section id="eligibility" data-magellan-target="eligibility">
                     <h4>Is my pet eligible?</h4>
                     <p>
@@ -359,6 +414,10 @@
                           clinic. Even though the university charges us less
                           than a commercial rate, we do still need to pay for
                           their services.
+                          <meta
+                            itemprop="paymentAccepted"
+                            content="Cash, Credit Card, Cheque"
+                          />
                           <strong
                             >We now accept card payments as well as cash or
                             cheque.</strong
@@ -728,54 +787,6 @@
                     </p>
                   </section>
                 </article>
-                <!-- SIDEBAR NAVIGATION -->
-                <div class="cell medium-4 grid-padding-y content-nav-container">
-                  <nav
-                    class="sticky-container"
-                    data-sticky-container
-                    aria-label="Content navigation"
-                  >
-                    <div
-                      class="sticky"
-                      data-sticky
-                      data-anchor="content"
-                      data-sticky-on="medium"
-                    >
-                      <div class="content-nav-header hide-for-small-only">
-                        FAQs
-                      </div>
-                      <ul class="content-nav vertical menu" data-magellan>
-                        <li>
-                          <a href="#eligibility">Is my pet eligible?</a>
-                        </li>
-                        <li>
-                          <a href="#cost">How much does it cost?</a>
-                        </li>
-                        <li>
-                          <a href="#which-animals"
-                            >Which animals can you treat?</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#out-of-hours"
-                            >What if my pet needs help out of hours?</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#vaccinations">Vaccinations</a>
-                        </li>
-                        <li>
-                          <a href="#neutering">Neutering</a>
-                        </li>
-                        <li>
-                          <a href="#helping"
-                            >Helping out at the animal clinic</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div>
               </div>
             </div>
           </div>
@@ -825,6 +836,7 @@
               <ul class="menu simple">
                 <li>
                   <a
+                    aria-label="Click to follow us on Twitter"
                     class="social-icon-link"
                     href="https://twitter.com/#!/cambstreasurer"
                   >
@@ -834,8 +846,12 @@
                       height="32"
                       viewBox="0 0 32 32"
                       fill="currentColor"
+                      aria-labelledby="twitterIconSvgTitle twitterIconSvgDesc"
                     >
-                      <title>Twitter</title>
+                      <title id="twitterIconSvgTitle">Twitter icon</title>
+                      <desc id="twitterIconSvgDesc">
+                        RSPCA Cambridge Twitter account
+                      </desc>
                       <path
                         d="M24.6 8.4q-1.2 1.7-2.5 2.6v0.6q0 5.5-3.9 9.9t-10.5 4.4q-4.2 0-7.7-2.2 0.4 0.1 1.2 0.1 3.5 0 6.3-2.2-1.6-0.1-2.9-1t-1.8-2.5q0.6 0.1 0.9 0.1 0.7 0 1.4-0.2-1.7-0.3-2.9-1.7t-1.2-3.2v-0.1q1.3 0.7 2.3 0.7-2.2-1.5-2.2-4.2 0-1.4 0.6-2.5 4.1 4.9 10.4 5.3-0.1-0.7-0.1-1.1 0-2.1 1.5-3.6t3.6-1.5q2.3 0 3.7 1.6 1.8-0.4 3.2-1.2-0.6 1.8-2.2 2.8 1.4-0.2 2.9-0.7z"
                       />
@@ -844,6 +860,7 @@
                 </li>
                 <li>
                   <a
+                    aria-label="Click to follow us on Facebook"
                     class="social-icon-link"
                     href="https://www.facebook.com/rspcacambridge"
                   >
@@ -853,8 +870,12 @@
                       height="32"
                       viewBox="0 0 32 32"
                       fill="currentColor"
+                      aria-labelledby="facebookIconSvgTitle facebookIconSvgDesc"
                     >
-                      <title>Facebook</title>
+                      <title id="facebookIconSvgTitle">Facebook icon</title>
+                      <desc id="facebookIconSvgDesc">
+                        RSPCA Cambridge Facebook page
+                      </desc>
                       <path
                         d="M21.8 4.5q0.5 0 0.9 0.4t0.4 0.9v20.5q0 0.5-0.4 0.9t-0.9 0.4h-5.9v-8.9h3l0.4-3.5h-3.4v-2.2q0-1.7 1.8-1.7h1.8v-3.1q-0.9-0.2-2.7-0.2-2 0-3.2 1.2t-1.2 3.4v2.6h-3v3.5h3v8.9h-11.1q-0.5 0-0.9-0.4t-0.4-0.9v-20.5q0-0.5 0.4-0.9t0.9-0.4h20.5z"
                       />
@@ -863,6 +884,7 @@
                 </li>
                 <li>
                   <a
+                    aria-label="Click to see our Blogspot adoption blog"
                     class="social-icon-link"
                     href="https://rspca-cambridge-rehome.blogspot.com"
                   >
@@ -872,8 +894,12 @@
                       height="32"
                       viewBox="0 0 32 32"
                       fill="currentColor"
+                      aria-labelledby="blogspotIconSvgTitle blogspotIconSvgDesc"
                     >
-                      <title>RSPCA Cambridge Rehoming Gallery</title>
+                      <title id="blogspotIconSvgTitle">Blogspot icon</title>
+                      <desc id="blogspotIconSvgDesc">
+                        RSPCA Cambridge Rehoming Gallery
+                      </desc>
                       <path
                         d="M19.25 4.5q1.563 0 2.688 1.125t1.125 2.688v15.375q0 1.563-1.125 2.688t-2.688 1.125h-15.438q-1.563 0-2.688-1.125t-1.125-2.688v-15.375q0-1.563 1.125-2.688t2.688-1.125h15.438zM18.5 18.563v-3.813l-0.125-0.25-0.188-0.125q-0.125-0.063-0.938-0.094t-1-0.219q-0.25-0.25-0.375-1.25t-0.375-1.5q-0.438-0.938-1.5-1.625t-1.938-0.813h-3.125q-1.813 0-3.156 1.344t-1.344 3.156v5.188q0 1.813 1.344 3.125t3.156 1.313h5.125q1.813 0 3.125-1.313t1.313-3.125zM9 14.25q-0.375 0-0.625-0.281t-0.25-0.594q0-0.813 0.875-0.813h2.438q0.875 0 0.875 0.813 0 0.313-0.25 0.594t-0.625 0.281h-2.438zM14 17.625q0.313 0 0.594 0.281t0.281 0.594-0.281 0.563-0.594 0.25h-5q-0.875 0-0.875-0.813 0-0.313 0.25-0.594t0.625-0.281h5z"
                       ></path>
