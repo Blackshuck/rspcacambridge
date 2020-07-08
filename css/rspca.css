@@ -279,7 +279,8 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
+{
   content: "";
   display: inline-block;
   height: 1rem;
@@ -390,7 +391,8 @@ a[href$=".pdf" i]::before {
 }
 
 .image-link:hover,
-.image-link:active {
+.image-link:active,
+.image-link:focus {
   text-decoration: none;
 }
 
@@ -398,6 +400,14 @@ a[href$=".pdf" i]::before {
 .image-link .card .card-section:hover,
 .image-link .card .card-section:active {
   color: var(--color-accent);
+}
+
+.register-link::before {
+  content: "➔ ";
+}
+
+.register-link {
+  font-size: 125%;
 }
 
 @media screen and (max-width: 39.9375em) {
