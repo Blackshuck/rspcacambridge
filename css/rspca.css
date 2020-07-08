@@ -56,7 +56,7 @@ table,
   max-width: var(--measure);
 }
 
-td[headers="weekday"],
+td[headers*="weekday"],
 td[headers="pet"],
 td[headers="vaccination-pet"] {
   font-weight: 500;
@@ -72,10 +72,6 @@ h3,
 h4 {
   font-weight: 500;
   hyphens: auto;
-}
-
-main > * + * {
-  margin-top: 1rem;
 }
 
 figcaption {
@@ -328,8 +324,12 @@ a[href$=".pdf" i]::before {
 }
 
 .donate-justgiving,
-.button.donate-justgiving:hover {
+.button.donate-justgiving {
   background-color: var(--color-accent);
+}
+
+.button.donate-justgiving {
+  border-radius: 5px;
 }
 
 .button.donate-justgiving:hover,
@@ -345,18 +345,49 @@ a[href$=".pdf" i]::before {
   padding-top: 0;
 }
 
-@media screen and (max-width: 39.9375em) {
-  .content-nav-container {
-    order: 1;
-  }
+/* Map pin symbol */
+.directions::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  background-size: 1.5rem 1.1rem;
+  background-image: url("../icons/pin.svg");
+  background-repeat: no-repeat;
+}
 
-  .sticky-container {
-    margin-top: 1em;
-  }
+/* Map pin symbol on a dark background */
+.footer .directions::before,
+.message .directions::before,
+.header .directions::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  background-size: 1.5rem 1.1rem;
+  background-image: url("../icons/pin-white.svg");
+  background-repeat: no-repeat;
+}
 
-  .content-container {
-    order: 2;
-  }
+.map-link::before {
+  content: "";
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.2rem;
+  background-image: url("../icons/map.svg");
+  background-repeat: no-repeat;
+}
+
+.directions,
+.facebook-link {
+  margin-left: 1.5rem;
+}
+
+.contact.card h3 {
+  font-size: 1.5em;
 }
 
 .social-media-btn {
@@ -422,4 +453,19 @@ a[href$=".pdf" i]::before {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Prevent collapsed menu appearing together with full nav */
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
 }
