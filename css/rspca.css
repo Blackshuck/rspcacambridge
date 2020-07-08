@@ -301,50 +301,6 @@ a[href$=".pdf" i]::before {
   background-repeat: no-repeat;
 }
 
-.full-nav,
-.full-nav .menu,
-.small-nav {
-  background-color: var(--color-accent);
-}
-
-.full-nav {
-  padding: 0;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.donate-justgiving {
-  color: var(--color-light);
-}
-
-.donate-justgiving img {
-  height: 1.2rem;
-}
-
-.donate-justgiving,
-.button.donate-justgiving {
-  background-color: var(--color-accent);
-}
-
-.button.donate-justgiving {
-  border-radius: 5px;
-}
-
-.button.donate-justgiving:hover,
-.button.donate-justgiving:active {
-  background-color: var(--color-accent-darker);
-}
-
-.inline {
-  display: inline;
-}
-
-.card-divider + .card-divider {
-  padding-top: 0;
-}
-
 /* Map pin symbol */
 .directions::before {
   content: "";
@@ -371,14 +327,17 @@ a[href$=".pdf" i]::before {
   background-repeat: no-repeat;
 }
 
-.map-link::before {
+/* Facebook icon */
+.facebook-link::before {
   content: "";
   display: inline-block;
-  height: 1.2rem;
+  height: 1rem;
   width: 1.5rem;
-  background-size: 1.5rem 1.2rem;
-  background-image: url("../icons/map.svg");
+  margin-left: -1.5rem;
+  background-size: 1.2rem 1.1rem;
+  background-image: url("../icons/facebook.svg");
   background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .directions,
@@ -386,8 +345,66 @@ a[href$=".pdf" i]::before {
   margin-left: 1.5rem;
 }
 
-.contact.card h3 {
-  font-size: 1.5em;
+.full-nav,
+.full-nav .menu,
+.small-nav {
+  background-color: var(--color-accent);
+}
+
+.full-nav {
+  padding: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.donate-justgiving {
+  color: var(--color-light);
+}
+
+.donate-justgiving img {
+  height: 1.2rem;
+}
+
+.donate-justgiving,
+.button.donate-justgiving:hover {
+  background-color: var(--color-accent);
+}
+
+.button.donate-justgiving:hover,
+.button.donate-justgiving:active {
+  background-color: var(--color-accent-darker);
+}
+
+.inline {
+  display: inline;
+}
+
+.card-divider + .card-divider {
+  padding-top: 0;
+}
+
+.image-link {
+  font-weight: unset;
+}
+
+.image-link:hover,
+.image-link:active {
+  text-decoration: none;
+}
+
+.image-link .card .card-section h4,
+.image-link .card .card-section:hover,
+.image-link .card .card-section:active {
+  color: var(--color-accent);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .medium-order-1,
+  .sticky-container {
+    margin-top: 1em;
+  }
 }
 
 .social-media-btn {

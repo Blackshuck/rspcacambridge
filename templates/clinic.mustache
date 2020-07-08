@@ -23,8 +23,9 @@
         <div class="grid-x grid-margin-x">
           <div class="cell medium-2">
             <h3 class="h4">Address</h3>
-            <address itemprop="address">
-              1 Pool Way<br />
+            <!-- display: inline -->
+            <address class="directions" itemprop="address"
+              >1 Pool Way<br />
               Whitehill Road<br />
               Cambridge<br />
               CB5 8NT
@@ -101,7 +102,18 @@
               <div class="cell"><h3>About</h3></div>
             </div>
             <div class="grid-x grid-margin-x">
-              <section class="cell medium-8 content-container">
+              <div class="cell medium-4 medium-order-2">
+                <figure>
+                  <img
+                    src="{{assetPrefix}}img/dog-in-clinic.jpeg"
+                    alt="Photo of a dog in the clinic"
+                  />
+                  <figcaption>
+                    Photo by Poppy Corbett
+                  </figcaption>
+                </figure>
+              </div>
+              <section class="cell medium-8 medium-order-1">
                 <p class="lead">
                   The history of the RSPCA Cambridge animal clinic dates back to
                   the 1930s. Staff and hospital facilities for the clinic are
@@ -126,17 +138,6 @@
                   put to sleep.
                 </p>
               </section>
-              <div class="cell medium-4 content-nav-container">
-                <figure>
-                  <img
-                    src="{{assetPrefix}}img/dog-in-clinic.jpeg"
-                    alt="Photo of a dog in the clinic"
-                  />
-                  <figcaption>
-                    Photo by Poppy Corbett
-                  </figcaption>
-                </figure>
-              </div>
             </div>
           </div>
         </div>
@@ -187,7 +188,10 @@
               </div>
             </div>
             <div class="grid-x grid-margin-x grid-padding-y" id="content">
-              <article class="cell medium-8 content-container">
+              <div class="cell medium-4 medium-order-2">
+                {{>sidebar}}
+              </div>
+              <article class="cell medium-8 medium-order-1">
                 <section id="eligibility" data-magellan-target="eligibility">
                   <h4>Is my pet eligible?</h4>
                   <p>
@@ -588,52 +592,6 @@
                   </p>
                 </section>
               </article>
-              <!-- SIDEBAR NAVIGATION -->
-              <div class="cell medium-4 grid-padding-y content-nav-container">
-                <nav
-                  class="sticky-container"
-                  data-sticky-container
-                  aria-label="Content navigation"
-                >
-                  <div
-                    class="sticky"
-                    data-sticky
-                    data-anchor="content"
-                    data-sticky-on="medium"
-                  >
-                    <div class="content-nav-header hide-for-small-only">
-                      FAQs
-                    </div>
-                    <ul class="content-nav vertical menu" data-magellan>
-                      <li>
-                        <a href="#eligibility">Is my pet eligible?</a>
-                      </li>
-                      <li>
-                        <a href="#cost">How much does it cost?</a>
-                      </li>
-                      <li>
-                        <a href="#which-animals"
-                          >Which animals can you treat?</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#out-of-hours"
-                          >What if my pet needs help out of hours?</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#vaccinations">Vaccinations</a>
-                      </li>
-                      <li>
-                        <a href="#neutering">Neutering</a>
-                      </li>
-                      <li>
-                        <a href="#helping">Helping out at the animal clinic</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
             </div>
           </div>
         </div>
