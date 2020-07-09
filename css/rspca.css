@@ -213,6 +213,7 @@ address {
 }
 
 .footer {
+  margin-top: 1em;
   background-color: var(--color-rspca-blue);
   color: var(--color-lightish);
 }
