@@ -398,13 +398,34 @@ a[href$=".pdf" i]::before {
 .image-link .card .card-section h4,
 .image-link .card .card-section:hover,
 .image-link .card .card-section:active {
-  color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.cards img {
+  object-fit: cover;
+}
+
+.cards .card {
+  border: none;
+}
+
+.cards .card-section {
+  background-color: var(--color-secondary);
+  flex-basis: 50%;
 }
 
 @media screen and (max-width: 39.9375em) {
   .medium-order-1,
   .sticky-container {
     margin-top: 1em;
+  }
+
+  .cards .card {
+    flex-flow: row;
+  }
+
+  .cards img {
+    flex-basis: 33%;
   }
 }
 
@@ -441,13 +462,15 @@ a[href$=".pdf" i]::before {
   text-align: left;
 }
 
-.homepage .help-card .card-section h4,
-.homepage .about-card .card-section h4 {
-  text-align: center;
-  font-weight: bold;
+.homepage .about-card .card-section p,
+.homepage .help-card .card-section p {
+  background-color: var(--color-secondary);
+  text-align: left;
+  font-weight: 400;
 }
 
-#home-10-point-plan {
+.homepage .help-card .card-section h4,
+.homepage .about-card .card-section h4 {
   font-weight: bold;
 }
 
