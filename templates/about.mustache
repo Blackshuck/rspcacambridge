@@ -7,7 +7,7 @@
     <div class="grid-container full-screen-height">
       {{#breadcrumbs?}} {{> breadcrumbs }} {{/breadcrumbs?}}
       <!-- MAIN CONTENT -->
-      <div class="grid-x align-center">
+      <div class="grid-x">
         <main class="cell" role="main">
           <div class="grid-x grid-margin-x grid-padding-y">
             <div class="cell">
@@ -17,13 +17,15 @@
           <div class="grid-x grid-margin-x">
             <div class="cell medium-4 medium-order-2">
               <figure>
-                <a href="{{assetPrefix}}img/brancharea.jpg" class="image-link">
+                <a href="{{assetPrefix}}area.html" class="image-link">
                   <img
                     src="{{assetPrefix}}img/brancharea.jpg"
-                    alt="A map showing the outlines of the RSPCA Cambridge & District branch area"
+                    alt="A map showing the borders of the RSPCA Cambridge & District branch area"
                     class="hide-for-small-only"
                   />
-                  <span class="hide-for-medium">RSPCA Cambridge &amp; District branch area.</span>
+                  <span class="hide-for-medium"
+                    >RSPCA Cambridge &amp; District branch area.</span
+                  >
                 </a>
                 <figcaption class="hide-for-small-only">
                   RSPCA Cambridge &amp; District branch area
@@ -79,15 +81,27 @@
                 >
                 as we are unable to provide the range of services that we could
                 several years ago, including emergency support for pet owners
-                who cannot afford vet fees. Those in receipt of state benefits
-                and may struggle with vet bills should register with our
-                <a href="{{assetPrefix}}clinic.html">clinic</a>. Veterinary
-                charges at the clinic are roughly one third that of private
-                vets.
+                who cannot afford vet fees.
               </p>
-              <p><a href="http://www.rspca.org.uk/getinvolved/becomeamember">Become a member of the RSPCA</a>.  Membership gives you voting rights on important issues and the chance of joining your local branch committee as well as supporting the society.</p>
+              <p>
+                <strong
+                  >Those in receipt of state benefits and may struggle with vet
+                  bills should register with our
+                  <a href="{{assetPrefix}}clinic.html">clinic</a>.</strong
+                >
+                Veterinary charges at the clinic are roughly one third that of
+                private vets.
+              </p>
+              <p>
+                <a href="http://www.rspca.org.uk/getinvolved/becomeamember"
+                  >Become a member of the RSPCA</a
+                >. Membership gives you voting rights on important issues and
+                the chance of joining your local branch committee as well as
+                supporting the society.
+              </p>
             </div>
           </div>
+          <hr />
           <div
             class="grid-x grid-margin-x cards"
             data-equalizer
@@ -108,25 +122,34 @@
               </a>
             </div>
             <div class="cell medium-4 large-3">
-              <a href="https://www.rspca.org.uk/getinvolved/becomeamember" class="image-link">
+              <a
+                href="https://www.rspca.org.uk/getinvolved/becomeamember"
+                class="image-link"
+              >
                 <div class="card" data-equalizer-watch>
                   <img
-                          alt="A photo of a small rabbit held by a person with RSPCA written on their clothes"
-                          src="{{assetPrefix}}img/rabbit.jpg"
+                    alt="A photo of a small rabbit held by a person with RSPCA written on their clothes"
+                    src="{{assetPrefix}}img/rabbit.jpg"
                   />
                   <div class="card-section">
-                    <h4>Become a member</h4>
-                    <p>Join us today and help us fight for improved animal welfare.</p>
+                    <h4>Join RSPCA</h4>
+                    <p>
+                      Become a member of the RSPCA today and help us fight for
+                      improved animal welfare.
+                    </p>
                   </div>
                 </div>
               </a>
             </div>
             <div class="cell medium-4 large-3">
-              <a href="{{assetPrefix}}donate.html#items-cash" class="image-link">
+              <a
+                href="{{assetPrefix}}donate.html#items-cash"
+                class="image-link"
+              >
                 <div class="card" data-equalizer-watch>
                   <img
-                          alt="A photo of the interior of our Mill Road charity shop"
-                    src="{{assetPrefix}}img/millroad.png"
+                    alt="A photo of the interior of our Mill Road charity shop"
+                    src="{{assetPrefix}}img/checkout-at-shop.jpg"
                   />
                   <div class="card-section">
                     <h4>Donate</h4>
@@ -139,12 +162,15 @@
               <a href="{{assetPrefix}}donate.html#sponsor" class="image-link">
                 <div class="card" data-equalizer-watch>
                   <img
-                          src="{{assetPrefix}}img/dog.jpg"
-                          alt="Photo of a dog in a kennel"
+                    src="{{assetPrefix}}img/dog.jpg"
+                    alt="Photo of a dog in a kennel"
                   />
                   <div class="card-section">
                     <h4>Sponsor</h4>
-                    <p>Sponsor a kennel space to enable us to admit animals for rehoming and provide them with veterinary care.</p>
+                    <p>
+                      Sponsor a kennel space to allow us to admit more animals
+                      and provide more veterinary care.
+                    </p>
                   </div>
                 </div>
               </a>
@@ -152,9 +178,13 @@
             <div class="cell medium-4 large-3">
               <a href="{{assetPrefix}}trustees.html" class="image-link">
                 <div class="card" data-equalizer-watch>
+                  <img src="{{assetPrefix}}img/rspca-group.jpg" alt="" />
                   <div class="card-section">
                     <h4>Become a trustee</h4>
-                    <p>Become a trustee and have a say in how the local branch is run.</p>
+                    <p>
+                      Become a trustee and have a say in how the local branch is
+                      run.
+                    </p>
                   </div>
                 </div>
               </a>
@@ -162,20 +192,36 @@
             <div class="cell medium-4 large-3">
               <a href="{{assetPrefix}}volunteer.html" class="image-link">
                 <div class="card" data-equalizer-watch>
+                  <img
+                    src="{{assetPrefix}}img/halloween-dog.jpg"
+                    alt="A photo of a white dog wearing an orange hat during the Cambridge Halloween Dog Parade"
+                  />
                   <div class="card-section">
                     <h4>Volunteer</h4>
-                    <p>Volunteer as a fosterer, home visitor, fundraiser or in one of our shops.</p>
+                    <p>
+                      Volunteer as a fosterer, home visitor, fundraiser or in
+                      one of our shops.
+                    </p>
                   </div>
                 </div>
               </a>
             </div>
             <div class="cell medium-4 large-3">
-              <a href="{{assetPrefix}}donate.html#other-ways-to-donate" class="image-link">
+              <a
+                href="{{assetPrefix}}donate.html#other-ways-to-donate"
+                class="image-link"
+              >
                 <div class="card" data-equalizer-watch>
+                  <img
+                    src="{{assetPrefix}}img/give-as-you-live-logo-blue.svg"
+                    alt="Give as you live - Online"
+                  />
                   <div class="card-section">
-                    <img src="{{assetPrefix}}img/give-as-you-live-logo.svg" alt="Give as you live - Online">
                     <h4>Give as you live</h4>
-                    <p>Raise free funds for us when you shop over 4,000+ online stores.</p>
+                    <p>
+                      Raise free funds for us when you shop over 4,000+ online
+                      stores.
+                    </p>
                   </div>
                 </div>
               </a>
@@ -184,12 +230,15 @@
               <a href="{{assetPrefix}}donate.html#legacies" class="image-link">
                 <div class="card" data-equalizer-watch>
                   <img
-                          alt="A photo of the interior of our Mill Road charity shop"
-                          src="{{assetPrefix}}img/kitten.jpg"
+                    alt="A photo of the interior of our Mill Road charity shop"
+                    src="{{assetPrefix}}img/kitten.jpg"
                   />
                   <div class="card-section">
                     <h4>Legacies</h4>
-                    <p>Leaving us a legacy in your will is another way you can help.</p>
+                    <p>
+                      Leaving us a legacy in your will is another way you can
+                      help.
+                    </p>
                   </div>
                 </div>
               </a>

@@ -1,0 +1,16 @@
+{
+  "metadata_page_title": "Branch area",
+  "breadcrumbs?": true,
+  "assetPrefix": "",
+  "breadcrumbs": [
+    {
+      "content": "Home",
+      "filepath": "index.html"
+    },
+    {
+      "content": "About",
+      "filepath": "about.html"
+    }
+  ],
+  "current_breadcrumb": "Branch area"
+}
