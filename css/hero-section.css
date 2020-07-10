@@ -1,0 +1,25 @@
+/* Modified version of the responsive hero section Foundation Building Block
+   Original source: https://get.foundation/building-blocks/blocks/responsive-hero-section.html
+*/
+
+.hero-section {
+  background: url("../img/dog-in-clinic-lg.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+}

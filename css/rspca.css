@@ -17,6 +17,7 @@ Accent - Aqua: #189ca1
   --color-lightish: #f1f1f1;
   --color-light: #fafafa;
   --color-mid: grey;
+  --color-secondary: #e4e1ca;
   --ratio: 1.4;
   --measure: 80ch;
   --line-height: var(--ratio);
@@ -426,7 +427,7 @@ a[href$=".pdf" i]::before {
 
 .homepage a:hover,
 .homepage a:focus {
-  color: var(--color-accent);
+  color: var(--color-dark);
   text-decoration: none;
 }
 
@@ -436,12 +437,13 @@ a[href$=".pdf" i]::before {
 
 .homepage .about-card .card-section,
 .homepage .help-card .card-section {
-  background-color: white;
+  background-color: var(--color-secondary);
   text-align: left;
 }
 
-.homepage .help-card .card-divider h4,
-.homepage .about-card .card-divider h4 {
+.homepage .help-card .card-section h4,
+.homepage .about-card .card-section h4 {
+  text-align: center;
   font-weight: bold;
 }
 
@@ -449,11 +451,14 @@ a[href$=".pdf" i]::before {
   font-weight: bold;
 }
 
-#home-10-point-plan a,
-#home-10-point-plan a:hover,
-#home-10-point-plan a:focus {
+#home-10-point-plan a {
   color: var(--color-accent);
   text-decoration: underline;
+}
+
+#home-10-point-plan a:hover,
+#home-10-point-plan a:focus {
+  text-decoration: none;
 }
 
 /* Embed external in responsive iframe */
