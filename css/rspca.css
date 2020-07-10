@@ -17,6 +17,7 @@ Accent - Aqua: #189ca1
   --color-lightish: #f1f1f1;
   --color-light: #fafafa;
   --color-mid: grey;
+  --color-secondary: #e4e1ca;
   --ratio: 1.4;
   --measure: 80ch;
   --line-height: var(--ratio);
@@ -399,7 +400,20 @@ a[href$=".pdf" i]::before {
 .image-link .card .card-section h4,
 .image-link .card .card-section:hover,
 .image-link .card .card-section:active {
-  color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.cards img {
+  object-fit: cover;
+}
+
+.cards .card {
+  border: none;
+}
+
+.cards .card-section {
+  background-color: var(--color-secondary);
+  flex-basis: 50%;
 }
 
 .register-link::before {
@@ -414,6 +428,14 @@ a[href$=".pdf" i]::before {
   .medium-order-1,
   .sticky-container {
     margin-top: 1em;
+  }
+
+  .cards .card {
+    flex-flow: row;
+  }
+
+  .cards img {
+    flex-basis: 33%;
   }
 }
 
