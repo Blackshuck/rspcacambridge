@@ -425,6 +425,11 @@ a[href$=".pdf" i]::before {
   font-size: 125%;
 }
 
+.cards img {
+  height: 50%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 39.9375em) {
   .medium-order-1,
   .sticky-container {
