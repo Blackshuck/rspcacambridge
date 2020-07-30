@@ -139,9 +139,17 @@ address {
   font-weight: normal;
 }
 
+.footer {
+  margin-top: 1em;
+}
+
 .head .message a {
   color: var(--color-light);
   text-decoration: underline;
+}
+
+.give-as-you-live {
+  background-color: #44b4e4;
 }
 
 .nav-links a {
@@ -423,6 +431,11 @@ a[href$=".pdf" i]::before {
 
 .register-link {
   font-size: 125%;
+}
+
+.cards img {
+  height: 50%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 39.9375em) {
