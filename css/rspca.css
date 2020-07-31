@@ -17,6 +17,7 @@ Accent - Aqua: #189ca1
   --color-lightish: #f1f1f1;
   --color-light: #fafafa;
   --color-mid: grey;
+  --color-secondary: #e4e1ca;
   --ratio: 1.4;
   --measure: 80ch;
   --line-height: var(--ratio);
@@ -138,9 +139,17 @@ address {
   font-weight: normal;
 }
 
+.footer {
+  margin-top: 1em;
+}
+
 .head .message a {
   color: var(--color-light);
   text-decoration: underline;
+}
+
+.give-as-you-live {
+  background-color: #44b4e4;
 }
 
 .nav-links a {
@@ -212,6 +221,7 @@ address {
 }
 
 .footer {
+  margin-top: 1em;
   background-color: var(--color-rspca-blue);
   color: var(--color-lightish);
 }
@@ -279,7 +289,8 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
+{
   content: "";
   display: inline-block;
   height: 1rem;
@@ -390,20 +401,55 @@ a[href$=".pdf" i]::before {
 }
 
 .image-link:hover,
-.image-link:active {
+.image-link:active,
+.image-link:focus {
   text-decoration: none;
 }
 
 .image-link .card .card-section h4,
 .image-link .card .card-section:hover,
 .image-link .card .card-section:active {
-  color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.cards img {
+  object-fit: cover;
+}
+
+.cards .card {
+  border: none;
+}
+
+.cards .card-section {
+  background-color: var(--color-secondary);
+  flex-basis: 50%;
+}
+
+.register-link::before {
+  content: "➔ ";
+}
+
+.register-link {
+  font-size: 125%;
+}
+
+.cards img {
+  height: 50%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 39.9375em) {
   .medium-order-1,
   .sticky-container {
     margin-top: 1em;
+  }
+
+  .cards .card {
+    flex-flow: row;
+  }
+
+  .cards img {
+    flex-basis: 33%;
   }
 }
 
