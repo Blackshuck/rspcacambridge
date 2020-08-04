@@ -5,6 +5,7 @@
 .hero-section {
   background: url("../img/dog-in-clinic-lg.jpg") 50% no-repeat;
   background-size: cover;
+  background-position-y: top;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
