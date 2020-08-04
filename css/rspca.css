@@ -201,7 +201,8 @@ address {
   height: 55px;
 }
 
-.head .button {
+.head .button,
+.donate.button {
   background-color: var(--color-accent-orange);
   color: var(--color-dark);
   border-radius: 5px;
@@ -210,7 +211,9 @@ address {
 }
 
 .head .button:hover,
-.head .button:active {
+.head .button:active,
+.donate.button:hover,
+.donate.button:active {
   background-color: var(--color-accent-orange-darker);
 }
 
