@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="css/rspca.css" />
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0" nonce="gRkxu3k4"></script>
 <!-- PAGE HEADER -->
 <header class="head">
   <div class="grid-x text-center message">
@@ -152,11 +154,14 @@
     </div>
     <div class="grid-x grid-margin-x grid-padding-y">
       <div class="cell medium-4 medium-order-2 text-center">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frspcacambridge&tabs=events&width=340&height=260&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="340" height="260"
-                style="border:none;overflow:hidden"
-                allowTransparency="true" allow="encrypted-media">
-        </iframe>
+        <!-- Facebook Events plugin -->
+        <div class="fb-page" data-href="https://www.facebook.com/rspcacambridge"
+             data-tabs="events" data-width="" data-height="" data-small-header="false"
+             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/rspcacambridge" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/rspcacambridge">R.S.P.C.A. Cambridge</a>
+          </blockquote>
+        </div>
       </div>
       <div class="cell medium-8 medium-order-1">
         <h3>AUGUST 2020: Changes due to COVID-19 </h3>
