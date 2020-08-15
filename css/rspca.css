@@ -7,6 +7,7 @@ Accent - Aqua: #189ca1
 :root {
   --font-plain: "arial", sans-serif;
   --color-rspca-blue: #003473;
+  --color-rspca-blue-darker: #002654;
   --color-accent: #189ca1;
   --color-accent-darker: #12787c;
   --color-accent-orange: #f69220;
@@ -42,7 +43,7 @@ a,
 
 a:focus,
 a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-darker);
   text-decoration: underline;
 }
 
@@ -81,8 +82,21 @@ figcaption {
   color: var(--color-mid);
 }
 
+.button {
+  border-radius: 5px;
+}
+
+.button.primary {
+  background-color: var(--color-rspca-blue);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--color-rspca-blue-darker);
+}
+
 .full-screen-height {
-  min-height: calc(100vh - 374px);
+  min-height: calc(100vh - 150px);
 }
 
 .content-nav {
@@ -414,6 +428,7 @@ a[href$=".pdf" i]::before {
   flex-basis: 50%;
 }
 
+/* Mobile screens */
 @media screen and (max-width: 39.9375em) {
   .medium-order-1,
   .sticky-container {
@@ -438,7 +453,6 @@ a[href$=".pdf" i]::before {
 }
 
 .homepage {
-  padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -505,6 +519,7 @@ a[href$=".pdf" i]::before {
   display: none;
 }
 
+/* Medium and large screens */
 @media screen and (min-width: 40em) {
   .no-js .top-bar {
     display: block;

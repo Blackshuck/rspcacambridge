@@ -32,134 +32,115 @@
   <body>
     {{> header }} {{> navigation }}
     <!-- BODY OF PAGE STARTS HERE-->
-    <div class="grid-x text-center hide">
-      <div class="cell">
-        <div class="callout announcement">
-          <h5>Update: April 2020</h5>
-          <p>
-            Currently our shops and clinic are closed due to Covid-19 and we are
-            not taking in or rehoming any animals. For veterinary emergencies
-            registered clinic clients should contact the branch as normal.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container full-screen-height homepage">
-      <div class="grid-x grid-padding-y">
-        <div class="cell text-center">
-          <h2>What we do</h2>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-y">
+    <div class="homepage">
+      <div class="grid-x full-screen-height">
         <div class="cell">
           <a href="clinic.html">
-            <div class="hero-section">
+            <div class="clinic hero-section full-screen-height">
               <div class="hero-section-text">
                 <h2 class="h1">Our clinic</h2>
                 <p class="h4">
                   We provide cheap veterinary treatment for low-income pet
                   owners
                 </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div
-        class="grid-x grid-margin-x cards"
-        data-equalizer
-        data-equalize-on="medium"
-      >
-        <div class="cell medium-6">
-          <a href="shops.html">
-            <div class="card about-card" data-equalizer-watch>
-              <img
-                alt="Charity shop floor"
-                src="img/burleigh-can-you-volunteer.png"
-              />
-              <div class="card-section lead">
-                <h4>Our shops</h4>
                 <p>
-                  We have charity shops in central Cambridge, Mill Road and
-                  Newmarket
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cell medium-6">
-          <a href="adopt.html">
-            <div class="card about-card" data-equalizer-watch>
-              <img alt="Two tabby kittens playing on a cat tree" src="{{assetPath}}img/tabbykittens.jpg" />
-              <div class="card-section lead">
-                <h4>Rehoming</h4>
-                <p>
-                  We rehome rescue animals such as cats, dogs and other small
-                  animals
+                  <a class="button primary">Read more</a>
                 </p>
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div class="grid-x grid-padding-y text-center">
-        <div class="cell">
-          <hr id="divider" />
-        </div>
-      </div>
-      <div class="grid-x text-center grid-padding-y">
-        <div class="cell">
-          <h2>We need help</h2>
-          <h5 id="home-10-point-plan">
-            Read our <a href="10point.html">10 point plan</a> to learn how you
-            can make a difference
-          </h5>
-        </div>
-      </div>
-      <div
-        class="grid-x grid-margin-x cards"
-        data-equalizer
-        data-equalize-on="medium"
-      >
-        <div class="cell medium-4">
-          <a href="volunteer.html#shops" class="image-link">
-            <div class="card help-card" data-equalizer-watch>
-              <img src="img/millroad.png" alt="" />
-              <div class="card-section lead">
-                <h4>Volunteer with us</h4>
-                <p>
-                  Apply to become a volunteer in one of our shops
-                </p>
+      <div class="grid-container">
+        <div
+                class="grid-x grid-margin-x grid-padding-y cards"
+        >
+          <div class="cell medium-6">
+            <a href="shops.html">
+              <div class="shops hero-section">
+                <div class="hero-section-text">
+                  <h2>Our shops</h2>
+                  <p>
+                    We have charity shops in central Cambridge, Mill Road and
+                    Newmarket
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="cell medium-4">
-          <a href="donate.html">
-            <div class="card help-card" data-equalizer-watch>
-              <img src="img/five-kittens.jpg" alt="" />
-              <div class="card-section lead">
-                <h4>Donate</h4>
-                <p>
-                  Donate money or items for our shops, or leave a legacy in your
-                  will
-                </p>
+            </a>
+          </div>
+          <div class="cell medium-6">
+            <a href="adopt.html">
+              <div class="rehoming hero-section">
+                <div class="hero-section-text">
+                  <h2>Rehoming</h2>
+                  <p>
+                    We rehome rescue animals such as cats, dogs and other small
+                    animals
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-        <div class="cell medium-4">
-          <a href="volunteer.html">
-            <div class="card help-card" data-equalizer-watch>
-              <img src="img/dog-in-grass.jpg" alt="" />
-              <div class="card-section lead">
-                <h4>Help our animals</h4>
-                <p>
-                  Our animals need fosterers, home visitors and fundraisers
-                </p>
+        <div class="grid-x grid-padding-y text-center">
+          <div class="cell">
+            <hr id="divider" />
+          </div>
+        </div>
+        <div class="grid-x text-center grid-padding-y">
+          <div class="cell">
+            <h2>We need help</h2>
+            <h5 id="home-10-point-plan">
+              Read our <a href="10point.html">10 point plan</a> to learn how you
+              can make a difference
+            </h5>
+          </div>
+        </div>
+        <div
+                class="grid-x grid-margin-x cards"
+                data-equalizer
+                data-equalize-on="medium"
+        >
+          <div class="cell medium-4">
+            <a href="volunteer.html#shops" class="image-link">
+              <div class="card help-card" data-equalizer-watch>
+                <img src="img/millroad.png" alt="" />
+                <div class="card-section lead">
+                  <h4>Volunteer with us</h4>
+                  <p>
+                    Apply to become a volunteer in one of our shops
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+          <div class="cell medium-4">
+            <a href="donate.html">
+              <div class="card help-card" data-equalizer-watch>
+                <img src="img/five-kittens.jpg" alt="" />
+                <div class="card-section lead">
+                  <h4>Donate</h4>
+                  <p>
+                    Donate money or items for our shops, or leave a legacy in your
+                    will
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cell medium-4">
+            <a href="volunteer.html">
+              <div class="card help-card" data-equalizer-watch>
+                <img src="img/dog-in-grass.jpg" alt="" />
+                <div class="card-section lead">
+                  <h4>Help our animals</h4>
+                  <p>
+                    Our animals need fosterers, home visitors and fundraisers
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
