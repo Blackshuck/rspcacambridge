@@ -361,8 +361,21 @@ a[href$=".pdf" i]::before {
   background-position-x: center;
 }
 
+.map-link::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  background-size: 1.2rem 1.05rem;
+  background-image: url("../icons/map.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .directions,
-.facebook-link {
+.facebook-link,
+.map-link {
   margin-left: 1.5rem;
 }
 
