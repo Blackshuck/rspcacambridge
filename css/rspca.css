@@ -82,10 +82,6 @@ figcaption {
   color: var(--color-mid);
 }
 
-.button {
-  border-radius: 5px;
-}
-
 .button.primary {
   background-color: var(--color-rspca-blue);
 }
@@ -93,10 +89,6 @@ figcaption {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--color-rspca-blue-darker);
-}
-
-.full-screen-height {
-  min-height: calc(100vh - 150px);
 }
 
 .content-nav {
@@ -299,8 +291,7 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
-{
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
   content: "";
   display: inline-block;
   height: 1rem;
@@ -435,10 +426,6 @@ a[href$=".pdf" i]::before {
   color: var(--color-dark);
 }
 
-.cards img {
-  object-fit: cover;
-}
-
 .cards .card {
   border: none;
 }
@@ -457,7 +444,6 @@ a[href$=".pdf" i]::before {
 }
 
 .cards img {
-  height: 50%;
   object-fit: cover;
 }
 
@@ -474,6 +460,7 @@ a[href$=".pdf" i]::before {
 
   .cards img {
     flex-basis: 33%;
+    height: unset;
   }
 }
 
@@ -497,6 +484,10 @@ a[href$=".pdf" i]::before {
 .homepage a:focus {
   color: var(--color-dark);
   text-decoration: none;
+}
+
+.homepage .button {
+  border-radius: 5px;
 }
 
 .homepage #divider {
@@ -560,5 +551,9 @@ a[href$=".pdf" i]::before {
 
   .no-js .title-bar {
     display: none;
+  }
+
+  .full-screen-height {
+    min-height: calc(100vh - 9em);
   }
 }

@@ -3,36 +3,37 @@
 */
 
 .hero-section {
-  background-position-y: top;
   display: flex;
+  height: 45vh;
+  background-position-y: top;
+  background-size: cover;
   align-items: center;
   justify-content: center;
 }
 
 .clinic.hero-section {
-  background: url("../img/dog-in-clinic-lg.jpg") no-repeat;
+  background: url("../img/dog-in-clinic.jpg") no-repeat;
   background-size: cover;
 }
 
 .shops.hero-section {
   background: url("../img/burleigh-can-you-volunteer.png") no-repeat;
-  height: 45vh;
+  background-size: cover;
+  margin-right: 1em;
 }
 
 .rehoming.hero-section {
   background: url("../img/tabbykittens.jpg") no-repeat;
-  height: 45vh;
+  background-size: cover;
 }
 
 .hero-section-text {
   color: var(--color-dark);
   background-color: var(--color-light);
-  padding: 1em;
+  padding: 1rem;
   border-radius: 5px;
-}
-
-.clinic.hero-section .hero-section-text {
-  border-left: 1rem solid var(--color-rspca-blue);
+  margin: 0 1.5rem;
+  text-align: center;
 }
 
 .hero-section-text .h1 {
@@ -41,6 +42,23 @@
 
 .hero-section-text .button {
   margin: 0;
+}
+
+.clinic .hero-section-text {
+  text-align: left;
+  border-left: 1rem solid var(--color-rspca-blue);
+}
+
+/* Medium and large screens */
+@media screen and (min-width: 40em) {
+  .clinic.hero-section {
+    background: url("../img/dog-in-clinic-lg.jpeg") no-repeat;
+    background-size: cover;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
 }
 
 /* Large screens */
