@@ -158,6 +158,10 @@ address {
   text-decoration: underline;
 }
 
+.give-as-you-live {
+  background-color: #44b4e4;
+}
+
 .nav-links a {
   font-size: 1rem;
 }
@@ -227,6 +231,7 @@ address {
 }
 
 .footer {
+  margin-top: 1em;
   background-color: var(--color-rspca-blue);
   color: var(--color-lightish);
 }
@@ -294,7 +299,8 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
+{
   content: "";
   display: inline-block;
   height: 1rem;
@@ -355,8 +361,21 @@ a[href$=".pdf" i]::before {
   background-position-x: center;
 }
 
+.map-link::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  background-size: 1.2rem 1.05rem;
+  background-image: url("../icons/map.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .directions,
-.facebook-link {
+.facebook-link,
+.map-link {
   margin-left: 1.5rem;
 }
 
@@ -405,7 +424,8 @@ a[href$=".pdf" i]::before {
 }
 
 .image-link:hover,
-.image-link:active {
+.image-link:active,
+.image-link:focus {
   text-decoration: none;
 }
 
@@ -426,6 +446,19 @@ a[href$=".pdf" i]::before {
 .cards .card-section {
   background-color: var(--color-secondary);
   flex-basis: 50%;
+}
+
+.register-link::before {
+  content: "➔ ";
+}
+
+.register-link {
+  font-size: 125%;
+}
+
+.cards img {
+  height: 50%;
+  object-fit: cover;
 }
 
 /* Mobile screens */

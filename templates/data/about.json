@@ -1,5 +1,5 @@
 {
-  "metadata_page_title": "Adopt",
+  "metadata_page_title": "About",
   "breadcrumbs?": true,
   "assetPrefix": "",
   "breadcrumbs": [
@@ -8,5 +8,5 @@
       "filepath": "index.html"
     }
   ],
-  "current_breadcrumb": "Adopt"
+  "current_breadcrumb": "About"
 }

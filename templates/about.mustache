@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  {{> metadata }}
+  <body>
+    {{> header }} {{> navigation }}
+    <!-- BODY OF PAGE STARTS HERE-->
+    <div class="grid-container full-screen-height">
+      {{#breadcrumbs?}} {{> breadcrumbs }} {{/breadcrumbs?}}
+      <!-- MAIN CONTENT -->
+      <div class="grid-x">
+        <main class="cell" role="main">
+          <div class="grid-x grid-margin-x grid-padding-y">
+            <div class="cell">
+              <h2>{{current_breadcrumb}}</h2>
+            </div>
+          </div>
+          <div class="grid-x grid-margin-x">
+            <div class="cell medium-4 medium-order-2">
+              <figure>
+                <a href="{{assetPrefix}}img/brancharea.jpg" class="image-link">
+                  <img
+                    src="{{assetPrefix}}img/brancharea.jpg"
+                    alt="A map showing the borders of the RSPCA Cambridge & District branch area"
+                    class="hide-for-small-only"
+                  />
+                  <span class="hide-for-medium"
+                    >RSPCA Cambridge &amp; District branch area.</span
+                  >
+                </a>
+                <figcaption class="hide-for-small-only">
+                  RSPCA Cambridge &amp; District branch area
+                </figcaption>
+              </figure>
+            </div>
+            <div class="cell medium-8 medium-order-1">
+              <p class="lead">
+                We are a branch of the RSPCA raising money locally to support
+                our animal welfare work. Our branch is run by a committee of
+                locally elected volunteers who are responsible for the
+                management and administration of the branch&rsquo;s affairs.
+              </p>
+              <p>
+                Our main activities are:
+              </p>
+              <ul>
+                <li>
+                  Caring for and rehoming animals in need who are brought to us
+                  by our local RSPCA Inspectors.
+                </li>
+                <li>Providing treatment for sick and injured stray animals.</li>
+                <li>
+                  A small animal clinic for owners who are unable to afford the
+                  full cost of veterinary treatment.
+                </li>
+              </ul>
+              <h3>How you can help</h3>
+              <p>
+                Local branch animal welfare services depend entirely on
+                voluntary income and fundraising activities carried out locally
+                and nationally. There is no National Health Service for animals
+                and the RSPCA does not receive automatic funding. We need
+                &pound;2,500 a month to keep our animal clinic running and
+                another &pound;2,000 per month to pay for boarding and care of
+                animals waiting for new homes.
+              </p>
+              <p>
+                All RSPCA local branches are separate charities affiliated to
+                the national RSPCA, which provides us with a basic grant
+                annually. But the branch is responsible for raising the rest of
+                the funds needed to provide local services. We pay an annual
+                contribution to the Regional Fund, which is used to support
+                projects that benefit all Eastern Region branches. Everything
+                else we raise is spent locally.
+              </p>
+              <p>
+                <strong
+                  >We desperately need more support through
+                  <a href="{{assetPrefix}}donate.html">donations</a> or
+                  <a href="{{assetPrefix}}volunteer.html">volunteering</a
+                  >,</strong
+                >
+                as we are unable to provide the range of services that we could
+                several years ago, including emergency support for pet owners
+                who cannot afford vet fees.
+              </p>
+              <p>
+                <strong
+                  >Those in receipt of state benefits and may struggle with vet
+                  bills should register with our
+                  <a href="{{assetPrefix}}clinic.html">clinic</a>.</strong
+                >
+                Veterinary charges at the clinic are roughly one third that of
+                private vets.
+              </p>
+              <p>
+                <a href="http://www.rspca.org.uk/getinvolved/becomeamember"
+                  >Become a member of the RSPCA</a
+                >. Membership gives you voting rights on important issues and
+                the chance of joining your local branch committee as well as
+                supporting the society.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div
+            class="grid-x grid-margin-x cards"
+            data-equalizer
+            data-equalize-on="medium"
+          >
+            <div class="cell medium-4 large-3">
+              <a href="{{assetPrefix}}10point.html" class="image-link">
+                <div class="card" data-equalizer-watch>
+                  <img
+                    alt="A photo of a black cat"
+                    src="{{assetPrefix}}img/blackcat.jpg"
+                  />
+                  <div class="card-section">
+                    <h4>10 point plan</h4>
+                    <p>How much of a difference could you make?</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a
+                href="https://www.rspca.org.uk/getinvolved/becomeamember"
+                class="image-link"
+              >
+                <div class="card" data-equalizer-watch>
+                  <img
+                    alt="A photo of a small rabbit held by a person with RSPCA written on their clothes"
+                    src="{{assetPrefix}}img/rabbit.jpg"
+                  />
+                  <div class="card-section">
+                    <h4>Join RSPCA</h4>
+                    <p>
+                      Become a member of the RSPCA today and help us fight for
+                      improved animal welfare.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a
+                href="{{assetPrefix}}donate.html#items-cash"
+                class="image-link"
+              >
+                <div class="card" data-equalizer-watch>
+                  <img
+                    alt="A photo of the interior of our Mill Road charity shop"
+                    src="{{assetPrefix}}img/checkout-at-shop.jpg"
+                  />
+                  <div class="card-section">
+                    <h4>Donate</h4>
+                    <p>Donate cash or items to our shops that we can sell.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a href="{{assetPrefix}}donate.html#sponsor" class="image-link">
+                <div class="card" data-equalizer-watch>
+                  <img
+                    src="{{assetPrefix}}img/dog.jpg"
+                    alt="Photo of a dog in a kennel"
+                  />
+                  <div class="card-section">
+                    <h4>Sponsor</h4>
+                    <p>
+                      Sponsor a kennel space to allow us to admit more animals
+                      and provide more veterinary care.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a href="{{assetPrefix}}trustees.html" class="image-link">
+                <div class="card" data-equalizer-watch>
+                  <img src="{{assetPrefix}}img/rspca-group.jpg" alt="" />
+                  <div class="card-section">
+                    <h4>Become a trustee</h4>
+                    <p>
+                      Become a trustee and have a say in how the local branch is
+                      run.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a href="{{assetPrefix}}volunteer.html" class="image-link">
+                <div class="card" data-equalizer-watch>
+                  <img
+                    src="{{assetPrefix}}img/halloween-dog.jpg"
+                    alt="A photo of a white dog wearing an orange hat during the Cambridge Halloween Dog Parade"
+                  />
+                  <div class="card-section">
+                    <h4>Volunteer</h4>
+                    <p>
+                      Volunteer as a fosterer, home visitor, fundraiser or in
+                      one of our shops.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a
+                href="{{assetPrefix}}donate.html#other-ways-to-donate"
+                class="image-link"
+              >
+                <div class="card" data-equalizer-watch>
+                  <img
+                    src="{{assetPrefix}}img/give-as-you-live-logo-blue.svg"
+                    alt="Give as you live - Online"
+                  />
+                  <div class="card-section">
+                    <h4>Give as you live</h4>
+                    <p>
+                      Raise free funds for us when you shop in over 4,000+
+                      online stores.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cell medium-4 large-3">
+              <a href="{{assetPrefix}}donate.html#legacies" class="image-link">
+                <div class="card" data-equalizer-watch>
+                  <img
+                    alt="A photo of a black and white kitten laying on a bed"
+                    src="{{assetPrefix}}img/kitten.jpg"
+                  />
+                  <div class="card-section">
+                    <h4>Legacies</h4>
+                    <p>
+                      Leaving us a legacy in your will is another way you can
+                      help.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    {{> footer }} {{> scripts }}
+  </body>
+</html>
