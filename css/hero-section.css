@@ -52,7 +52,7 @@
 /* Medium and large screens */
 @media screen and (min-width: 40em) {
   .clinic.hero-section {
-    background: url("../img/dog-in-clinic-lg.jpeg") no-repeat;
+    background: url("../img/dog-in-clinic-lg.jpg") no-repeat;
     background-size: cover;
   }
 
