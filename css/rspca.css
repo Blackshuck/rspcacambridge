@@ -141,9 +141,13 @@ address {
 
 .footer {
   margin-top: 1em;
+  padding: 1em 0;
+  background-color: var(--color-rspca-blue);
+  color: var(--color-lightish);
 }
 
-.head .message a {
+.head .message a,
+.footer .message a {
   color: var(--color-light);
   text-decoration: underline;
 }
@@ -169,12 +173,15 @@ address {
   color: var(--color-dark);
 }
 
-.footer .vertical.menu a {
+.footer .vertical.menu a,
+.footer .icons {
   padding: 0.7rem 1rem 0.7rem 0;
 }
 
 .head .message a:hover,
-.head .message a:active {
+.head .message a:active,
+.footer .message a:hover,
+.footer .message a:active {
   color: var(--color-light);
   text-decoration: none;
 }
@@ -194,7 +201,8 @@ address {
   height: 55px;
 }
 
-.head .button {
+.head .button,
+.donate.button {
   background-color: var(--color-accent-orange);
   color: var(--color-dark);
   border-radius: 5px;
@@ -203,11 +211,14 @@ address {
 }
 
 .head .button:hover,
-.head .button:active {
+.head .button:active,
+.donate.button:hover,
+.donate.button:active {
   background-color: var(--color-accent-orange-darker);
 }
 
-.head .message {
+.head .message,
+.footer .message {
   background-color: var(--color-accent-red);
   font-weight: bold;
   color: var(--color-light);
@@ -215,15 +226,14 @@ address {
   max-width: none;
 }
 
+.footer .message {
+  font-weight: normal;
+  padding: 0.5em;
+}
+
 .warning-text {
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.footer {
-  margin-top: 1em;
-  background-color: var(--color-rspca-blue);
-  color: var(--color-lightish);
 }
 
 .footer hr {
