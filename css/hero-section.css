@@ -1,0 +1,70 @@
+/* Modified version of the responsive hero section Foundation Building Block
+   Original source: https://get.foundation/building-blocks/blocks/responsive-hero-section.html
+*/
+
+.hero-section {
+  display: flex;
+  height: 45vh;
+  background-position-y: top;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.clinic.hero-section {
+  background: url("../img/dog-in-clinic.jpg") no-repeat;
+  background-size: cover;
+}
+
+.shops.hero-section {
+  background: url("../img/burleigh-can-you-volunteer.png") no-repeat;
+  background-size: cover;
+}
+
+.rehoming.hero-section {
+  background: url("../img/tabbykittens.jpg") no-repeat;
+  background-size: cover;
+}
+
+.hero-section-text {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 1.5rem;
+  text-align: center;
+}
+
+.hero-section-text .h1 {
+  font-weight: bold;
+}
+
+.hero-section-text .button {
+  margin: 0;
+}
+
+.clinic .hero-section-text {
+  text-align: left;
+  border-left: 1rem solid var(--color-rspca-blue);
+}
+
+/* Medium and large screens */
+@media screen and (min-width: 40em) {
+  .clinic.hero-section {
+    background: url("../img/dog-in-clinic-lg.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 64em) {
+  .clinic.hero-section .hero-section-text {
+    width: 50%;
+    margin-right: 1.5rem;
+    margin-left: auto;
+  }
+}
