@@ -57,7 +57,7 @@ generate_html() {
   fi
   if chevron -p ${PARTIALS_DIR} -d "${json}" "$1" >"${outputDir}/${name}.html"; then
     echo " - ✔ OK"
-    prettier --write "${outputDir}/${name}.html"
+    npx prettier --write "${outputDir}/${name}.html"
   else
     echo " - ✘ FAIL"
   fi
