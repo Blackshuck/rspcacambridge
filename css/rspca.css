@@ -73,6 +73,8 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
@@ -305,7 +307,8 @@ a[href^="mailto:"]::before {
 }
 
 /* External link symbol */
-main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after {
+main a[href*="//"]:not([href*="rspca-cambridge.org.uk" i]):not(.image-link):not(.button)::after
+{
   content: "";
   display: inline-block;
   height: 1rem;
@@ -446,6 +449,7 @@ a[href$=".pdf" i]::before {
 
 .cards .card-section {
   background-color: var(--color-secondary);
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 
@@ -458,6 +462,7 @@ a[href$=".pdf" i]::before {
 }
 
 .cards img {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -469,10 +474,14 @@ a[href$=".pdf" i]::before {
   }
 
   .cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
     flex-flow: row;
   }
 
   .cards img {
+    -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
     height: unset;
   }

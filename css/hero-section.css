@@ -3,11 +3,17 @@
 */
 
 .hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 45vh;
   background-position-y: top;
   background-size: cover;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -17,7 +23,7 @@
 }
 
 .shops.hero-section {
-  background: url("../img/burleigh-can-you-volunteer.png") no-repeat;
+  background: url("../img/burleigh-can-you-volunteer.jpg") no-repeat;
   background-size: cover;
 }
 
